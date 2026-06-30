@@ -1,0 +1,1426 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_1",
+    "graph2_name": "SaportaOxford1645",
+    "creation_date": "2026-06-26T17:11:05.629550",
+    "total_nodes": 69,
+    "total_edges": 81,
+    "shared_nodes": 1,
+    "kg1_unique_nodes": 33,
+    "kg2_unique_nodes": 35,
+    "shared_edges": 0,
+    "kg1_unique_edges": 41,
+    "kg2_unique_edges": 40
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_Exodus_13_21",
+      "label": "וי\"י הולך לפניה",
+      "full_label": "וי\"י הולך לפניהם יומם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: וי\"י הולך לפניהם יומם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yy",
+      "label": "י\"י",
+      "full_label": "י\"י",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: י\"י\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_byt_dynw",
+      "label": "בית דינו",
+      "full_label": "בית דינו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: בית דינו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hqbbh",
+      "label": "הקב\"ה",
+      "full_label": "הקב\"ה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: הקב\"ה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hshm",
+      "label": "השם",
+      "full_label": "השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_amwd_hann",
+      "label": "עמוד הענן",
+      "full_label": "עמוד הענן",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: עמוד הענן\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_amwd_hash",
+      "label": "עמוד האש",
+      "full_label": "עמוד האש",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: עמוד האש\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_ashr_ayn_byn",
+      "label": "אשר עין בעין נר",
+      "full_label": "אשר עין בעין נראה אתה י\"י ועננך עומד עליהם ובעמוד ענן אתה הולך לפניהם יומם ובעמוד אש לילה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אשר עין בעין נראה אתה י\"י ועננך עומד עליהם ובעמוד ענן אתה הולך לפניהם יומם ובעמוד אש לילה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shmvth_rbbh",
+      "label": "שמות רבה",
+      "full_label": "שמות רבה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שמות רבה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_ky_hvlk_lpn",
+      "label": "כי לא בחפזון תצ",
+      "full_label": "כי לא בחפזון תצאו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כי לא בחפזון תצאו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ר_אברהם",
+      "label": "אבן עזרא",
+      "full_label": "אבן עזרא",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אבן עזרא\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_gawlh_hrashvnh",
+      "label": "גאולה הראשונה",
+      "full_label": "גאולה הראשונה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: גאולה הראשונה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_laatyd_lba",
+      "label": "לעתיד לבא",
+      "full_label": "לעתיד לבא",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: לעתיד לבא\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_מדת_דינו",
+      "label": "מידת הדין",
+      "full_label": "מידת הדין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מידת הדין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_רחמים",
+      "label": "מידת הרחמים",
+      "full_label": "מידת הרחמים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מידת הרחמים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_השם_המיוחד",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: השם המיוחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yqb",
+      "label": "יעקב",
+      "full_label": "יעקב",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: יעקב\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_alhy_yqb",
+      "label": "אלהי יעקב",
+      "full_label": "אלהי יעקב",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אלהי יעקב\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_msh",
+      "label": "משה",
+      "full_label": "משה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: משה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_mwlyk_lymyn",
+      "label": "מוליך לימין משה",
+      "full_label": "מוליך לימין משה זרוע תפארתו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מוליך לימין משה זרוע תפארתו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_kn_nhgt_amk",
+      "label": "כן נהגת עמך לעש",
+      "full_label": "כן נהגת עמך לעשות לך שם תפארת",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כן נהגת עמך לעשות לך שם תפארת\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yshral",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ישראל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_swd_hmdrsh",
+      "label": "סוד המדרש",
+      "full_label": "סוד המדרש",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: סוד המדרש\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_pyrwh_hktwb",
+      "label": "פירוש הכתוב",
+      "full_label": "פירוש הכתוב",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: פירוש הכתוב\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "bq_tehillim_139_12",
+      "label": "ולילה כיום יאיר",
+      "full_label": "ולילה כיום יאיר כחשכה כאורה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ולילה כיום יאיר כחשכה כאורה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_המדרש_הזה",
+      "label": "המדרש הזה",
+      "full_label": "המדרש הזה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: המדרש הזה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_לעתיד_לבא",
+      "label": "לעתיד לבא",
+      "full_label": "לעתיד לבא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: לעתיד לבא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_8a3f2c1d9e4b",
+      "label": "אלהי יעקב",
+      "full_label": "אלהי יעקב",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אלהי יעקב\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הכתוב",
+      "label": "הכתוב",
+      "full_label": "הכתוב",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: הכתוב\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כח_השם",
+      "label": "כח השם",
+      "full_label": "כח השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כח השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שלוחו",
+      "label": "שלוחו",
+      "full_label": "שלוחו",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שלוחו\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ישראל",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ישראל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_תפארתו",
+      "label": "תפארתו",
+      "full_label": "תפארתו",
+      "entity_type": "KabbalisticConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_1】: תפארתו\n【SaportaOxford1645】: תפארת\nReason: embedding cos=0.813 (no LLM verify)",
+      "matched_with": "sg1_tpaart"
+    },
+    {
+      "id": "sg2_שם_תפארת",
+      "label": "שם תפארת",
+      "full_label": "שם תפארת",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שם תפארת\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yesod_haneshama",
+      "label": "יסוד הנשמה",
+      "full_label": "יסוד הנשמה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יסוד הנשמה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shem_mala",
+      "label": "שם מלא",
+      "full_label": "שם מלא",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: שם מלא\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yhy_alahym",
+      "label": "יי' אלהים",
+      "full_label": "יי' אלהים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יי' אלהים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_etrah",
+      "label": "עטרה",
+      "full_label": "עטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: עטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_olam_mala",
+      "label": "עולם מלא",
+      "full_label": "עולם מלא",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: עולם מלא\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_tshuva",
+      "label": "תשובה",
+      "full_label": "תשובה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: תשובה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashkalim_hanbdalim",
+      "label": "השכלים הנבדלים",
+      "full_label": "השכלים הנבדלים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: השכלים הנבדלים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shrim",
+      "label": "שרים",
+      "full_label": "שרים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: שרים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_malakhim",
+      "label": "מלאכים",
+      "full_label": "מלאכים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: מלאכים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ruach_hashem_hagadol",
+      "label": "רוח השם הגדול",
+      "full_label": "רוח השם הגדול",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: רוח השם הגדול\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashem_hagadol",
+      "label": "השם הגדול",
+      "full_label": "השם הגדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: השם הגדול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ko_haemtsey",
+      "label": "קו האמצעי",
+      "full_label": "קו האמצעי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: קו האמצעי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_daat",
+      "label": "דעת",
+      "full_label": "דעת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: דעת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_tvuna",
+      "label": "תבונה",
+      "full_label": "תבונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: תבונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yesod",
+      "label": "יסוד",
+      "full_label": "יסוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יסוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_neshamot",
+      "label": "נשמות",
+      "full_label": "נשמות",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: נשמות\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_nefesh_hashkal",
+      "label": "נפש השכל",
+      "full_label": "נפש השכל",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: נפש השכל\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_neshmat_shdi",
+      "label": "נשמת שדי",
+      "full_label": "נשמת שדי",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: נשמת שדי\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shdi",
+      "label": "שדי",
+      "full_label": "שדי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: שדי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_derekh_amat_vaemunah",
+      "label": "דרך אמת ואמונה",
+      "full_label": "דרך אמת ואמונה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: דרך אמת ואמונה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_chey_hamelekh",
+      "label": "חיי המלך",
+      "full_label": "חיי המלך",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: חיי המלך\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_melekh",
+      "label": "מלך",
+      "full_label": "מלך",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: מלך\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_1Samuel_1_26",
+      "label": "חי יי' וחי נפשך",
+      "full_label": "חי יי' וחי נפשך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: חי יי' וחי נפשך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shl_hashem",
+      "label": "של השם",
+      "full_label": "של השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: של השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yum_hashabat",
+      "label": "יום השבת",
+      "full_label": "יום השבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יום השבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_nfashot",
+      "label": "נפשות",
+      "full_label": "נפשות",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: נפשות\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yesod_olam",
+      "label": "יסוד עולם",
+      "full_label": "יסוד עולם",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יסוד עולם\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_chey_haolamim",
+      "label": "חי העולמים",
+      "full_label": "חי העולמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: חי העולמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_chayim_lkol_haolamim",
+      "label": "חיים לכל העולמי",
+      "full_label": "חיים לכל העולמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: חיים לכל העולמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Exodus_22_10",
+      "label": "דברת שבועת יי' ",
+      "full_label": "דברת שבועת יי' אלהים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: דברת שבועת יי' אלהים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Proverbs_2_6",
+      "label": "מפיו דעת ותבונה",
+      "full_label": "מפיו דעת ותבונה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: מפיו דעת ותבונה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Job_33_4",
+      "label": "נשמת שדי",
+      "full_label": "נשמת שדי",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: נשמת שדי\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Proverbs_10_25",
+      "label": "יסוד עולם",
+      "full_label": "יסוד עולם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: יסוד עולם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Daniel_12_7",
+      "label": "חי העולמים",
+      "full_label": "חי העולמים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: חי העולמים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Psalms_94_10",
+      "label": "הנותן דעת לאדם",
+      "full_label": "הנותן דעת לאדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO SaportaOxford1645\nLabel: הנותן דעת לאדם\nType: BiblicalQuotation",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_tvuna",
+      "target": "sg1_bq_Proverbs_2_6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg2_מדת_דינו",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "sg1_etrah",
+      "target": "sg1_shdi",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_shdi",
+      "target": "sg1_bq_Job_33_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_yesod_olam",
+      "target": "sg1_chey_haolamim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_alhy_yqb",
+      "target": "sg1_yshral",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_msh",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_bq_Exodus_22_10",
+      "target": "sg1_yhy_alahym",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg1_bq_Exodus_13_21",
+      "target": "sg1_bq_ashr_ayn_byn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_tvuna",
+      "target": "sg1_tshuva",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_tshuva",
+      "target": "sg1_etrah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_yum_hashabat",
+      "target": "sg1_nfashot",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: relatedTo"
+    },
+    {
+      "source": "sg1_neshmat_shdi",
+      "target": "sg1_tshuva",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg2_המדרש_הזה",
+      "target": "sg1_hqbbh",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_bq_1Samuel_1_26",
+      "target": "sg1_bq_1Samuel_1_26",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_ruach_hashem_hagadol",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: explains"
+    },
+    {
+      "source": "sg2_מדת_דינו",
+      "target": "sg2_רחמים",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "sg1_yesod_haneshama",
+      "target": "sg1_tshuva",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: hasPart"
+    },
+    {
+      "source": "sg1_melekh",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_swd_hmdrsh",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ky_hvlk_lpn",
+      "target": "sg1_bq_ky_hvlk_lpn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_hashkalim_hanbdalim",
+      "target": "sg1_malakhim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_hshm",
+      "target": "sg1_amwd_hann",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_yshral",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg2_השם_המיוחד",
+      "target": "sg2_ישראל",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: causes"
+    },
+    {
+      "source": "sg1_daat",
+      "target": "sg1_yesod",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Daniel_12_7",
+      "target": "sg1_chey_haolamim",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg1_nefesh_hashkal",
+      "target": "sg1_daat",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "bq_tehillim_139_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_yhy_alahym",
+      "target": "sg2_תפארתו",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: hasPart"
+    },
+    {
+      "source": "sg1_shem_mala",
+      "target": "sg1_yhy_alahym",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_Job_33_4",
+      "target": "sg1_neshmat_shdi",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg1_bq_Proverbs_10_25",
+      "target": "sg1_yesod_olam",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg1_shl_hashem",
+      "target": "sg1_tshuva",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: isCalled"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_byt_dynw",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_chey_haolamim",
+      "target": "sg1_bq_Daniel_12_7",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_daat",
+      "target": "sg1_bq_Proverbs_2_6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "sg2_רחמים",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: explains"
+    },
+    {
+      "source": "sg2_תפארתו",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Proverbs_2_6",
+      "target": "sg1_tvuna",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg2_הכתוב",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_bq_mwlyk_lymyn",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_שם_תפארת",
+      "target": "sg1_bq_kn_nhgt_amk",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_derekh_amat_vaemunah",
+      "target": "sg1_etrah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: hasPart"
+    },
+    {
+      "source": "sg2_תפארתו",
+      "target": "sg1_ko_haemtsey",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_shmvth_rbbh",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_yesod_olam",
+      "target": "sg1_bq_Proverbs_10_25",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_hashkalim_hanbdalim",
+      "target": "sg1_shrim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_chey_hamelekh",
+      "target": "sg1_tshuva",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: isCalled"
+    },
+    {
+      "source": "sg1_bq_Exodus_13_21",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_hqbbh",
+      "target": "sg1_amwd_hann",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_laatyd_lba",
+      "target": "sg2_השם_המיוחד",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_byt_dynw",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_hqbbh",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_kn_nhgt_amk",
+      "target": "sg2_שם_תפארת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_bq_kn_nhgt_amk",
+      "target": "sg1_bq_kn_nhgt_amk",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_bq_8a3f2c1d9e4b",
+      "target": "sg1_yqb",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_msh",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "sg1_yesod_haneshama",
+      "target": "sg1_shem_mala",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: correspondsTo"
+    },
+    {
+      "source": "sg1_derekh_amat_vaemunah",
+      "target": "sg2_תפארתו",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: hasPart"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg1_byt_dynw",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ashr_ayn_byn",
+      "target": "sg1_bq_ashr_ayn_byn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_neshamot",
+      "target": "sg1_yesod",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_yhy_alahym",
+      "target": "sg1_etrah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: hasPart"
+    },
+    {
+      "source": "sg1_bq_1Samuel_1_26",
+      "target": "sg1_shl_hashem",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    },
+    {
+      "source": "sg1_bq_Exodus_22_10",
+      "target": "sg1_bq_Exodus_22_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_neshmat_shdi",
+      "target": "sg1_bq_Job_33_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: appearsIn"
+    },
+    {
+      "source": "sg1_yqb",
+      "target": "sg2_bq_8a3f2c1d9e4b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg1_hqbbh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg2_כח_השם",
+      "target": "sg2_ישראל",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: hasPart"
+    },
+    {
+      "source": "sg1_bq_ky_hvlk_lpn",
+      "target": "sg1_laatyd_lba",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg2_שלוחו",
+      "target": "sg2_ישראל",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_chey_haolamim",
+      "target": "sg1_nfashot",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: relatedTo"
+    },
+    {
+      "source": "sg1_yum_hashabat",
+      "target": "sg1_yesod_olam",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: isCalled"
+    },
+    {
+      "source": "sg1_byt_dynw",
+      "target": "sg1_amwd_hash",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Proverbs_2_6",
+      "target": "sg1_daat",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to SaportaOxford1645: mentions"
+    }
+  ]
+}

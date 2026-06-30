@@ -1,0 +1,2201 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "Ricanati_Zicaron_aharon_ed",
+    "creation_date": "2026-06-26T17:11:15.287044",
+    "total_nodes": 98,
+    "total_edges": 138,
+    "shared_nodes": 12,
+    "kg1_unique_nodes": 15,
+    "kg2_unique_nodes": 71,
+    "shared_edges": 3,
+    "kg1_unique_edges": 24,
+    "kg2_unique_edges": 111
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "box",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: ונעשה לנו שם\n【Ricanati_Zicaron_aharon_ed】: וראשו בשמים\nReason: Anchor match",
+      "matched_with": "bq_genesis_11_4"
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מגדל\n【Ricanati_Zicaron_aharon_ed】: מגדל\nReason: embedding cos=0.863 (no LLM verify)",
+      "matched_with": "sg1_he_2b3c4d5e6f7g"
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מדה כנגד מדה\n【Ricanati_Zicaron_aharon_ed】: מדה כנגד מדה\nReason: embedding cos=0.897 (no LLM verify)",
+      "matched_with": "sg6_מדה_כנגד_מדה"
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אביהם\n【Ricanati_Zicaron_aharon_ed】: אדם\nReason: embedding cos=0.864 (no LLM verify)",
+      "matched_with": "sg8_adam"
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אדם קדמאה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: המבול\n【Ricanati_Zicaron_aharon_ed】: המבול\nReason: embedding cos=0.903 (no LLM verify)",
+      "matched_with": "sg8_hamabul"
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הפלגה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אלהים\n【Ricanati_Zicaron_aharon_ed】: שם אלהים\nReason: embedding cos=0.941 (no LLM verify)",
+      "matched_with": "sg8_shem_elohim"
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: השם המיוחד\n【Ricanati_Zicaron_aharon_ed】: שם המיוחד\nReason: embedding cos=0.847 (no LLM verify)",
+      "matched_with": "sg8_shem_hamyuchad"
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: שמו הגדול\n【Ricanati_Zicaron_aharon_ed】: השם הגדול\nReason: embedding cos=0.809 (no LLM verify)",
+      "matched_with": "sg8_hashem_hagadol"
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: סדום\n【Ricanati_Zicaron_aharon_ed】: סדום\nReason: embedding cos=0.916 (no LLM verify)",
+      "matched_with": "sg6_סדום"
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מדת סדום\n【Ricanati_Zicaron_aharon_ed】: דין\nReason: embedding cos=0.869 (no LLM verify)",
+      "matched_with": "sg9_he_dddddddddddd"
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: חטאם\n【Ricanati_Zicaron_aharon_ed】: חטאם\nReason: embedding cos=0.943 (no LLM verify)",
+      "matched_with": "sg8_chetam"
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: חטא אביהם\n【Ricanati_Zicaron_aharon_ed】: חטא אביהם\nReason: embedding cos=0.938 (no LLM verify)",
+      "matched_with": "sg8_chet_avihem"
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: בני חמריא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_7f8a9b0c1d2e",
+      "label": "ויאמרו הבה נבנה",
+      "full_label": "ויאמרו הבה נבנה לנו עיר ומגדל וגו'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ויאמרו הבה נבנה לנו עיר ומגדל וגו'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_ha_ir",
+      "label": "עיר",
+      "full_label": "עיר",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: עיר\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_3c4d5e6f7g8h",
+      "label": "העיר הנזכרת",
+      "full_label": "העיר הנזכרת",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: העיר הנזכרת\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_8g9h0i1j2k3l",
+      "label": "ושם הקטנה רחל",
+      "full_label": "ושם הקטנה רחל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ושם הקטנה רחל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_4d5e6f7g8h9i",
+      "label": "רחל",
+      "full_label": "רחל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: רחל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "bq_proverbs_18_10",
+      "label": "מגדל עוז שם יי'",
+      "full_label": "מגדל עוז שם יי'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מגדל עוז שם יי'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_5e6f7g8h9i0j",
+      "label": "שם יי'",
+      "full_label": "שם יי'",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם יי'\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_6f7g8h9i0j1k",
+      "label": "שמים",
+      "full_label": "שמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_7g8h9i0j1k2l",
+      "label": "שמים העליונים",
+      "full_label": "שמים העליונים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שמים העליונים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shekhinah",
+      "label": "השכינה",
+      "full_label": "השכינה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: השכינה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_הבנין",
+      "label": "בנין",
+      "full_label": "בנין",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בנין\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_kochot_hatumah",
+      "label": "כחות הטומאה",
+      "full_label": "כחות הטומאה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כחות הטומאה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_nachash",
+      "label": "הנחש",
+      "full_label": "הנחש",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הנחש\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_3c4d5e6f7a8b",
+      "label": "בית קדשנו ותפאר",
+      "full_label": "בית קדשנו ותפארתנו היה לשרפת אש",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בית קדשנו ותפארתנו היה לשרפת אש\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_tifartenu",
+      "label": "תפארתנו",
+      "full_label": "תפארתנו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: תפארתנו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_beit_kodshenu",
+      "label": "בית קדשנו",
+      "full_label": "בית קדשנו",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בית קדשנו\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_mikdash_yy",
+      "label": "מקדש יי'",
+      "full_label": "מקדש יי'",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מקדש יי'\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Eichah_1_10",
+      "label": "כי את מקדש יי' ",
+      "full_label": "כי את מקדש יי' טמא",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כי את מקדש יי' טמא\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "bq_genesis_11_3",
+      "label": "ותהי להם הלבנה ",
+      "full_label": "ותהי להם הלבנה לאבן",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ותהי להם הלבנה לאבן\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_halevenah",
+      "label": "הלבנה",
+      "full_label": "הלבנה",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הלבנה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_even",
+      "label": "אבן",
+      "full_label": "אבן",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: אבן\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Bereshit_28_12",
+      "label": "וראשו בשמים",
+      "full_label": "וראשו בשמים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: וראשו בשמים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_levanah",
+      "label": "לבנה",
+      "full_label": "לבנה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: לבנה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_even",
+      "label": "אבן",
+      "full_label": "אבן",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: אבן\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shiur_komah",
+      "label": "שיעור קומה",
+      "full_label": "שיעור קומה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שיעור קומה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_even_haroshah",
+      "label": "אבן הראשה",
+      "full_label": "אבן הראשה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: אבן הראשה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "סוד",
+      "label": "סוד",
+      "full_label": "סוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: סוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_ha_even_ha_roshah",
+      "label": "האבן הראשה",
+      "full_label": "האבן הראשה",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: האבן הראשה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_ha_migdal",
+      "label": "המגדל",
+      "full_label": "המגדל",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: המגדל\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_manhig",
+      "label": "מנהיג",
+      "full_label": "מנהיג",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מנהיג\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bereshit_rabbah",
+      "label": "בראשית רבה",
+      "full_label": "בראשית רבה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בראשית רבה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_rabi_chiya",
+      "label": "רבי חייא",
+      "full_label": "רבי חייא",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: רבי חייא\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_avodah_zarah",
+      "label": "עבודה זרה",
+      "full_label": "עבודה זרה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: עבודה זרה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_avodah_zarah",
+      "label": "עבודה זרה",
+      "full_label": "עבודה זרה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: עבודה זרה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ha_olam_ha_zeh",
+      "label": "העולם השפל",
+      "full_label": "העולם השפל",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: העולם השפל\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_b2c3d4e5f6a7",
+      "label": "ותתן טרף לביתה ",
+      "full_label": "ותתן טרף לביתה וחק לנערותיה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ותתן טרף לביתה וחק לנערותיה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_eshet_chayil",
+      "label": "אשת חיל",
+      "full_label": "אשת חיל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: אשת חיל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_Iyov_28_5",
+      "label": "ארץ ממנה יצא לח",
+      "full_label": "ארץ ממנה יצא לחם ותחתיה נהפך כמו אש",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ארץ ממנה יצא לחם ותחתיה נהפך כמו אש\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_eretz_ha_elyonah",
+      "label": "ארץ העליונה",
+      "full_label": "ארץ העליונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ארץ העליונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ha_binyan",
+      "label": "הבנין",
+      "full_label": "הבנין",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הבנין\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_d4e5f6a7b8c9",
+      "label": "בלשונות ובארצות",
+      "full_label": "בלשונות ובארצות",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בלשונות ובארצות\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_לשונות",
+      "label": "לשונות",
+      "full_label": "לשונות",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: לשונות\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_ארצות",
+      "label": "ארצות",
+      "full_label": "ארצות",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ארצות\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_60005_hash",
+      "label": "מקדם",
+      "full_label": "מקדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מקדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_מזרח",
+      "label": "מזרח",
+      "full_label": "מזרח",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מזרח\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_מערב",
+      "label": "מערב",
+      "full_label": "מערב",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: מערב\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_60008_hash",
+      "label": "אנשי דמים ומרמה",
+      "full_label": "אנשי דמים ומרמה לא יחצו ימיהם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: אנשי דמים ומרמה לא יחצו ימיהם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_שנות_האדם",
+      "label": "שנות האדם",
+      "full_label": "שנות האדם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שנות האדם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_60010_hash",
+      "label": "וירד יי' לראות ",
+      "full_label": "וירד יי' לראות את העיר וגו'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: וירד יי' לראות את העיר וגו'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_יי",
+      "label": "יי'",
+      "full_label": "יי'",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: יי'\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_ירידה",
+      "label": "ירידה",
+      "full_label": "ירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_60015_hash",
+      "label": "ארדה נא ואראה",
+      "full_label": "ארדה נא ואראה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ארדה נא ואראה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_60016_hash",
+      "label": "ויאמר יי' אל לב",
+      "full_label": "ויאמר יי' אל לבו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ויאמר יי' אל לבו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_Genesis_11_2",
+      "label": "ויהי בנסעם מקדם",
+      "full_label": "ויהי בנסעם מקדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ויהי בנסעם מקדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_remez",
+      "label": "רמז",
+      "full_label": "רמז",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: רמז\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_bq_bneihada0004",
+      "label": "בני האדם",
+      "full_label": "בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_bq_veatahlo0006",
+      "label": "ועתה לא יבצר מה",
+      "full_label": "ועתה לא יבצר מהם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ועתה לא יבצר מהם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_hester_panym",
+      "label": "הסתיר פניו",
+      "full_label": "הסתיר פניו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הסתיר פניו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_haanan_hanireh_lanu",
+      "label": "הענן הנראה לנו",
+      "full_label": "הענן הנראה לנו",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הענן הנראה לנו\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_eretz_hachaim",
+      "label": "ארץ החיים",
+      "full_label": "ארץ החיים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ארץ החיים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_heider_hakoach",
+      "label": "העדר הכח",
+      "full_label": "העדר הכח",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: העדר הכח\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_hitrachaka",
+      "label": "התרחקה",
+      "full_label": "התרחקה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: התרחקה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_he_999999999999",
+      "label": "רחמים",
+      "full_label": "רחמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: רחמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_bq_Psalms_29_10",
+      "label": "יי' למבול ישב",
+      "full_label": "יי' למבול ישב",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: יי' למבול ישב\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_he_cccccccccccc",
+      "label": "השם הנכבד",
+      "full_label": "השם הנכבד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: השם הנכבד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_he_eeeeeeeeeeee",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: השחתת הארץ\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_he_ffffffffffff",
+      "label": "יושביה",
+      "full_label": "יושביה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: יושביה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_he_111111111112",
+      "label": "דור המבול",
+      "full_label": "דור המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: דור המבול\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_bq_8g9h0i1j2k3l",
+      "target": "sg1_bq_8g9h0i1j2k3l",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg4_ha_ir",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg6_bq_60008_hash",
+      "target": "sg2_chatam",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: explains"
+    },
+    {
+      "source": "sg6_bq_60010_hash",
+      "target": "sg6_יי",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_remez",
+      "target": "sg2_chatam",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg6_הבנין",
+      "target": "sg6_ארצות",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: locatedIn"
+    },
+    {
+      "source": "sg8_hester_panym",
+      "target": "sg8_hitrachaka",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg5_avodah_zarah",
+      "target": "sg5_ha_olam_ha_zeh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_shmo_hagadol",
+      "target": "sg1_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "bq_genesis_11_3",
+      "target": "sg2_even",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg3_bq_Eichah_1_10",
+      "target": "sg2_mikdash_yy",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg1_bq_7f8a9b0c1d2e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg5_ha_olam_ha_zeh",
+      "target": "sg5_ha_olam_ha_zeh",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg4_bereshit_rabbah",
+      "target": "sg4_rabi_chiya",
+      "predicate": "cites",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: cites"
+    },
+    {
+      "source": "sg2_bq_3c4d5e6f7a8b",
+      "target": "sg2_bq_3c4d5e6f7a8b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "bq_genesis_11_3",
+      "target": "sg3_levanah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "bq_genesis_11_3",
+      "target": "bq_genesis_11_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg6_bq_60010_hash",
+      "target": "sg6_bq_60010_hash",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg5_bq_Iyov_28_5",
+      "target": "sg5_bq_Iyov_28_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg6_bq_60005_hash",
+      "target": "sg6_מזרח",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: relatedTo"
+    },
+    {
+      "source": "sg9_he_cccccccccccc",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg9_bq_Psalms_29_10",
+      "target": "sg1_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_even",
+      "target": "sg3_even_haroshah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg6_bq_60008_hash",
+      "target": "sg6_שנות_האדם",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg2_even",
+      "target": "bq_genesis_11_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "bq_genesis_11_3",
+      "target": "sg3_even",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_he_4d5e6f7g8h9i",
+      "target": "sg1_bq_8g9h0i1j2k3l",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_he_6f7g8h9i0j1k",
+      "target": "sg1_he_7g8h9i0j1k2l",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg6_bq_60005_hash",
+      "target": "sg6_bq_Genesis_11_2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_7f8a9b0c1d2e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg1_he_5e6f7g8h9i0j",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes"
+    },
+    {
+      "source": "sg3_levanah",
+      "target": "bq_genesis_11_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "bq_proverbs_18_10",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled"
+    },
+    {
+      "source": "sg1_he_5e6f7g8h9i0j",
+      "target": "bq_proverbs_18_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "סוד",
+      "target": "sg3_shiur_komah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg6_יי",
+      "target": "sg6_ירידה",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg5_bq_d4e5f6a7b8c9",
+      "target": "sg5_ha_binyan",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg2_halevenah",
+      "target": "sg2_even",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_shmo_hagadol",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_sdom",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_mikdash_yy",
+      "target": "sg3_bq_Eichah_1_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg3_bq_Eichah_1_10",
+      "target": "sg3_bq_Eichah_1_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_midah_keneged_midah",
+      "target": "sg6_הבנין",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg2_bq_Bereshit_28_12",
+      "target": "sg1_he_7g8h9i0j1k2l",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_bq_veatahlo0006",
+      "target": "sg8_bq_veatahlo0006",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg2_bq_3c4d5e6f7a8b",
+      "target": "סוד",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg3_bq_Eichah_1_10",
+      "target": "סוד",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_he_6f7g8h9i0j1k",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_halevenah",
+      "target": "bq_genesis_11_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg4_rabi_chiya",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "commentedOn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: commentedOn"
+    },
+    {
+      "source": "sg3_levanah",
+      "target": "sg3_even",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg8_hester_panym",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg8_bq_bneihada0004",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg6_bq_60016_hash",
+      "target": "sg6_bq_60016_hash",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg6_bq_60015_hash",
+      "target": "sg3_sdom",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg2_shem",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg6_יי",
+      "target": "sg6_bq_60010_hash",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg9_he_ffffffffffff",
+      "target": "sg8_hester_panym",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: appearsIn"
+    },
+    {
+      "source": "sg1_bq_7f8a9b0c1d2e",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg5_avodah_zarah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_haanan_hanireh_lanu",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg6_ירידה",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg1_he_3c4d5e6f7g8h",
+      "target": "sg4_ha_ir",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg5_bq_b2c3d4e5f6a7",
+      "target": "sg5_ha_olam_ha_zeh",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg2_mikdash_yy",
+      "target": "sg6_הבנין",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_tifartenu",
+      "target": "sg2_bq_3c4d5e6f7a8b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg6_הבנין",
+      "target": "sg6_לשונות",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg4_shem",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg4_shem",
+      "target": "sg4_manhig",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_bq_3c4d5e6f7a8b",
+      "target": "sg2_beit_kodshenu",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_bq_8g9h0i1j2k3l",
+      "target": "sg4_ha_ir",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg9_he_eeeeeeeeeeee",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_he_7g8h9i0j1k2l",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg6_bq_60015_hash",
+      "target": "sg6_bq_60015_hash",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg4_rabi_chiya",
+      "target": "sg4_shem",
+      "predicate": "commentedOn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: commentedOn"
+    },
+    {
+      "source": "sg8_hester_panym",
+      "target": "sg8_heider_hakoach",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg4_ha_ir",
+      "target": "sg1_bq_7f8a9b0c1d2e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg2_shekhinah",
+      "target": "sg6_הבנין",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg4_shem",
+      "target": "sg4_avodah_zarah",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg2_bq_3c4d5e6f7a8b",
+      "target": "sg2_tifartenu",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_haanan_hanireh_lanu",
+      "target": "sg8_eretz_hachaim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg2_even",
+      "target": "sg4_ha_even_ha_roshah",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg8_bq_bneihada0004",
+      "target": "sg1_avihem",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg5_bq_Iyov_28_5",
+      "target": "sg5_eretz_ha_elyonah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg6_bq_60008_hash",
+      "target": "sg6_bq_60008_hash",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg8_eretz_hachaim",
+      "target": "sg8_hester_panym",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes"
+    },
+    {
+      "source": "sg2_shem",
+      "target": "bq_proverbs_18_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_shmo_hagadol",
+      "target": "sg8_hester_panym",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "bq_proverbs_18_10",
+      "target": "bq_proverbs_18_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_midah_keneged_midah",
+      "target": "sg5_ha_binyan",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg4_bereshit_rabbah",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_bq_veatahlo0006",
+      "target": "sg2_chatam",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: explains"
+    },
+    {
+      "source": "sg5_bq_b2c3d4e5f6a7",
+      "target": "sg5_bq_b2c3d4e5f6a7",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_kochot_hatumah",
+      "target": "sg3_nachash",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_sdom",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg1_he_4d5e6f7g8h9i",
+      "target": "sg4_ha_ir",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg5_bq_b2c3d4e5f6a7",
+      "target": "sg5_eshet_chayil",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "סוד",
+      "target": "sg6_bq_Genesis_11_2",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "bq_genesis_11_3",
+      "target": "sg2_halevenah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg8_bq_bneihada0004",
+      "target": "sg4_bereshit_rabbah",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg3_shem",
+      "target": "סוד",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg2_beit_kodshenu",
+      "target": "sg2_bq_3c4d5e6f7a8b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: symbolizes"
+    },
+    {
+      "source": "bq_proverbs_18_10",
+      "target": "sg2_shem",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled"
+    },
+    {
+      "source": "sg4_ha_ir",
+      "target": "sg4_ha_migdal",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg3_even",
+      "target": "bq_genesis_11_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg9_he_111111111112",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg6_bq_60005_hash",
+      "target": "sg6_מערב",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg9_he_999999999999",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg5_eretz_ha_elyonah",
+      "target": "sg5_ha_binyan",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg9_bq_Psalms_29_10",
+      "target": "sg9_bq_Psalms_29_10",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    }
+  ]
+}

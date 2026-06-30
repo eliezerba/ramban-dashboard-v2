@@ -1,0 +1,1334 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_1",
+    "graph2_name": "DaatChachamVatokan114",
+    "creation_date": "2026-06-26T17:11:00.058250",
+    "total_nodes": 65,
+    "total_edges": 75,
+    "shared_nodes": 2,
+    "kg1_unique_nodes": 32,
+    "kg2_unique_nodes": 31,
+    "shared_edges": 0,
+    "kg1_unique_edges": 41,
+    "kg2_unique_edges": 34
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_Exodus_13_21",
+      "label": "וי\"י הולך לפניה",
+      "full_label": "וי\"י הולך לפניהם יומם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: וי\"י הולך לפניהם יומם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yy",
+      "label": "י\"י",
+      "full_label": "י\"י",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: י\"י\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_byt_dynw",
+      "label": "בית דינו",
+      "full_label": "בית דינו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: בית דינו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hqbbh",
+      "label": "הקב\"ה",
+      "full_label": "הקב\"ה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: הקב\"ה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hshm",
+      "label": "השם",
+      "full_label": "השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_amwd_hann",
+      "label": "עמוד הענן",
+      "full_label": "עמוד הענן",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: עמוד הענן\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_amwd_hash",
+      "label": "עמוד האש",
+      "full_label": "עמוד האש",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: עמוד האש\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_ashr_ayn_byn",
+      "label": "אשר עין בעין נר",
+      "full_label": "אשר עין בעין נראה אתה י\"י ועננך עומד עליהם ובעמוד ענן אתה הולך לפניהם יומם ובעמוד אש לילה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אשר עין בעין נראה אתה י\"י ועננך עומד עליהם ובעמוד ענן אתה הולך לפניהם יומם ובעמוד אש לילה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shmvth_rbbh",
+      "label": "שמות רבה",
+      "full_label": "שמות רבה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שמות רבה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_ky_hvlk_lpn",
+      "label": "כי לא בחפזון תצ",
+      "full_label": "כי לא בחפזון תצאו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כי לא בחפזון תצאו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ר_אברהם",
+      "label": "אבן עזרא",
+      "full_label": "אבן עזרא",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אבן עזרא\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_gawlh_hrashvnh",
+      "label": "גאולה הראשונה",
+      "full_label": "גאולה הראשונה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: גאולה הראשונה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_laatyd_lba",
+      "label": "לעתיד לבא",
+      "full_label": "לעתיד לבא",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: לעתיד לבא\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_מדת_דינו",
+      "label": "מידת הדין",
+      "full_label": "מידת הדין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מידת הדין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_רחמים",
+      "label": "מידת הרחמים",
+      "full_label": "מידת הרחמים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מידת הרחמים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_השם_המיוחד",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: השם המיוחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yqb",
+      "label": "יעקב",
+      "full_label": "יעקב",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: יעקב\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_alhy_yqb",
+      "label": "אלהי יעקב",
+      "full_label": "אלהי יעקב",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אלהי יעקב\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_msh",
+      "label": "משה",
+      "full_label": "משה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: משה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_mwlyk_lymyn",
+      "label": "מוליך לימין משה",
+      "full_label": "מוליך לימין משה זרוע תפארתו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: מוליך לימין משה זרוע תפארתו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_kn_nhgt_amk",
+      "label": "כן נהגת עמך לעש",
+      "full_label": "כן נהגת עמך לעשות לך שם תפארת",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כן נהגת עמך לעשות לך שם תפארת\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yshral",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ישראל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_swd_hmdrsh",
+      "label": "סוד המדרש",
+      "full_label": "סוד המדרש",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: סוד המדרש\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_pyrwh_hktwb",
+      "label": "פירוש הכתוב",
+      "full_label": "פירוש הכתוב",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: פירוש הכתוב\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "bq_tehillim_139_12",
+      "label": "ולילה כיום יאיר",
+      "full_label": "ולילה כיום יאיר כחשכה כאורה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ולילה כיום יאיר כחשכה כאורה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_המדרש_הזה",
+      "label": "המדרש הזה",
+      "full_label": "המדרש הזה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: המדרש הזה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_לעתיד_לבא",
+      "label": "לעתיד לבא",
+      "full_label": "לעתיד לבא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: לעתיד לבא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_8a3f2c1d9e4b",
+      "label": "אלהי יעקב",
+      "full_label": "אלהי יעקב",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: אלהי יעקב\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הכתוב",
+      "label": "הכתוב",
+      "full_label": "הכתוב",
+      "entity_type": "BiblicalSource",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_1】: הכתוב\n【DaatChachamVatokan114】: הכתוב\nReason: embedding cos=0.831 (no LLM verify)",
+      "matched_with": "sg1_he_hakatuv"
+    },
+    {
+      "id": "sg2_כח_השם",
+      "label": "כח השם",
+      "full_label": "כח השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: כח השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שלוחו",
+      "label": "שלוחו",
+      "full_label": "שלוחו",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שלוחו\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ישראל",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: ישראל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_תפארתו",
+      "label": "תפארתו",
+      "full_label": "תפארתו",
+      "entity_type": "KabbalisticConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_1】: תפארתו\n【DaatChachamVatokan114】: תפארת\nReason: embedding cos=0.832 (no LLM verify)",
+      "matched_with": "sg1_he_tiferet"
+    },
+    {
+      "id": "sg2_שם_תפארת",
+      "label": "שם תפארת",
+      "full_label": "שם תפארת",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_1\nLabel: שם תפארת\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_hakham",
+      "label": "החכם",
+      "full_label": "החכם",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: החכם\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_shem_male",
+      "label": "שם מלא",
+      "full_label": "שם מלא",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: שם מלא\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_yhwh_elohim",
+      "label": "יי' אלהים",
+      "full_label": "יי' אלהים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יי' אלהים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_du_partzufin",
+      "label": "דו פרצופין",
+      "full_label": "דו פרצופין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: דו פרצופין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_shem_hagadol",
+      "label": "שם הגדול",
+      "full_label": "שם הגדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: שם הגדול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_eser_sefirot",
+      "label": "עשר ספירות",
+      "full_label": "עשר ספירות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: עשר ספירות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_haayin",
+      "label": "הע'",
+      "full_label": "הע'",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: הע'\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_melet_shlema",
+      "label": "מלת שלימה",
+      "full_label": "מלת שלימה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: מלת שלימה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_echad_bekoach",
+      "label": "אחד בכח",
+      "full_label": "אחד בכח",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: אחד בכח\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_achat_befoal",
+      "label": "אחת בפועל",
+      "full_label": "אחת בפועל",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: אחת בפועל\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_maalat_hanefesh",
+      "label": "מעלת הנפש",
+      "full_label": "מעלת הנפש",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: מעלת הנפש\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_yesoda_vsoda",
+      "label": "יסודה וסודה",
+      "full_label": "יסודה וסודה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יסודה וסודה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_yesoda",
+      "label": "יסודה",
+      "full_label": "יסודה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יסודה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_devekut",
+      "label": "דבקות",
+      "full_label": "דבקות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: דבקות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_haneshamot",
+      "label": "הנשמות",
+      "full_label": "הנשמות",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: הנשמות\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_shalshelet_chayei_hanefesh",
+      "label": "שלשלת חיי הנפש",
+      "full_label": "שלשלת חיי הנפש",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: שלשלת חיי הנפש\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_yesod",
+      "label": "יסוד המערכה",
+      "full_label": "יסוד המערכה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יסוד המערכה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_hateshuva",
+      "label": "התשובה",
+      "full_label": "התשובה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: התשובה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_shesha_ketzavot",
+      "label": "ששה קצוות",
+      "full_label": "ששה קצוות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: ששה קצוות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_tzurat_haguf",
+      "label": "צורת הגוף",
+      "full_label": "צורת הגוף",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: צורת הגוף\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_menishmato",
+      "label": "מנשמתו",
+      "full_label": "מנשמתו",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: מנשמתו\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_osai_hamelacha",
+      "label": "עושי המלאכה",
+      "full_label": "עושי המלאכה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: עושי המלאכה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_ruach_da'at",
+      "label": "רוח דעת",
+      "full_label": "רוח דעת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: רוח דעת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_tevuna",
+      "label": "תבונה",
+      "full_label": "תבונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: תבונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_ginzei_hamelech",
+      "label": "גנזי המלך",
+      "full_label": "גנזי המלך",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: גנזי המלך\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_haatar",
+      "label": "העט'",
+      "full_label": "העט'",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: העט'\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_9d8c7b6a5f4e",
+      "label": "חי נפשך",
+      "full_label": "חי נפשך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: חי נפשך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_chai_hashem",
+      "label": "חי יי'",
+      "full_label": "חי יי'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: חי יי'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_hanefesh",
+      "label": "הנפש",
+      "full_label": "הנפש",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: הנפש\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Bereshit_2_4",
+      "label": "יי' אלהים",
+      "full_label": "יי' אלהים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יי' אלהים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Bereshit_2_7",
+      "label": "הנופח בו לתת לו",
+      "full_label": "הנופח בו לתת לו מנשמתו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: הנופח בו לתת לו מנשמתו\nType: BiblicalQuotation",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_he_shalshelet_chayei_hanefesh",
+      "target": "sg1_he_osai_hamelacha",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: causes"
+    },
+    {
+      "source": "sg1_he_devekut",
+      "target": "sg1_he_haneshamot",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: relatedTo"
+    },
+    {
+      "source": "sg2_מדת_דינו",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "bq_tehillim_139_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_alhy_yqb",
+      "target": "sg1_yshral",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_he_shalshelet_chayei_hanefesh",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_byt_dynw",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_he_shem_hagadol",
+      "target": "sg1_he_eser_sefirot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg2_הכתוב",
+      "target": "sg1_he_maalat_hanefesh",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: explains"
+    },
+    {
+      "source": "sg1_msh",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_he_hanefesh",
+      "target": "sg1_he_yesoda",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_he_eser_sefirot",
+      "target": "sg1_he_echad_bekoach",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: hasPart"
+    },
+    {
+      "source": "sg1_bq_chai_hashem",
+      "target": "sg1_bq_chai_hashem",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_he_shem_male",
+      "target": "sg1_he_yhwh_elohim",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: isCalled"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "sg2_רחמים",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: explains"
+    },
+    {
+      "source": "sg2_תפארתו",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg2_הכתוב",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_bq_mwlyk_lymyn",
+      "target": "sg1_bq_mwlyk_lymyn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_שם_תפארת",
+      "target": "sg1_bq_kn_nhgt_amk",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_he_hanefesh",
+      "target": "sg1_he_hateshuva",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_9d8c7b6a5f4e",
+      "target": "sg1_bq_chai_hashem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Exodus_13_21",
+      "target": "sg1_bq_ashr_ayn_byn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_shmvth_rbbh",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: commentedOn"
+    },
+    {
+      "source": "sg1_he_hanefesh",
+      "target": "sg1_he_tevuna",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_Exodus_13_21",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_hqbbh",
+      "target": "sg1_amwd_hann",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_laatyd_lba",
+      "target": "sg2_השם_המיוחד",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_byt_dynw",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg2_המדרש_הזה",
+      "target": "sg1_hqbbh",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_hqbbh",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_he_shem_male",
+      "target": "sg1_he_haayin",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: hasPart"
+    },
+    {
+      "source": "sg1_he_yesod",
+      "target": "sg1_he_hateshuva",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_he_osai_hamelacha",
+      "target": "sg1_he_yesod",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: relatedTo"
+    },
+    {
+      "source": "sg1_bq_kn_nhgt_amk",
+      "target": "sg2_שם_תפארת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg1_he_menishmato",
+      "target": "sg1_bq_Bereshit_2_7",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_he_shalshelet_chayei_hanefesh",
+      "target": "sg1_he_tzurat_haguf",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: isA"
+    },
+    {
+      "source": "bq_tehillim_139_12",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: explains"
+    },
+    {
+      "source": "sg1_he_shem_male",
+      "target": "sg2_הכתוב",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_bq_kn_nhgt_amk",
+      "target": "sg1_bq_kn_nhgt_amk",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg2_מדת_דינו",
+      "target": "sg2_רחמים",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "sg2_bq_8a3f2c1d9e4b",
+      "target": "sg1_yqb",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_msh",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_Bereshit_2_4",
+      "target": "sg1_bq_Bereshit_2_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_he_hanefesh",
+      "target": "sg1_he_ruach_da'at",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_he_ruach_da'at",
+      "target": "sg1_he_ginzei_hamelech",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: relatedTo"
+    },
+    {
+      "source": "sg1_he_eser_sefirot",
+      "target": "sg1_he_achat_befoal",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: hasPart"
+    },
+    {
+      "source": "sg1_swd_hmdrsh",
+      "target": "sg1_gawlh_hrashvnh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ky_hvlk_lpn",
+      "target": "sg1_bq_ky_hvlk_lpn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_he_ginzei_hamelech",
+      "target": "sg1_he_haatar",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg1_byt_dynw",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ashr_ayn_byn",
+      "target": "sg1_bq_ashr_ayn_byn",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_he_haayin",
+      "target": "sg1_he_melet_shlema",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: hasPart"
+    },
+    {
+      "source": "sg2_תפארתו",
+      "target": "sg2_תפארתו",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_9d8c7b6a5f4e",
+      "target": "sg1_bq_9d8c7b6a5f4e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_he_yhwh_elohim",
+      "target": "sg1_he_du_partzufin",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg2_הכתוב",
+      "target": "sg1_he_yesoda_vsoda",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: explains"
+    },
+    {
+      "source": "sg1_he_shalshelet_chayei_hanefesh",
+      "target": "sg1_he_yesod",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: relatedTo"
+    },
+    {
+      "source": "sg1_yqb",
+      "target": "sg2_bq_8a3f2c1d9e4b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Bereshit_2_7",
+      "target": "sg1_he_menishmato",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: mentions"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_bq_Exodus_13_21",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: appearsIn"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg1_hqbbh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_he_yhwh_elohim",
+      "target": "sg2_הכתוב",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_hshm",
+      "target": "sg1_amwd_hann",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_yy",
+      "target": "sg1_yshral",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ky_hvlk_lpn",
+      "target": "sg1_laatyd_lba",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: mentions"
+    },
+    {
+      "source": "sg2_כח_השם",
+      "target": "sg2_ישראל",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: hasPart"
+    },
+    {
+      "source": "sg2_השם_המיוחד",
+      "target": "sg2_ישראל",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: causes"
+    },
+    {
+      "source": "sg2_שלוחו",
+      "target": "sg2_ישראל",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_he_yhwh_elohim",
+      "target": "sg1_bq_Bereshit_2_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: appearsIn"
+    },
+    {
+      "source": "sg1_he_hakham",
+      "target": "sg2_הכתוב",
+      "predicate": "commentedOn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: commentedOn"
+    },
+    {
+      "source": "sg2_תפארתו",
+      "target": "sg1_he_shesha_ketzavot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+    },
+    {
+      "source": "sg1_byt_dynw",
+      "target": "sg1_amwd_hash",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    },
+    {
+      "source": "sg1_gawlh_hrashvnh",
+      "target": "sg2_לעתיד_לבא",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_1: relatedTo"
+    }
+  ]
+}

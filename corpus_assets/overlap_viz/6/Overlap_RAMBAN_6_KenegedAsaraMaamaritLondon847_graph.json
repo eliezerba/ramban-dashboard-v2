@@ -1,0 +1,1306 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "KenegedAsaraMaamaritLondon847",
+    "creation_date": "2026-06-26T17:11:09.354589",
+    "total_nodes": 69,
+    "total_edges": 66,
+    "shared_nodes": 4,
+    "kg1_unique_nodes": 23,
+    "kg2_unique_nodes": 42,
+    "shared_edges": 0,
+    "kg1_unique_edges": 27,
+    "kg2_unique_edges": 39
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מגדל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדה כנגד מדה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אביהם\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אדם קדמאה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: המבול\n【KenegedAsaraMaamaritLondon847】: ענין המבול\nReason: embedding cos=0.820 (no LLM verify)",
+      "matched_with": "sg1_inyan_hamabul"
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הפלגה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אלהים\n【KenegedAsaraMaamaritLondon847】: אלהים\nReason: embedding cos=0.889 (no LLM verify)",
+      "matched_with": "sg1_elohim"
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: השם המיוחד\n【KenegedAsaraMaamaritLondon847】: שם המיוחד\nReason: embedding cos=0.865 (no LLM verify)",
+      "matched_with": "sg1_shem_hamyuchad"
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: שמו הגדול\n【KenegedAsaraMaamaritLondon847】: שמו הגדול\nReason: embedding cos=0.878 (no LLM verify)",
+      "matched_with": "sg1_shmo_hagadol"
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: סדום\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדת סדום\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטאם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטא אביהם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: בני חמריא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_anshi_haflagah",
+      "label": "אנשי הפלגה",
+      "full_label": "אנשי הפלגה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: אנשי הפלגה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_rabati",
+      "label": "רבותי",
+      "full_label": "רבותי",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: רבותי\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_boram",
+      "label": "בוראם",
+      "full_label": "בוראם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: בוראם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_tiferet",
+      "label": "תפארת",
+      "full_label": "תפארת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: תפארת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_chamesh_hatachtonot",
+      "label": "חמש התחתונות",
+      "full_label": "חמש התחתונות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: חמש התחתונות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_haelyonot",
+      "label": "העליונות",
+      "full_label": "העליונות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: העליונות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_leatarah_levadah",
+      "label": "לעטרה לבדה",
+      "full_label": "לעטרה לבדה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: לעטרה לבדה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_atarah",
+      "label": "עטרה",
+      "full_label": "עטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: עטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_midot",
+      "label": "מידות",
+      "full_label": "מידות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: מידות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hasfirot",
+      "label": "הספירות",
+      "full_label": "הספירות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הספירות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_sfirah",
+      "label": "ספירה",
+      "full_label": "ספירה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: ספירה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_inyan_sdom",
+      "label": "ענין סדום",
+      "full_label": "ענין סדום",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: ענין סדום\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_4f8a2b9c1d3e",
+      "label": "הבה נרדה",
+      "full_label": "הבה נרדה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הבה נרדה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_lashon_rabim",
+      "label": "לשון רבים",
+      "full_label": "לשון רבים",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: לשון רבים\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_remez",
+      "label": "רמז",
+      "full_label": "רמז",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: רמז\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shibim_sarim",
+      "label": "שבעים שרים",
+      "full_label": "שבעים שרים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: שבעים שרים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_divrei_torah",
+      "label": "דברי תורה",
+      "full_label": "דברי תורה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: דברי תורה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_briyotav",
+      "label": "בריותיו",
+      "full_label": "בריותיו",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: בריותיו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adnuto",
+      "label": "אדנותו",
+      "full_label": "אדנותו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: אדנותו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_sabat_hasibot",
+      "label": "סבת הסבות",
+      "full_label": "סבת הסבות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: סבת הסבות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_david_hamelech",
+      "label": "דוד המלך",
+      "full_label": "דוד המלך",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: דוד המלך\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_9e7d6c5b4a3f",
+      "label": "גבורי כח עושי ר",
+      "full_label": "גבורי כח עושי רצונו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: גבורי כח עושי רצונו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_pamalya_shelo",
+      "label": "נבראיו הנכבדים",
+      "full_label": "נבראיו הנכבדים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: נבראיו הנכבדים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_melech_basar_vadam",
+      "label": "מלך בשר ודם",
+      "full_label": "מלך בשר ודם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: מלך בשר ודם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_1a2b3c4d5e6f",
+      "label": "נעשה אדם",
+      "full_label": "נעשה אדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: נעשה אדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_2b3c4d5e6f7a",
+      "label": "מכסה אני מאברהם",
+      "full_label": "מכסה אני מאברהם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: מכסה אני מאברהם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Amos_3_7",
+      "label": "לא יעשה יי' אלי",
+      "full_label": "לא יעשה יי' אלי'ם דבר כי אם גלה סודו אל עבדיו הנביאים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: לא יעשה יי' אלי'ם דבר כי אם גלה סודו אל עבדיו הנביאים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_amru_chazal",
+      "label": "אמרו חז\"ל",
+      "full_label": "אמרו חז\"ל",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: אמרו חז\"ל\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_5e6f7a8b9c0d",
+      "label": "יודיע דרכיו למש",
+      "full_label": "יודיע דרכיו למשה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: יודיע דרכיו למשה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_6f7a8b9c0d1e",
+      "label": "כח מעשיו הגיד ל",
+      "full_label": "כח מעשיו הגיד לעמו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: כח מעשיו הגיד לעמו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_7a8b9c0d1e2f",
+      "label": "זכר עשה לנפלאות",
+      "full_label": "זכר עשה לנפלאותיו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: זכר עשה לנפלאותיו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_8b9c0d1e2f3a",
+      "label": "הקול הנשמע לאדם",
+      "full_label": "הקול הנשמע לאדם בגן",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הקול הנשמע לאדם בגן\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_gan_eden",
+      "label": "גן עדן",
+      "full_label": "גן עדן",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: גן עדן\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_maamad_har_sinai",
+      "label": "מעמד הר סיני",
+      "full_label": "מעמד הר סיני",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: מעמד הר סיני\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_har_sinai",
+      "label": "הר סיני",
+      "full_label": "הר סיני",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הר סיני\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_0d1e2f3a4b5c",
+      "label": "בין שני הכרובים",
+      "full_label": "בין שני הכרובים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: בין שני הכרובים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hakruvim",
+      "label": "הכרובים",
+      "full_label": "הכרובים",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הכרובים\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_1e2f3a4b5c6d",
+      "label": "ותמונה אינכם רו",
+      "full_label": "ותמונה אינכם רואים זולתי קול",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: ותמונה אינכם רואים זולתי קול\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kol",
+      "label": "קול",
+      "full_label": "קול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: קול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_2f3a4b5c6d7e",
+      "label": "עין בעין נראה א",
+      "full_label": "עין בעין נראה אתה יי'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: עין בעין נראה אתה יי'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ayin",
+      "label": "עין",
+      "full_label": "עין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: עין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hakavod",
+      "label": "הכבוד",
+      "full_label": "הכבוד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KenegedAsaraMaamaritLondon847\nLabel: הכבוד\nType: TheologicalConcept",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_inyan_sdom",
+      "target": "sg1_atarah",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: symbolizes"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_gan_eden",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_5e6f7a8b9c0d",
+      "target": "sg1_bq_5e6f7a8b9c0d",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_chamesh_hatachtonot",
+      "target": "sg1_haelyonot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg1_anshi_haflagah",
+      "target": "sg1_chamesh_hatachtonot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_1a2b3c4d5e6f",
+      "target": "sg1_pamalya_shelo",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: mentions"
+    },
+    {
+      "source": "sg1_midot",
+      "target": "sg1_hasfirot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg1_anshi_haflagah",
+      "target": "sg1_boram",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_bq_9e7d6c5b4a3f",
+      "target": "sg1_bq_9e7d6c5b4a3f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_anshi_haflagah",
+      "target": "sg1_leatarah_levadah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_1e2f3a4b5c6d",
+      "target": "sg1_bq_1e2f3a4b5c6d",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_david_hamelech",
+      "target": "sg1_bq_9e7d6c5b4a3f",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_2b3c4d5e6f7a",
+      "target": "sg1_bq_2b3c4d5e6f7a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg2_shmo_hagadol",
+      "target": "sg1_tiferet",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: isCalled"
+    },
+    {
+      "source": "sg1_bq_6f7a8b9c0d1e",
+      "target": "sg1_bq_6f7a8b9c0d1e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hakruvim",
+      "target": "sg1_bq_0d1e2f3a4b5c",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_ayin",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: isCalled"
+    },
+    {
+      "source": "sg1_boram",
+      "target": "sg1_briyotav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_boram",
+      "target": "sg1_pamalya_shelo",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_rabati",
+      "target": "sg1_anshi_haflagah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: mentions"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_maamad_har_sinai",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_bq_9e7d6c5b4a3f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_4f8a2b9c1d3e",
+      "target": "sg1_shibim_sarim",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: mentions"
+    },
+    {
+      "source": "sg1_melech_basar_vadam",
+      "target": "sg1_boram",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_4f8a2b9c1d3e",
+      "target": "sg1_bq_4f8a2b9c1d3e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_bq_Amos_3_7",
+      "target": "sg1_bq_Amos_3_7",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_1a2b3c4d5e6f",
+      "target": "sg1_bq_1a2b3c4d5e6f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_atarah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_2f3a4b5c6d7e",
+      "target": "sg1_bq_2f3a4b5c6d7e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_bq_0d1e2f3a4b5c",
+      "target": "sg1_bq_0d1e2f3a4b5c",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_atarah",
+      "target": "sg1_atarah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_hashem_hamyuchad",
+      "target": "sg1_tiferet",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: isCalled"
+    },
+    {
+      "source": "sg1_bq_7a8b9c0d1e2f",
+      "target": "sg1_bq_7a8b9c0d1e2f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_gan_eden",
+      "target": "sg1_bq_8b9c0d1e2f3a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: appearsIn"
+    },
+    {
+      "source": "sg1_lashon_rabim",
+      "target": "sg1_shibim_sarim",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: relatedTo"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_hakavod",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: correspondsTo"
+    },
+    {
+      "source": "sg1_elohim",
+      "target": "sg1_atarah",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: isCalled"
+    },
+    {
+      "source": "sg1_boram",
+      "target": "sg1_sabat_hasibot",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: isCalled"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg1_kol",
+      "target": "sg1_hakruvim",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KenegedAsaraMaamaritLondon847: hasPart"
+    }
+  ]
+}

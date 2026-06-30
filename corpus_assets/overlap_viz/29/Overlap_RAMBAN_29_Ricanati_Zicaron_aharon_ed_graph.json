@@ -1,0 +1,1710 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_29",
+    "graph2_name": "Ricanati_Zicaron_aharon_ed",
+    "creation_date": "2026-06-26T17:12:06.618446",
+    "total_nodes": 81,
+    "total_edges": 100,
+    "shared_nodes": 5,
+    "kg1_unique_nodes": 49,
+    "kg2_unique_nodes": 27,
+    "shared_edges": 1,
+    "kg1_unique_edges": 67,
+    "kg2_unique_edges": 32
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_במדבר_ד_כ",
+      "label": "ולא יבאו לראות ",
+      "full_label": "ולא יבאו לראות כבלע את הקדש",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: ולא יבאו לראות כבלע את הקדש\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_הקדש",
+      "label": "הקדש",
+      "full_label": "הקדש",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הקדש\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_הכלי",
+      "label": "הכלי",
+      "full_label": "הכלי",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הכלי\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_נרתיקו",
+      "label": "נרתיקו",
+      "full_label": "נרתיקו",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: נרתיקו\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_רשי",
+      "label": "רש\"י",
+      "full_label": "רש\"י",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: רש\"י\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_אנקלוס",
+      "label": "אונקלוס",
+      "full_label": "אונקלוס",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: אונקלוס\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_רבותינו",
+      "label": "רבותינו",
+      "full_label": "רבותינו",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: רבותינו\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_מסכת_סנהדרין",
+      "label": "מסכת סנהדרין (פ",
+      "full_label": "מסכת סנהדרין (פא, ב)",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: מסכת סנהדרין (פא, ב)\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_אזהרה",
+      "label": "אזהרה",
+      "full_label": "אזהרה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: אזהרה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_גונב_כלי_שרת",
+      "label": "גונב כלי שרת",
+      "full_label": "גונב כלי שרת",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: גונב כלי שרת\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_כלי_שרת",
+      "label": "כלי שרת",
+      "full_label": "כלי שרת",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: כלי שרת\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_חייב_מיתה",
+      "label": "חייב מיתה",
+      "full_label": "חייב מיתה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: חייב מיתה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_הקנאין_פוגעין_בו",
+      "label": "הקנאין פוגעין ב",
+      "full_label": "הקנאין פוגעין בו",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הקנאין פוגעין בו\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_בליעה",
+      "label": "בליעה",
+      "full_label": "בליעה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בליעה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_גנבה",
+      "label": "גנבה",
+      "full_label": "גנבה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: גנבה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_גזל",
+      "label": "גזל",
+      "full_label": "גזל",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: גזל\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_איוב_כ_טו",
+      "label": "חיל בלע ויקיאנו",
+      "full_label": "חיל בלע ויקיאנו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: חיל בלע ויקיאנו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_איוב",
+      "label": "איוב",
+      "full_label": "איוב",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: איוב\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_ירמיהו_נא_מד",
+      "label": "והוצאתי את בלעו",
+      "full_label": "והוצאתי את בלעו מפיו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: והוצאתי את בלעו מפיו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ירמיהו",
+      "label": "ירמיהו",
+      "full_label": "ירמיהו",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: ירמיהו\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ר_אברהם",
+      "label": "אברהם אבן עזרא",
+      "full_label": "אברהם אבן עזרא",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: אברהם אבן עזרא\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "בפשוטו",
+      "label": "בפשוטו",
+      "full_label": "בפשוטו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_29】: בפשוטו\n【Ricanati_Zicaron_aharon_ed】: כפשוטו\nReason: embedding cos=0.904 (no LLM verify)",
+      "matched_with": "sg4_he_kifshuto"
+    },
+    {
+      "id": "sg2_הפרכת",
+      "label": "פרכת המסך",
+      "full_label": "פרכת המסך",
+      "entity_type": "PhysicalObject",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_29】: פרכת המסך\n【Ricanati_Zicaron_aharon_ed】: הפרכת\nReason: embedding cos=0.803 (no LLM verify)",
+      "matched_with": "sg3_פרכת"
+    },
+    {
+      "id": "sg1_בגד_פלוני",
+      "label": "בגד פלוני",
+      "full_label": "בגד פלוני",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בגד פלוני\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_מכסה_פלוני",
+      "label": "מכסה פלוני",
+      "full_label": "מכסה פלוני",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: מכסה פלוני\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_בלוע",
+      "label": "בלוע",
+      "full_label": "בלוע",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בלוע\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_איכה_ב_ב",
+      "label": "בלע י\"י ולא חמל",
+      "full_label": "בלע י\"י ולא חמל את כל נאות יעקב\"",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בלע י\"י ולא חמל את כל נאות יעקב\"\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_י_י",
+      "label": "י\"י",
+      "full_label": "י\"י",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: י\"י\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_יעקב",
+      "label": "יעקב",
+      "full_label": "יעקב",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: יעקב\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_איכה",
+      "label": "איכה",
+      "full_label": "איכה",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: איכה\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_איוב_י_ח",
+      "label": "יחד סביב ותבלענ",
+      "full_label": "יחד סביב ותבלעני",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: יחד סביב ותבלעני\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הקנאין_פוגעין_בו",
+      "label": "הקנאין פוגעין ב",
+      "full_label": "הקנאין פוגעין בו",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הקנאין פוגעין בו\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_איוב_כ_טו",
+      "label": "איוב כ, טו",
+      "full_label": "איוב כ, טו",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: איוב כ, טו\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ירמיהו_נא_מד",
+      "label": "ירמיהו נא, מד",
+      "full_label": "ירמיהו נא, מד",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: ירמיהו נא, מד\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_איכה_ב_ב",
+      "label": "איכה ב, ב",
+      "full_label": "איכה ב, ב",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: איכה ב, ב\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_איוב_י_ח",
+      "label": "איוב י, ח",
+      "full_label": "איוב י, ח",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: איוב י, ח\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_הלוים",
+      "label": "הלויים",
+      "full_label": "הלויים",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הלויים\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_בבדים",
+      "label": "בבדים",
+      "full_label": "בבדים",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בבדים\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_אהרן",
+      "label": "אהרן",
+      "full_label": "אהרן",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: אהרן\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_שמואל_א_ו_יט",
+      "label": "כי ראו בארון י\"",
+      "full_label": "כי ראו בארון י\"י",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: כי ראו בארון י\"י\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שמואל_א_ו_יט",
+      "label": "שמואל א' ו, יט",
+      "full_label": "שמואל א' ו, יט",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: שמואל א' ו, יט\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_בליעה",
+      "label": "בליעה",
+      "full_label": "בליעה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: בליעה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הבנין",
+      "label": "הבנין",
+      "full_label": "הבנין",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הבנין\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_על_דרך_האמת",
+      "label": "על דרך האמת",
+      "full_label": "על דרך האמת",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: על דרך האמת\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_הכבוד",
+      "label": "הכבוד",
+      "full_label": "הכבוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: הכבוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_הכרובים",
+      "label": "הכרובים",
+      "full_label": "הכרובים",
+      "entity_type": "SpiritualEntity",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_29】: הכרובים\n【Ricanati_Zicaron_aharon_ed】: כרובים\nReason: embedding cos=0.836 (no LLM verify)",
+      "matched_with": "sg2_כרובים"
+    },
+    {
+      "id": "sg3_י_י",
+      "label": "י\"י",
+      "full_label": "י\"י",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: י\"י\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_הכהנים",
+      "label": "הכהנים",
+      "full_label": "הכהנים",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_29】: הכהנים\n【Ricanati_Zicaron_aharon_ed】: הכהנים\nReason: embedding cos=0.906 (no LLM verify)",
+      "matched_with": "sg3_כהנים"
+    },
+    {
+      "id": "sg3_חביון_עזו",
+      "label": "חביון עזו",
+      "full_label": "חביון עזו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: חביון עזו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_קדש_הקדשים",
+      "label": "קדש הקדשים",
+      "full_label": "קדש הקדשים",
+      "entity_type": "Place",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: קדש הקדשים\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_המשכיל_יבין",
+      "label": "המשכיל יבין",
+      "full_label": "המשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: המשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_7f3e9a2c1d4b",
+      "label": "כבלע את הקדש",
+      "full_label": "כבלע את הקדש",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: כבלע את הקדש\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_qdsh",
+      "label": "קדש",
+      "full_label": "קדש",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_29\nLabel: קדש\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hmskyl",
+      "label": "המשכיל",
+      "full_label": "המשכיל",
+      "entity_type": "OtherConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_29】: המשכיל\n【Ricanati_Zicaron_aharon_ed】: כוונתו\nReason: embedding cos=0.802 (no LLM verify)",
+      "matched_with": "sg1_he_kavanato"
+    },
+    {
+      "id": "sg1_bq_a1b2c3d4e5f6",
+      "label": "ולא יבואו לראות",
+      "full_label": "ולא יבואו לראות כבלע את הקדש ומתו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ולא יבואו לראות כבלע את הקדש ומתו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_hakodesh",
+      "label": "הקדש",
+      "full_label": "הקדש",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הקדש\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_he_harav_hagadol",
+      "label": "הרב הגדול",
+      "full_label": "הרב הגדול",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הרב הגדול\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כלי_המשכן",
+      "label": "כלי המשכן",
+      "full_label": "כלי המשכן",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כלי המשכן\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_השכינה",
+      "label": "השכינה",
+      "full_label": "השכינה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: השכינה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_בית_המקדש",
+      "label": "בית המקדש",
+      "full_label": "בית המקדש",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בית המקדש\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_משכן",
+      "label": "משכן",
+      "full_label": "משכן",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: משכן\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_כלי",
+      "label": "הכלים",
+      "full_label": "הכלים",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הכלים\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הכבוד",
+      "label": "הכבוד",
+      "full_label": "הכבוד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הכבוד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שם_הגדול",
+      "label": "שם הגדול",
+      "full_label": "שם הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם הגדול\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_חביון_עוזו",
+      "label": "חביון עוזו",
+      "full_label": "חביון עוזו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: חביון עוזו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_דרך_כבוד_של_מעלה",
+      "label": "דרך כבוד של מעל",
+      "full_label": "דרך כבוד של מעלה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: דרך כבוד של מעלה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg_לוים",
+      "label": "הלוים",
+      "full_label": "הלוים",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הלוים\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg_קדש",
+      "label": "קדש",
+      "full_label": "קדש",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: קדש\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Bamidbar_4_20",
+      "label": "פן ימותו ותפגעם",
+      "full_label": "פן ימותו ותפגעם הרעה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: פן ימותו ותפגעם הרעה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Tehillim_27_5",
+      "label": "בחביון עוזו",
+      "full_label": "בחביון עוזו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: בחביון עוזו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_5a7c9e2f4b1d",
+      "label": "ויבאו הלוים בקד",
+      "full_label": "ויבאו הלוים בקדש",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: ויבאו הלוים בקדש\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_הקודש",
+      "label": "הקודש",
+      "full_label": "הקודש",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: הקודש\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_כבוד",
+      "label": "כבוד",
+      "full_label": "כבוד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כבוד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_שם_הקדש",
+      "label": "שם הקדש",
+      "full_label": "שם הקדש",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם הקדש\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_7a3f9e2c1d5b",
+      "label": "פן יהרסו",
+      "full_label": "פן יהרסו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: פן יהרסו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_4b8d2e6f9a1c",
+      "label": "כבלע",
+      "full_label": "כבלע",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כבלע\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_כאשר_עושים_למטה_כך_נעשה_למעלה",
+      "label": "כאשר עושים למטה",
+      "full_label": "כאשר עושים למטה כך נעשה למעלה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כאשר עושים למטה כך נעשה למעלה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_9c1e5a7d3f2b",
+      "label": "חביון עוזו",
+      "full_label": "חביון עוזו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: חביון עוזו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_he_kable",
+      "label": "כבלע",
+      "full_label": "כבלע",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כבלע\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_he_kol_kli",
+      "label": "כל כלי",
+      "full_label": "כל כלי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: כל כלי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_he_shem_hagadol",
+      "label": "שם הגדול",
+      "full_label": "שם הגדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: שם הגדול\nType: KabbalisticConcept",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_כלי_שרת",
+      "target": "sg2_הקנאין_פוגעין_בו",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_הכבוד",
+      "target": "sg2_שם_הגדול",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg2_דרך_כבוד_של_מעלה",
+      "target": "sg_לוים",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_איכה_ב_ב",
+      "target": "sg1_bq_איכה_ב_ב",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_bq_ירמיהו_נא_מד",
+      "target": "sg1_בליעה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg4_qdsh",
+      "target": "sg4_bq_7f3e9a2c1d4b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg2_בליעה",
+      "target": "sg1_bq_איוב_י_ח",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: derivedFrom"
+    },
+    {
+      "source": "sg3_הלוים",
+      "target": "sg3_הכהנים",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg_קדש",
+      "target": "sg2_bq_5a7c9e2f4b1d",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_רשי",
+      "target": "sg1_בלוע",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: explains"
+    },
+    {
+      "source": "sg1_גזל",
+      "target": "sg2_בליעה",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: isCalled"
+    },
+    {
+      "source": "sg1_גנבה",
+      "target": "sg1_בליעה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg1_he_harav_hagadol",
+      "target": "sg4_hmskyl",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg_לוים",
+      "target": "sg2_בית_המקדש",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_הלוים",
+      "target": "sg2_בבדים",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg3_על_דרך_האמת",
+      "target": "sg3_הכבוד",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg1_בגד_פלוני",
+      "target": "sg1_הכלי",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "בפשוטו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_גונב_כלי_שרת",
+      "target": "sg1_הקנאין_פוגעין_בו",
+      "predicate": "permits",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: permits"
+    },
+    {
+      "source": "sg1_רשי",
+      "target": "sg1_bq_במדבר_ד_כ",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: commentedOn"
+    },
+    {
+      "source": "sg2_מסכת_סנהדרין",
+      "target": "sg1_כלי_שרת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_bq_איכה_ב_ב",
+      "target": "sg1_bq_איכה_ב_ב",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_הקדש",
+      "target": "sg1_bq_במדבר_ד_כ",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_bq_a1b2c3d4e5f6",
+      "target": "sg1_he_hakodesh",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions"
+    },
+    {
+      "source": "sg1_י_י",
+      "target": "sg1_bq_איכה_ב_ב",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_הקדש",
+      "target": "sg1_הקדש",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg3_הכהנים",
+      "target": "sg3_כלי",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_כלי_המשכן",
+      "target": "sg2_משכן",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: locatedIn"
+    },
+    {
+      "source": "sg1_bq_איוב_כ_טו",
+      "target": "sg1_בליעה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg3_bq_9c1e5a7d3f2b",
+      "target": "sg3_bq_9c1e5a7d3f2b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg1_גזל",
+      "target": "sg1_בליעה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_בליעה",
+      "target": "sg1_bq_איוב_כ_טו",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: derivedFrom"
+    },
+    {
+      "source": "sg1_בלוע",
+      "target": "sg1_הקדש",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: isCalled"
+    },
+    {
+      "source": "sg1_גונב_כלי_שרת",
+      "target": "sg1_חייב_מיתה",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: causes"
+    },
+    {
+      "source": "sg2_השכינה",
+      "target": "sg3_הכרובים",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_איוב_י_ח",
+      "target": "sg1_bq_איוב_י_ח",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_bq_איכה_ב_ב",
+      "target": "sg1_בליעה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_גנבה",
+      "target": "sg2_בליעה",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: isCalled"
+    },
+    {
+      "source": "sg3_bq_7a3f9e2c1d5b",
+      "target": "sg3_bq_7a3f9e2c1d5b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg3_הקודש",
+      "target": "sg4_he_kable",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg3_י_י",
+      "target": "sg2_bq_שמואל_א_ו_יט",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg2_ר_אברהם",
+      "target": "sg1_bq_במדבר_ד_כ",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: explains"
+    },
+    {
+      "source": "sg_לוים",
+      "target": "sg2_bq_5a7c9e2f4b1d",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg1_הקדש",
+      "target": "sg2_bq_שמואל_א_ו_יט",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg3_הקודש",
+      "target": "sg4_he_shem_hagadol",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg3_הכרובים",
+      "target": "sg2_משכן",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_הכבוד",
+      "target": "sg3_קדש_הקדשים",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg1_יעקב",
+      "target": "sg1_bq_איכה_ב_ב",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_כלי_שרת",
+      "target": "sg1_חייב_מיתה",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: causes"
+    },
+    {
+      "source": "sg3_הקודש",
+      "target": "sg2_שם_הגדול",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg1_bq_a1b2c3d4e5f6",
+      "target": "sg1_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_הכבוד",
+      "target": "sg2_bq_Tehillim_27_5",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled"
+    },
+    {
+      "source": "sg4_bq_7f3e9a2c1d4b",
+      "target": "sg4_bq_7f3e9a2c1d4b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg3_כבוד",
+      "target": "sg2_שם_הגדול",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg3_הלוים",
+      "target": "sg1_הקדש",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_אנקלוס",
+      "target": "sg1_רשי",
+      "predicate": "cites",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: cites"
+    },
+    {
+      "source": "sg1_אזהרה",
+      "target": "sg1_גונב_כלי_שרת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg4_bq_7f3e9a2c1d4b",
+      "target": "בפשוטו",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_אהרן",
+      "target": "sg2_הפרכת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_הבנין",
+      "target": "sg1_הקדש",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: hasPart"
+    },
+    {
+      "source": "sg1_כלי_שרת",
+      "target": "sg1_הכלי",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg4_bq_7f3e9a2c1d4b",
+      "target": "sg4_qdsh",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_הכלי",
+      "target": "sg1_נרתיקו",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg1_he_harav_hagadol",
+      "target": "sg1_bq_a1b2c3d4e5f6",
+      "predicate": "commentedOn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: commentedOn"
+    },
+    {
+      "source": "sg3_כבוד",
+      "target": "sg3_bq_9c1e5a7d3f2b",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_חביון_עוזו",
+      "target": "sg2_bq_Tehillim_27_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg2_איוב_י_ח",
+      "target": "sg1_bq_איוב_י_ח",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_מכסה_פלוני",
+      "target": "sg1_הכלי",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg3_הכהנים",
+      "target": "sg2_הפרכת",
+      "predicate": "relatedTo",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: relatedTo"
+    },
+    {
+      "source": "sg3_הלוים",
+      "target": "sg3_י_י",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg1_he_hakodesh",
+      "target": "sg1_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn"
+    },
+    {
+      "source": "sg_לוים",
+      "target": "sg_קדש",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: locatedIn"
+    },
+    {
+      "source": "sg1_bq_איוב_כ_טו",
+      "target": "sg1_bq_איוב_כ_טו",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg4_he_kable",
+      "target": "sg4_he_shem_hagadol",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart"
+    },
+    {
+      "source": "sg1_הקדש",
+      "target": "sg2_הפרכת",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg_לוים",
+      "target": "sg2_bq_Bamidbar_4_20",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg3_הכבוד",
+      "target": "sg3_חביון_עזו",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg2_bq_שמואל_א_ו_יט",
+      "target": "sg2_שמואל_א_ו_יט",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg2_ירמיהו_נא_מד",
+      "target": "sg1_bq_ירמיהו_נא_מד",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg1_bq_איוב_י_ח",
+      "target": "sg1_בליעה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg2_בליעה",
+      "target": "sg1_bq_ירמיהו_נא_מד",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: derivedFrom"
+    },
+    {
+      "source": "בפשוטו",
+      "target": "sg4_he_kol_kli",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg2_bq_שמואל_א_ו_יט",
+      "target": "sg1_הקדש",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg2_איוב_כ_טו",
+      "target": "sg1_bq_איוב_כ_טו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg2_אנקלוס",
+      "target": "בפשוטו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg2_הכבוד",
+      "target": "sg2_חביון_עוזו",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: causes"
+    },
+    {
+      "source": "sg3_הכהנים",
+      "target": "sg3_כאשר_עושים_למטה_כך_נעשה_למעלה",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo"
+    },
+    {
+      "source": "sg2_בליעה",
+      "target": "sg1_bq_איכה_ב_ב",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: derivedFrom"
+    },
+    {
+      "source": "sg2_שמואל_א_ו_יט",
+      "target": "sg2_bq_שמואל_א_ו_יט",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    },
+    {
+      "source": "sg4_hmskyl",
+      "target": "sg4_bq_7f3e9a2c1d4b",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg1_bq_ירמיהו_נא_מד",
+      "target": "sg1_bq_ירמיהו_נא_מד",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg3_הכבוד",
+      "target": "sg3_הכרובים",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: correspondsTo"
+    },
+    {
+      "source": "sg1_רבותינו",
+      "target": "sg2_מסכת_סנהדרין",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: relatedTo"
+    },
+    {
+      "source": "sg4_he_kable",
+      "target": "בפשוטו",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: isA"
+    },
+    {
+      "source": "sg2_bq_שמואל_א_ו_יט",
+      "target": "sg2_bq_שמואל_א_ו_יט",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg1_bq_במדבר_ד_כ",
+      "target": "sg1_bq_במדבר_ד_כ",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: appearsIn"
+    },
+    {
+      "source": "sg_לוים",
+      "target": "sg3_bq_7a3f9e2c1d5b",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg2_הפרכת",
+      "target": "sg1_הקדש",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: hasPart"
+    },
+    {
+      "source": "sg3_הקודש",
+      "target": "sg3_bq_4b8d2e6f9a1c",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo"
+    },
+    {
+      "source": "sg1_bq_במדבר_ד_כ",
+      "target": "sg1_הקדש",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_29: mentions"
+    }
+  ]
+}

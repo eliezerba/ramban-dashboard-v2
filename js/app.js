@@ -1575,6 +1575,12 @@ function resolveCorpusAssetUrl(doc, rawUrl) {
   const url = String(rawUrl || '').trim();
   if (!url) return '';
   if (/^(?:https?:|mailto:|#)/i.test(url)) return url;
+  if (/^(?:\.{0,2}\/)?overlap_viz\//i.test(url)) {
+    return joinNormalizedPath('./corpus_assets', url.replace(/^\.?\/?/, ''));
+  }
+  if (/^(?:\.{0,2}\/)?commentator\/viz\//i.test(url)) {
+    return joinNormalizedPath('./corpus_assets', url.replace(/^\.?\/?/, ''));
+  }
   if (/^(?:\.{0,2}\/)?(?:overlap_viz|commentator\/viz|matrices|pairwise|commentator\/signature)\//i.test(url)) {
     return joinNormalizedPath(index.source?.e3 || '../Data/E3_comparative_analysis', url.replace(/^\.?\/?/, ''));
   }

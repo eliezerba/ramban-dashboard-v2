@@ -1,0 +1,855 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "Comment_a_shuib_Parma_68",
+    "creation_date": "2026-06-26T17:11:07.057537",
+    "total_nodes": 44,
+    "total_edges": 44,
+    "shared_nodes": 0,
+    "kg1_unique_nodes": 27,
+    "kg2_unique_nodes": 17,
+    "shared_edges": 0,
+    "kg1_unique_edges": 27,
+    "kg2_unique_edges": 17
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מגדל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדה כנגד מדה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אביהם\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אדם קדמאה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: המבול\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הפלגה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אלהים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השם המיוחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שמו הגדול\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: סדום\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדת סדום\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטאם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטא אביהם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: בני חמריא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shiur",
+      "label": "שיעור",
+      "full_label": "שיעור",
+      "entity_type": "HalakhicConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: שיעור\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_anshei_bekaa",
+      "label": "אנשי בקעה",
+      "full_label": "אנשי בקעה",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: אנשי בקעה\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_even_hayit",
+      "label": "אבן הית",
+      "full_label": "אבן הית",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: אבן הית\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yad_yamin",
+      "label": "יד ימין",
+      "full_label": "יד ימין",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: יד ימין\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yad_smal",
+      "label": "יד שמאל",
+      "full_label": "יד שמאל",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: יד שמאל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shechemalu",
+      "label": "שכמל\"ו",
+      "full_label": "שכמל\"ו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: שכמל\"ו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kavod_hakavod_hagadol",
+      "label": "כבוד הכבוד הגדו",
+      "full_label": "כבוד הכבוד הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: כבוד הכבוד הגדול\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_aspaklarya_hameira",
+      "label": "איספקלריה המאיר",
+      "full_label": "איספקלריה המאירה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: איספקלריה המאירה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_malchut_hamelech_elyon",
+      "label": "מלכות המלך עליו",
+      "full_label": "מלכות המלך עליון",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: מלכות המלך עליון\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_leolam_vaed",
+      "label": "לעולם ועד",
+      "full_label": "לעולם ועד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: לעולם ועד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_milmaala_lemata",
+      "label": "מלמעלה למטה",
+      "full_label": "מלמעלה למטה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: מלמעלה למטה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_mil_mata_lemala",
+      "label": "מלמטה למעלה",
+      "full_label": "מלמטה למעלה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: מלמטה למעלה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_romaz",
+      "label": "רומז",
+      "full_label": "רומז",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: רומז\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kavana_gdola",
+      "label": "כוונה גדולה",
+      "full_label": "כוונה גדולה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: כוונה גדולה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_yeshayahu_63_14",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_shemot_15_18",
+      "label": "לעולם ועד",
+      "full_label": "לעולם ועד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: לעולם ועד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_daniel_4_14",
+      "label": "מלכות המלך עליו",
+      "full_label": "מלכות המלך עליון",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Comment_a_shuib_Parma_68\nLabel: מלכות המלך עליון\nType: BiblicalQuotation",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg1_leolam_vaed",
+      "target": "sg1_bq_shemot_15_18",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: appearsIn"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_even_hayit",
+      "target": "sg1_yad_smal",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: correspondsTo"
+    },
+    {
+      "source": "sg1_leolam_vaed",
+      "target": "sg1_milmaala_lemata",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: isCalled"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_malchut_hamelech_elyon",
+      "target": "sg1_bq_daniel_4_14",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_bq_yeshayahu_63_14",
+      "target": "sg1_kavod_hakavod_hagadol",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_even_hayit",
+      "target": "sg1_romaz",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: isA"
+    },
+    {
+      "source": "sg1_aspaklarya_hameira",
+      "target": "sg1_malchut_hamelech_elyon",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: correspondsTo"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_even_hayit",
+      "target": "sg1_yad_yamin",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: correspondsTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_shemot_15_18",
+      "target": "sg1_leolam_vaed",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: mentions"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_shechemalu",
+      "target": "sg1_kavod_hakavod_hagadol",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_anshei_bekaa",
+      "target": "sg1_kavana_gdola",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: relatedTo"
+    },
+    {
+      "source": "sg1_anshei_bekaa",
+      "target": "sg1_anshei_bekaa",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: isCalled"
+    },
+    {
+      "source": "sg1_kavod_hakavod_hagadol",
+      "target": "sg1_aspaklarya_hameira",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: isA"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_leolam_vaed",
+      "target": "sg1_mil_mata_lemala",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: isCalled"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_malchut_hamelech_elyon",
+      "target": "sg1_leolam_vaed",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_daniel_4_14",
+      "target": "sg1_malchut_hamelech_elyon",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_anshei_bekaa",
+      "target": "sg1_shiur",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Comment_a_shuib_Parma_68: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    }
+  ]
+}

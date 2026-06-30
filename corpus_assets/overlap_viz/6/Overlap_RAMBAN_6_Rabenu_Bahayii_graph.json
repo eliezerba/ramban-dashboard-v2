@@ -1,0 +1,1871 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "Rabenu_Bahayii",
+    "creation_date": "2026-06-26T17:11:14.280009",
+    "total_nodes": 84,
+    "total_edges": 116,
+    "shared_nodes": 10,
+    "kg1_unique_nodes": 17,
+    "kg2_unique_nodes": 57,
+    "shared_edges": 2,
+    "kg1_unique_edges": 25,
+    "kg2_unique_edges": 89
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מגדל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מדה כנגד מדה\n【Rabenu_Bahayii】: מדה כנגד מדה\nReason: embedding cos=0.886 (no LLM verify)",
+      "matched_with": "sg2_middah_keneged_middah"
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אביהם\n【Rabenu_Bahayii】: אדם הראשון\nReason: embedding cos=0.861 (no LLM verify)",
+      "matched_with": "sg1_adam_harishon"
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אדם קדמאה\n【Rabenu_Bahayii】: אדם קדמאה\nReason: embedding cos=0.899 (no LLM verify)",
+      "matched_with": "sg1_adam_kadmaah"
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: המבול\n【Rabenu_Bahayii】: דור המבול\nReason: embedding cos=0.803 (no LLM verify)",
+      "matched_with": "sg3_dor_hamabul"
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: הפלגה\n【Rabenu_Bahayii】: דור הפלגה\nReason: embedding cos=0.885 (no LLM verify)",
+      "matched_with": "sg3_dor_haplagah"
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אלהים\n【Rabenu_Bahayii】: אלהים\nReason: embedding cos=0.900 (no LLM verify)",
+      "matched_with": "sg2_elohim"
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השם המיוחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: שמו הגדול\n【Rabenu_Bahayii】: שמו הגדול\nReason: embedding cos=0.870 (no LLM verify)",
+      "matched_with": "sg3_shemo_hagadol"
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: סדום\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדת סדום\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: חטאם\n【Rabenu_Bahayii】: חטאו של אדם הראשון\nReason: embedding cos=0.849 (no LLM verify)",
+      "matched_with": "sg1_cheto_shel_adam_harishon"
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: חטא אביהם\n【Rabenu_Bahayii】: חטא אביהם הראשון\nReason: embedding cos=0.838 (no LLM verify)",
+      "matched_with": "sg1_chet_avihem_harishon"
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: בני חמריא\n【Rabenu_Bahayii】: בני חמריא\nReason: embedding cos=0.859 (no LLM verify)",
+      "matched_with": "sg2_bnei_chamraya"
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_derech_ha_kabbalah",
+      "label": "דרך הקבלה",
+      "full_label": "דרך הקבלה",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: דרך הקבלה\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_5f8a2c1d9e3b",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_katzatz_b_netiot",
+      "label": "קצץ בנטיעות",
+      "full_label": "קצץ בנטיעות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: קצץ בנטיעות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_dor_enosh",
+      "label": "דור אנוש",
+      "full_label": "דור אנוש",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: דור אנוש\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ovdei_avodah_zarah",
+      "label": "עובדי ע\"ז",
+      "full_label": "עובדי ע\"ז",
+      "entity_type": "HalakhicConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עובדי ע\"ז\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_1a2b3c4d5e6f",
+      "label": "אז הוחל לקרא בש",
+      "full_label": "אז הוחל לקרא בשם ה'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אז הוחל לקרא בשם ה'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_chillul_hashem",
+      "label": "חלול השם",
+      "full_label": "חלול השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: חלול השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_7g8h9i0j1k2l",
+      "label": "וזה החלם לעשות",
+      "full_label": "וזה החלם לעשות",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: וזה החלם לעשות\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_middah_acharonah",
+      "label": "המדה האחרונה",
+      "full_label": "המדה האחרונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: המדה האחרונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_5y6z7a8b9c0d",
+      "label": "ויהי בנסעם מקדם",
+      "full_label": "ויהי בנסעם מקדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ויהי בנסעם מקדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_razal",
+      "label": "רז\"ל",
+      "full_label": "רז\"ל",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: רז\"ל\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kidmono_shel_olam",
+      "label": "קדמונו של עולם",
+      "full_label": "קדמונו של עולם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: קדמונו של עולם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_1e2f3g4h5i6j",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_midrash",
+      "label": "מדרש",
+      "full_label": "מדרש",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מדרש\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_4",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני גמליא",
+      "full_label": "בני גמליא",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בני גמליא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shem_elohim",
+      "label": "שם אלהים",
+      "full_label": "שם אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שם אלהים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_parasha_zu",
+      "label": "פרשה זו",
+      "full_label": "פרשה זו",
+      "entity_type": "BiblicalSource",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: פרשה זו\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_parashat_ha_mabul",
+      "label": "פרשת המבול",
+      "full_label": "פרשת המבול",
+      "entity_type": "BiblicalSource",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: פרשת המבול\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ha_aretz_ha_tachtonah",
+      "label": "הארץ התחתונה",
+      "full_label": "הארץ התחתונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הארץ התחתונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ha_elyonah",
+      "label": "העליונה",
+      "full_label": "העליונה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: העליונה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_olam_hazeh",
+      "label": "עוה\"ז",
+      "full_label": "עוה\"ז",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עוה\"ז\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_olam_haba",
+      "label": "הבא",
+      "full_label": "הבא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הבא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ha_aretz",
+      "label": "הארץ",
+      "full_label": "הארץ",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הארץ\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_13",
+      "label": "נשחתו מן הארץ",
+      "full_label": "נשחתו מן הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: נשחתו מן הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_parashat_hamabul",
+      "label": "פרשת המבול",
+      "full_label": "פרשת המבול",
+      "entity_type": "BiblicalSource",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: פרשת המבול\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_haaretz_hatachtonah",
+      "label": "הארץ התחתונה",
+      "full_label": "הארץ התחתונה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הארץ התחתונה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_haelyonah",
+      "label": "העליונה",
+      "full_label": "העליונה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: העליונה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_haolam_hazeh",
+      "label": "העוה\"ז",
+      "full_label": "העוה\"ז",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: העוה\"ז\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_haba",
+      "label": "הבא",
+      "full_label": "הבא",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הבא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shem_hamyuchad",
+      "label": "שם המיוחד",
+      "full_label": "שם המיוחד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שם המיוחד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_7a3f9c2e1b4d",
+      "label": "וירד",
+      "full_label": "וירד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: וירד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_middah_keneged_middah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מדה כנגד מדה\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hashem_yitbarach",
+      "label": "השי\"ת",
+      "full_label": "השי\"ת",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: השי\"ת\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shiur_komat_hamigdal",
+      "label": "שיעור קומת המגד",
+      "full_label": "שיעור קומת המגדל",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שיעור קומת המגדל\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_kvod_haikonim",
+      "label": "כבוד האיקונים",
+      "full_label": "כבוד האיקונים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: כבוד האיקונים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shilton",
+      "label": "שלטון",
+      "full_label": "שלטון",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שלטון\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bavel",
+      "label": "בבל",
+      "full_label": "בבל",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בבל\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg_beit_kodshenu_vetifartenu",
+      "label": "בית קדשנו ותפאר",
+      "full_label": "בית קדשנו ותפארתנו",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בית קדשנו ותפארתנו\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg_klei_hakodesh",
+      "label": "כלי הקדש",
+      "full_label": "כלי הקדש",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: כלי הקדש\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_nevuchadnetzar",
+      "label": "נבוכדנצר",
+      "full_label": "נבוכדנצר",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: נבוכדנצר\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_tzelem_hazahav",
+      "label": "צלם הזהב",
+      "full_label": "צלם הזהב",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: צלם הזהב\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bel",
+      "label": "בל",
+      "full_label": "בל",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_8b4g0d3f2c5e",
+      "label": "ופקדתי על בל בב",
+      "full_label": "ופקדתי על בל בבבל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ופקדתי על בל בבבל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_3_1",
+      "label": "אקימה בבקעת דור",
+      "full_label": "אקימה בבקעת דורא במדינת בבל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אקימה בבקעת דורא במדינת בבל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bikat_dura",
+      "label": "בקעת דורא",
+      "full_label": "בקעת דורא",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בקעת דורא\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bavel",
+      "label": "מדינת בבל",
+      "full_label": "מדינת בבל",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מדינת בבל\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_0d6i2f5h4e7g",
+      "label": "וימצאו בקעה",
+      "full_label": "וימצאו בקעה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: וימצאו בקעה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bikah",
+      "label": "בקעה",
+      "full_label": "בקעה",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בקעה\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_yichud",
+      "label": "יחוד",
+      "full_label": "יחוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: יחוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ntiot",
+      "label": "נטיעות",
+      "full_label": "נטיעות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: נטיעות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_ha_kubah",
+      "label": "הקב\"ה",
+      "full_label": "הקב\"ה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הקב\"ה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_chochmah",
+      "label": "חכמה",
+      "full_label": "חכמה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: חכמה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_machshavah_raah",
+      "label": "מחשבה רעה",
+      "full_label": "מחשבה רעה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מחשבה רעה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Genesis_11_8",
+      "label": "והפיץ אותם על פ",
+      "full_label": "והפיץ אותם על פני כל הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: והפיץ אותם על פני כל הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bel",
+      "label": "בל",
+      "full_label": "בל",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בל\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bikah",
+      "label": "בקעה",
+      "full_label": "בקעה",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בקעה\nType: Place",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg3_bq_Daniel_3_1",
+      "target": "sg3_bikat_dura",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg3_bikat_dura",
+      "target": "sg4_bavel",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg_klei_hakodesh",
+      "target": "sg3_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg3_bq_0d6i2f5h4e7g",
+      "target": "sg4_bikah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_bq_1e2f3g4h5i6j",
+      "target": "sg1_midrash",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_midrash",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_dor_enosh",
+      "target": "sg1_ovdei_avodah_zarah",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_shilton",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg3_bq_Daniel_3_1",
+      "target": "sg3_bq_Daniel_3_1",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_elohim",
+      "target": "sg2_shem_elohim",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg3_bq_7a3f9c2e1b4d",
+      "target": "sg3_hashem_yitbarach",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg3_nevuchadnetzar",
+      "target": "sg3_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg2_middah_acharonah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_ha_aretz",
+      "target": "sg1_elohim",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg3_bq_8b4g0d3f2c5e",
+      "target": "sg3_bavel",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg1_bq_7g8h9i0j1k2l",
+      "target": "sg1_chillul_hashem",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg1_bq_5f8a2c1d9e3b",
+      "target": "sg2_middah_acharonah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg3_bq_8b4g0d3f2c5e",
+      "target": "sg4_bel",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg3_parashat_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg4_bikah",
+      "target": "sg3_ntiot",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: symbolizes"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_kvod_haikonim",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg4_bikah",
+      "target": "sg3_yichud",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: symbolizes"
+    },
+    {
+      "source": "sg3_nevuchadnetzar",
+      "target": "sg3_tzelem_hazahav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg_klei_hakodesh",
+      "target": "sg4_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_bq_1e2f3g4h5i6j",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg3_haba",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_bq_Genesis_6_4",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg4_bavel",
+      "target": "sg4_bavel",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg3_bq_7a3f9c2e1b4d",
+      "target": "sg3_bq_7a3f9c2e1b4d",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_hashem_yitbarach",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg3_haelyonah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg2_shem_elohim",
+      "target": "sg2_parashat_ha_mabul",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg2_ha_aretz_ha_tachtonah",
+      "target": "sg2_bq_Genesis_6_13",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg2_middah_acharonah",
+      "target": "sg1_katzatz_b_netiot",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg3_bq_0d6i2f5h4e7g",
+      "target": "sg3_bikah",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg2_ha_aretz",
+      "target": "sg2_bq_Genesis_6_13",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg1_bq_1a2b3c4d5e6f",
+      "target": "sg1_chillul_hashem",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_shiur_komat_hamigdal",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_bq_Genesis_6_4",
+      "target": "sg1_avihem",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_shem_hamyuchad",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_parasha_zu",
+      "target": "sg2_shem_elohim",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_midah_keneged_midah",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg3_shiur_komat_hamigdal",
+      "target": "sg1_hafalgah",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hashem_yitbarach",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_katzatz_b_netiot",
+      "target": "sg1_katzatz_b_netiot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg3_bq_Daniel_3_1",
+      "target": "sg4_bavel",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_bq_5y6z7a8b9c0d",
+      "target": "sg1_bq_5y6z7a8b9c0d",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_bq_5f8a2c1d9e3b",
+      "target": "sg1_bq_5f8a2c1d9e3b",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_bikat_dura",
+      "target": "sg3_bikah",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg2_ha_aretz_ha_tachtonah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_bq_Genesis_6_13",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg_beit_kodshenu_vetifartenu",
+      "target": "sg4_bavel",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_5y6z7a8b9c0d",
+      "target": "sg1_razal",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_bq_7g8h9i0j1k2l",
+      "target": "sg1_bq_7g8h9i0j1k2l",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_bikat_dura",
+      "target": "sg3_bq_Daniel_3_1",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg3_bq_8b4g0d3f2c5e",
+      "target": "sg4_bavel",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_1e2f3g4h5i6j",
+      "target": "sg1_bq_1e2f3g4h5i6j",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_bavel",
+      "target": "sg3_ntiot",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: symbolizes"
+    },
+    {
+      "source": "sg3_bavel",
+      "target": "sg3_yichud",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: symbolizes"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg3_bq_8b4g0d3f2c5e",
+      "target": "sg3_bel",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_middah_keneged_middah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg3_bq_0d6i2f5h4e7g",
+      "target": "sg3_bq_0d6i2f5h4e7g",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg4_bavel",
+      "target": "sg_beit_kodshenu_vetifartenu",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_1a2b3c4d5e6f",
+      "target": "sg1_bq_1a2b3c4d5e6f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg3_haaretz_hatachtonah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg2_ha_elyonah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg2_olam_hazeh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_derech_ha_kabbalah",
+      "target": "sg1_bq_5f8a2c1d9e3b",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg4_bavel",
+      "target": "sg3_bikat_dura",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: symbolizes"
+    },
+    {
+      "source": "sg1_bq_5y6z7a8b9c0d",
+      "target": "sg1_kidmono_shel_olam",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg3_bq_8b4g0d3f2c5e",
+      "target": "sg3_bq_8b4g0d3f2c5e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_tzelem_hazahav",
+      "target": "sg3_bel",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg2_bq_Genesis_6_4",
+      "target": "sg2_bq_Genesis_6_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_tzelem_hazahav",
+      "target": "sg4_bel",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_machshavah_raah",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_bq_5f8a2c1d9e3b",
+      "target": "sg2_chat_avihem",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg_beit_kodshenu_vetifartenu",
+      "target": "sg3_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_machshavah_raah",
+      "target": "sg3_chochmah",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg2_chat_avihem",
+      "target": "sg1_katzatz_b_netiot",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg3_nevuchadnetzar",
+      "target": "sg4_bavel",
+      "predicate": "locatedIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: locatedIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg2_olam_haba",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg4_bavel",
+      "target": "sg3_bq_Daniel_3_1",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg3_haolam_hazeh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_ha_aretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_midrash",
+      "target": "sg2_bq_Genesis_6_4",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    }
+  ]
+}

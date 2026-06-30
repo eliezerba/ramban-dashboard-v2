@@ -1,0 +1,1677 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "KeterShemTov",
+    "creation_date": "2026-06-26T17:11:10.290121",
+    "total_nodes": 78,
+    "total_edges": 100,
+    "shared_nodes": 9,
+    "kg1_unique_nodes": 18,
+    "kg2_unique_nodes": 51,
+    "shared_edges": 0,
+    "kg1_unique_edges": 27,
+    "kg2_unique_edges": 73
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מגדל\n【KeterShemTov】: מגדל\nReason: embedding cos=0.919 (no LLM verify)",
+      "matched_with": "sg1_migdal"
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדה כנגד מדה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אביהם\n【KeterShemTov】: אדם\nReason: embedding cos=0.853 (no LLM verify)",
+      "matched_with": "sg2_adam"
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אדם קדמאה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: המבול\n【KeterShemTov】: מבול\nReason: embedding cos=0.860 (no LLM verify)",
+      "matched_with": "sg3_mabul"
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הפלגה\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אלהים\n【KeterShemTov】: השם\nReason: embedding cos=0.813 (no LLM verify)",
+      "matched_with": "sg3_hashem"
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: השם המיוחד\n【KeterShemTov】: השם המיוחד\nReason: embedding cos=0.927 (no LLM verify)",
+      "matched_with": "sg3_hashem_hamyuchad"
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שמו הגדול\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: הירידה\n【KeterShemTov】: טעם הירידה\nReason: embedding cos=0.823 (no LLM verify)",
+      "matched_with": "sg6_taam_hayeridah"
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: סדום\n【KeterShemTov】: סדום\nReason: embedding cos=0.880 (no LLM verify)",
+      "matched_with": "sg6_sdom"
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדת סדום\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטאם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: חטא אביהם\n【KeterShemTov】: חטא אביהם\nReason: embedding cos=0.872 (no LLM verify)",
+      "matched_with": "sg2_chet_avihem"
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: בני חמריא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: הירידה\n【KeterShemTov】: הירידה\nReason: embedding cos=0.963 (no LLM verify)",
+      "matched_with": "sg5_הירידה"
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: שם\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ir",
+      "label": "עיר",
+      "full_label": "עיר",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: עיר\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ir_kabbalistic",
+      "label": "עיר",
+      "full_label": "עיר",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: עיר\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_atarah",
+      "label": "עטרה",
+      "full_label": "עטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: עטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_migdal_kabbalistic",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: מגדל\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_tiferet",
+      "label": "תפארת",
+      "full_label": "תפארת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: תפארת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_levana",
+      "label": "הלבנה",
+      "full_label": "הלבנה",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הלבנה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_even",
+      "label": "אבן",
+      "full_label": "אבן",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: אבן\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shiur_komah",
+      "label": "סוד שיעור קומה",
+      "full_label": "סוד שיעור קומה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: סוד שיעור קומה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_maskil",
+      "label": "משכיל",
+      "full_label": "משכיל",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: משכיל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_rav",
+      "label": "רב",
+      "full_label": "רב",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: רב\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_a3f8e2d1c9b4",
+      "label": "עיר ומגדל",
+      "full_label": "עיר ומגדל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: עיר ומגדל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_b7c2f5e8a1d3",
+      "label": "והיתה להם הלבנה",
+      "full_label": "והיתה להם הלבנה לאבן",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: והיתה להם הלבנה לאבן\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ir",
+      "label": "עיר",
+      "full_label": "עיר",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: עיר\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: מגדל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: שם\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_kotzetzim_bantiyot",
+      "label": "קוצצים בנטיעות",
+      "full_label": "קוצצים בנטיעות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: קוצצים בנטיעות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_mazal",
+      "label": "מזל",
+      "full_label": "מזל",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: מזל\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Bereshit_11_4",
+      "label": "אמרו לעשות להם ",
+      "full_label": "אמרו לעשות להם שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: אמרו לעשות להם שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_chet_avotam",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: חטא אביהם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_reshuyot",
+      "label": "רשויות",
+      "full_label": "רשויות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: רשויות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg_dor_hamabul",
+      "label": "דור המבול",
+      "full_label": "דור המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: דור המבול\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hashem_hanichbad",
+      "label": "השם הנכבד",
+      "full_label": "השם הנכבד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: השם הנכבד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_rachamim",
+      "label": "הרחמים",
+      "full_label": "הרחמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הרחמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Devarim_5_5",
+      "label": "בין ה' וביניכם",
+      "full_label": "בין ה' וביניכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: בין ה' וביניכם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hashem_hanichbad",
+      "label": "השם הנכבד",
+      "full_label": "השם הנכבד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: השם הנכבד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: השם המיוחד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_noach",
+      "label": "נח",
+      "full_label": "נח",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: נח\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_Genesis_6_13",
+      "label": "ויאמר אלהים לנח",
+      "full_label": "ויאמר אלהים לנח",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: ויאמר אלהים לנח\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hashem_hagadol",
+      "label": "השם הגדול",
+      "full_label": "השם הגדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: השם הגדול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hester_panav",
+      "label": "הסתר פניו",
+      "full_label": "הסתר פניו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הסתר פניו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_heanan",
+      "label": "הענן",
+      "full_label": "הענן",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הענן\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_eretz_hachaim",
+      "label": "ארץ החיים",
+      "full_label": "ארץ החיים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: ארץ החיים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ה",
+      "label": "ה'",
+      "full_label": "ה'",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: ה'\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_taf",
+      "label": "טף",
+      "full_label": "טף",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: טף\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_Psalms_27_13",
+      "label": "בארץ החיים",
+      "full_label": "בארץ החיים",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: בארץ החיים\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_הסתר_הפנים",
+      "label": "הסתר הפנים",
+      "full_label": "הסתר הפנים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הסתר הפנים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_העדר_הכח",
+      "label": "העדר הכח",
+      "full_label": "העדר הכח",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: העדר הכח\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_רחמים",
+      "label": "רחמים",
+      "full_label": "רחמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: רחמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_הטף",
+      "label": "הטף",
+      "full_label": "הטף",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הטף\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_הברית",
+      "label": "הברית",
+      "full_label": "הברית",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הברית\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_אות",
+      "label": "אות",
+      "full_label": "אות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: אות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_Genesis_9_11",
+      "label": "ולא יהיה עוד",
+      "full_label": "ולא יהיה עוד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: ולא יהיה עוד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shayared",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_mimadah_lmadah",
+      "label": "ממדה למדה",
+      "full_label": "ממדה למדה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: ממדה למדה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_kavanah_zo",
+      "label": "כוונה זו",
+      "full_label": "כוונה זו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: כוונה זו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_lehitasef_bo",
+      "label": "להתאסף בו",
+      "full_label": "להתאסף בו",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: להתאסף בו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_lefutz",
+      "label": "להפרד",
+      "full_label": "להפרד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO KeterShemTov\nLabel: להפרד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_Genesis_11_9",
+      "label": "לבלבל שפתם",
+      "full_label": "לבלבל שפתם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: לבלבל שפתם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_bq_lhprd_a1b2c3d4e5f6",
+      "label": "להפרד",
+      "full_label": "להפרד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: להפרד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_bq_Genesis_11_7_9",
+      "label": "להפרד ולפוץ ולב",
+      "full_label": "להפרד ולפוץ ולבלבל שפתם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO KeterShemTov\nLabel: להפרד ולפוץ ולבלבל שפתם\nType: BiblicalQuotation",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg_dor_hamabul",
+      "target": "sg1_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_migdal",
+      "target": "sg1_atarah",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: symbolizes"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg4_heanan",
+      "target": "sg4_hashem_hagadol",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_b7c2f5e8a1d3",
+      "target": "sg2_levana",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: mentions"
+    },
+    {
+      "source": "sg2_shiur_komah",
+      "target": "sg1_rav",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: hasPart"
+    },
+    {
+      "source": "sg6_kavanah_zo",
+      "target": "sg6_bq_Genesis_11_9",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg7_bq_lhprd_a1b2c3d4e5f6",
+      "target": "sg7_bq_Genesis_11_7_9",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg2_chat_avihem",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg1_bq_a3f8e2d1c9b4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg_dor_hamabul",
+      "target": "sg4_hashem_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg4_noach",
+      "target": "sg4_bq_Genesis_6_13",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg3_chet_avotam",
+      "target": "sg3_reshuyot",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: hasPart"
+    },
+    {
+      "source": "sg6_bq_Genesis_11_9",
+      "target": "sg6_bq_Genesis_11_9",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg6_shayared",
+      "target": "sg6_mimadah_lmadah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: hasPart"
+    },
+    {
+      "source": "sg3_hashem_hanichbad",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_ir",
+      "target": "sg1_bq_a3f8e2d1c9b4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg4_hashem_hamyuchad",
+      "target": "sg_dor_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg5_ה",
+      "target": "sg5_הטף",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg1_ir_kabbalistic",
+      "target": "sg1_atarah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg5_הסתר_הפנים",
+      "target": "sg5_העדר_הכח",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg6_kavanah_zo",
+      "target": "sg6_lehitasef_bo",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_migdal_kabbalistic",
+      "target": "sg1_tiferet",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg6_shayared",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_levana",
+      "target": "sg1_bq_b7c2f5e8a1d3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg2_bq_Bereshit_11_4",
+      "target": "sg2_migdal",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: mentions"
+    },
+    {
+      "source": "sg2_ir",
+      "target": "sg2_migdal",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg1_ir_kabbalistic",
+      "target": "sg1_bq_a3f8e2d1c9b4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg3_bq_Devarim_5_5",
+      "target": "sg5_ה",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg6_kavanah_zo",
+      "target": "sg7_bq_Genesis_11_7_9",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg6_kavanah_zo",
+      "target": "sg6_lefutz",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg5_רחמים",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg5_bq_Genesis_9_11",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg2_migdal",
+      "target": "sg2_mazal",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg1_tiferet",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: symbolizes"
+    },
+    {
+      "source": "sg6_bq_Genesis_11_9",
+      "target": "sg7_bq_Genesis_11_7_9",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg5_הברית",
+      "target": "sg1_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg5_הברית",
+      "target": "sg5_אות",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_migdal",
+      "target": "sg2_chat_avihem",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg4_hester_panav",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg5_ה",
+      "target": "sg4_taf",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_ir",
+      "target": "sg1_atarah",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: symbolizes"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg2_levana",
+      "target": "sg1_even",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg4_rachamim",
+      "target": "sg_dor_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg5_ה",
+      "target": "sg3_bq_Devarim_5_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg1_even",
+      "target": "sg1_bq_b7c2f5e8a1d3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg1_maskil",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg4_hashem_hanichbad",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg4_hashem_hagadol",
+      "target": "sg4_hester_panav",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg2_shem",
+      "target": "sg1_atarah",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: isCalled"
+    },
+    {
+      "source": "sg4_eretz_hachaim",
+      "target": "sg4_heanan",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg4_eretz_hachaim",
+      "target": "sg4_bq_Psalms_27_13",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_bq_Devarim_5_5",
+      "target": "sg3_bq_Devarim_5_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg4_rachamim",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_shiur_komah",
+      "target": "sg2_shiur_komah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: hasPart"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg2_shem",
+      "target": "sg2_bq_Bereshit_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_shiur_komah",
+      "target": "sg1_maskil",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: isCalled"
+    },
+    {
+      "source": "sg1_hashem_hamyuchad",
+      "target": "sg_dor_hamabul",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg4_bq_Genesis_6_13",
+      "target": "sg4_bq_Genesis_6_13",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg2_bq_Bereshit_11_4",
+      "target": "sg2_shem",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg1_migdal_kabbalistic",
+      "target": "sg1_bq_a3f8e2d1c9b4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg4_rachamim",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg2_levana",
+      "target": "sg2_shiur_komah",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: symbolizes"
+    },
+    {
+      "source": "sg1_bq_b7c2f5e8a1d3",
+      "target": "sg1_even",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: mentions"
+    },
+    {
+      "source": "sg_dor_hamabul",
+      "target": "sg4_bq_Genesis_6_13",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg2_bq_Bereshit_11_4",
+      "target": "sg2_ir",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: mentions"
+    },
+    {
+      "source": "sg5_הברית",
+      "target": "sg3_hayyeridah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg6_kavanah_zo",
+      "target": "sg7_bq_lhprd_a1b2c3d4e5f6",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: relatedTo"
+    },
+    {
+      "source": "sg1_elohim",
+      "target": "sg3_bq_Devarim_5_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg_dor_hamabul",
+      "target": "sg3_chet_avotam",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: symbolizes"
+    },
+    {
+      "source": "sg7_bq_Genesis_11_7_9",
+      "target": "sg7_bq_lhprd_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: appearsIn"
+    },
+    {
+      "source": "sg4_hashem_hagadol",
+      "target": "sg4_hashem_hanichbad",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: correspondsTo"
+    },
+    {
+      "source": "sg5_הסתר_הפנים",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg6_shayared",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to KeterShemTov: causes"
+    }
+  ]
+}

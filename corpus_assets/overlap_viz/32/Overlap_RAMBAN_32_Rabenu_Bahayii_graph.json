@@ -1,0 +1,2530 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_32",
+    "graph2_name": "Rabenu_Bahayii",
+    "creation_date": "2026-06-26T17:12:14.597878",
+    "total_nodes": 117,
+    "total_edges": 153,
+    "shared_nodes": 6,
+    "kg1_unique_nodes": 37,
+    "kg2_unique_nodes": 74,
+    "shared_edges": 1,
+    "kg1_unique_edges": 53,
+    "kg2_unique_edges": 99
+  },
+  "nodes": [
+    {
+      "id": "sg1_ha_katuv",
+      "label": "הכתוב",
+      "full_label": "הכתוב",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: הכתוב\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_alohenu",
+      "label": "אלהינו",
+      "full_label": "אלהינו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: אלהינו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_alohikha",
+      "label": "אלהיך",
+      "full_label": "אלהיך",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: אלהיך\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_devarim_9_1_3",
+      "label": "שמע ישראל אתה ע",
+      "full_label": "שמע ישראל אתה עובר היום... כי י״י אלהיך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שמע ישראל אתה עובר היום... כי י״י אלהיך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yy_alohikha_theo",
+      "label": "י״י אלהיך",
+      "full_label": "י״י אלהיך",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהיך\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ישראל",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ישראל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_devarim_9_1_3_ref",
+      "label": "להלן ט, א-ג",
+      "full_label": "להלן ט, א-ג",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: להלן ט, א-ג\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_devarim_20_3_4",
+      "label": "שמע ישראל אתם ק",
+      "full_label": "שמע ישראל אתם קרבים היום... כי י״י אלהיכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שמע ישראל אתם קרבים היום... כי י״י אלהיכם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yy_aloheikhem_theo",
+      "label": "י״י אלהיכם",
+      "full_label": "י״י אלהיכם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהיכם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_devarim_20_3_4_ref",
+      "label": "שם כ, ג-ד",
+      "full_label": "שם כ, ג-ד",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שם כ, ג-ד\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_parshiyot",
+      "label": "הפרשיות",
+      "full_label": "הפרשיות",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: הפרשיות\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_devarim_6_5",
+      "label": "ואהבת את י״י אל",
+      "full_label": "ואהבת את י״י אלהיך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ואהבת את י״י אלהיך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_devarim_verse_5_ref",
+      "label": "להלן פסוק ה",
+      "full_label": "להלן פסוק ה",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: להלן פסוק ה\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_devarim_20_3",
+      "label": "י״י אלהיכם",
+      "full_label": "י״י אלהיכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהיכם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_devarim_6_5_phrase",
+      "label": "י״י אלהיך",
+      "full_label": "י״י אלהיך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהיך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_a1b2c3d4e5f6",
+      "label": "י״י אלהיכם",
+      "full_label": "י״י אלהיכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "box",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: י״י אלהיכם\n【Rabenu_Bahayii】: בת מלך\nReason: Anchor match",
+      "matched_with": "sg7_bq_a1b2c3d4e5f6"
+    },
+    {
+      "id": "sg2_bq_yy_alohikha",
+      "label": "י״י אלהיך",
+      "full_label": "י״י אלהיך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהיך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_d4e5f6g7h8i9",
+      "label": "י״י אלהינו",
+      "full_label": "י״י אלהינו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהינו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_משה",
+      "label": "משה",
+      "full_label": "משה",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: משה\n【Rabenu_Bahayii】: משה\nReason: embedding cos=0.805 (no LLM verify)",
+      "matched_with": "sg4_moshe"
+    },
+    {
+      "id": "sg2_שם_תפארת",
+      "label": "שם תפארת",
+      "full_label": "שם תפארת",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שם תפארת\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_דל״ת_אחד",
+      "label": "דל״ת אחד",
+      "full_label": "דל״ת אחד",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: דל״ת אחד\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_yesha_63_12",
+      "label": "בוקע מים מפניהם",
+      "full_label": "בוקע מים מפניהם לעשות לו שם עולם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: בוקע מים מפניהם לעשות לו שם עולם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ישעיהו_סג_יב",
+      "label": "ישעיהו סג, יב",
+      "full_label": "ישעיהו סג, יב",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ישעיהו סג, יב\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שם_עולם",
+      "label": "שם עולם",
+      "full_label": "שם עולם",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: שם עולם\n【Rabenu_Bahayii】: שם הגדול\nReason: embedding cos=0.815 (no LLM verify)",
+      "matched_with": "sg6_shem_hagadol"
+    },
+    {
+      "id": "sg2_קרית_שמע",
+      "label": "קרית שמע",
+      "full_label": "קרית שמע",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: קרית שמע\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_f6g7h8i9j0k1",
+      "label": "ברוך שם כבוד מל",
+      "full_label": "ברוך שם כבוד מלכותו לעולם ועד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ברוך שם כבוד מלכותו לעולם ועד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כבוד_מלכותו",
+      "label": "כבוד מלכותו",
+      "full_label": "כבוד מלכותו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: כבוד מלכותו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_בת_מלך",
+      "label": "בת מלך",
+      "full_label": "בת מלך",
+      "entity_type": "OtherConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: בת מלך\n【Rabenu_Bahayii】: בת מלך\nReason: embedding cos=0.854 (no LLM verify)",
+      "matched_with": "sg5_he_bat_melech"
+    },
+    {
+      "id": "sg2_ציקי_קדרה",
+      "label": "ציקי קדרה",
+      "full_label": "ציקי קדרה",
+      "entity_type": "OtherConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: ציקי קדרה\n【Rabenu_Bahayii】: דבר מבושם בריחו משיב הנפש\nReason: embedding cos=0.833 (no LLM verify)",
+      "matched_with": "sg6_tzikey_kedera"
+    },
+    {
+      "id": "sg2_בבלי_פסחים_נו_ע״א",
+      "label": "בבלי פסחים נו ע",
+      "full_label": "בבלי פסחים נו ע״א",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: בבלי פסחים נו ע״א\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ברמז",
+      "label": "ברמז",
+      "full_label": "ברמז",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ברמז\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הגדולות_והנוראות",
+      "label": "הגדולות ואת הנו",
+      "full_label": "הגדולות ואת הנוראות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: הגדולות ואת הנוראות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שם_כבוד_מלכותו",
+      "label": "שם כבוד מלכותו",
+      "full_label": "שם כבוד מלכותו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שם כבוד מלכותו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_deuteronomy_20_3",
+      "label": "כי י״י אלהיכם",
+      "full_label": "כי י״י אלהיכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: כי י״י אלהיכם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_deuteronomy_6_4",
+      "label": "י״י אלהינו",
+      "full_label": "י״י אלהינו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: י״י אלהינו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_dalet_echad_gdolah",
+      "label": "דל״ת אחד גדולה",
+      "full_label": "דל״ת אחד גדולה",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: דל״ת אחד גדולה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_mashal_bat_melech_tzikik_kdara",
+      "label": "משל בת מלך וציק",
+      "full_label": "משל בת מלך וציקי קדרה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: משל בת מלך וציקי קדרה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shem_havayah",
+      "label": "שם הוי״ה",
+      "full_label": "שם הוי״ה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: שם הוי״ה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sefer_devarim",
+      "label": "ספר דברים",
+      "full_label": "ספר דברים",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ספר דברים\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ba_torah",
+      "label": "תורה",
+      "full_label": "תורה",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: תורה\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_kavod",
+      "label": "כבוד",
+      "full_label": "כבוד",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_32】: כבוד\n【Rabenu_Bahayii】: כבודו\nReason: embedding cos=0.834 (no LLM verify)",
+      "matched_with": "sg6_kevodo"
+    },
+    {
+      "id": "sg3_malchuto",
+      "label": "מלכותו",
+      "full_label": "מלכותו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: מלכותו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ve_amru",
+      "label": "ואמרו",
+      "full_label": "ואמרו",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_32\nLabel: ואמרו\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ve_al_derekh_ha_kabbalah",
+      "label": "וע\"ד הקבלה",
+      "full_label": "וע\"ד הקבלה",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: וע\"ד הקבלה\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_devarim_6_4",
+      "label": "שמע ישראל",
+      "full_label": "שמע ישראל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שמע ישראל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_b2c3d4e5f6a1",
+      "label": "שמע",
+      "full_label": "שמע",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שמע\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_pasuk",
+      "label": "פסוק",
+      "full_label": "פסוק",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: פסוק\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_yichud",
+      "label": "ענין היחוד האמת",
+      "full_label": "ענין היחוד האמתי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ענין היחוד האמתי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yodei_ha_emet",
+      "label": "יודעי האמת",
+      "full_label": "יודעי האמת",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: יודעי האמת\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_sod_yichud_eser_sefirot",
+      "label": "סוד יחוד עשר ספ",
+      "full_label": "סוד יחוד עשר ספירות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: סוד יחוד עשר ספירות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_haeser",
+      "label": "עשר ספירות",
+      "full_label": "עשר ספירות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עשר ספירות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_sefirot",
+      "label": "ספירות",
+      "full_label": "ספירות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ספירות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_c3d4e5f6a1b2",
+      "label": "וישמע שאול",
+      "full_label": "וישמע שאול",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: וישמע שאול\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_sha_ul",
+      "label": "שאול",
+      "full_label": "שאול",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שאול\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Psalms_18_45",
+      "label": "לשמע אוזן ישמעו",
+      "full_label": "לשמע אוזן ישמעו לי",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: לשמע אוזן ישמעו לי\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_shem",
+      "label": "ה'",
+      "full_label": "ה'",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ה'\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_e5f6a1b2c3d4",
+      "label": "לך ה'",
+      "full_label": "לך ה'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: לך ה'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_he_shalosh_maalot",
+      "label": "שלש המעלות העלי",
+      "full_label": "שלש המעלות העליונות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שלש המעלות העליונות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_ma_alot_ha_elyonot",
+      "label": "המעלות העליונות",
+      "full_label": "המעלות העליונות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: המעלות העליונות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_he_hvhy_kabb_0001",
+      "label": "ה'",
+      "full_label": "ה'",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ה'\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_he_alohenu_kabb_01",
+      "label": "אלהינו",
+      "full_label": "אלהינו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אלהינו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_he_hagedulah_sfir",
+      "label": "הגדולה",
+      "full_label": "הגדולה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הגדולה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_he_hagevurah_sfi",
+      "label": "הגבורה",
+      "full_label": "הגבורה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הגבורה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_תפארת",
+      "label": "תפארת",
+      "full_label": "תפארת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: תפארת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_echad_shema_01",
+      "label": "אחד",
+      "full_label": "אחד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_א",
+      "label": "א'",
+      "full_label": "א'",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: א'\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_רמז",
+      "label": "רמז",
+      "full_label": "רמז",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: רמז\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_אין_המחשבה_משגת",
+      "label": "מי שאין המחשבה ",
+      "full_label": "מי שאין המחשבה משגת",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מי שאין המחשבה משגת\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_תשלום_הבנין",
+      "label": "תשלום הבנין",
+      "full_label": "תשלום הבנין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: תשלום הבנין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ה",
+      "label": "ה",
+      "full_label": "ה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_אחד",
+      "label": "אחד",
+      "full_label": "אחד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ח",
+      "label": "ח",
+      "full_label": "ח",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ח\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ד",
+      "label": "ד",
+      "full_label": "ד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_עטרת_זהב_גדולה",
+      "label": "עטרת זהב גדולה",
+      "full_label": "עטרת זהב גדולה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עטרת זהב גדולה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_עשירית",
+      "label": "עשירית",
+      "full_label": "עשירית",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עשירית\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_ליחד_ולחבר_את_הכל",
+      "label": "ליחד ולחבר את ה",
+      "full_label": "ליחד ולחבר את הכל",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ליחד ולחבר את הכל\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_yichud_mimatah_lmaalh",
+      "label": "יחוד ממטה למעלה",
+      "full_label": "יחוד ממטה למעלה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: יחוד ממטה למעלה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_maalin_bakodesh",
+      "label": "מעלין בקודש",
+      "full_label": "מעלין בקודש",
+      "entity_type": "HalakhicConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מעלין בקודש\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hakol_echad",
+      "label": "הכל אחד",
+      "full_label": "הכל אחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הכל אחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_avodat_hayichud",
+      "label": "עבודת היחוד",
+      "full_label": "עבודת היחוד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עבודת היחוד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hanavi_oha",
+      "label": "הנביא ע\"ה",
+      "full_label": "הנביא ע\"ה",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הנביא ע\"ה\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_Isaiah_63_12",
+      "label": "בוקע מים מפניהם",
+      "full_label": "בוקע מים מפניהם לעשות לו שם עולם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בוקע מים מפניהם לעשות לו שם עולם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_tefillah",
+      "label": "תפלה",
+      "full_label": "תפלה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: תפלה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_shemot_15_2",
+      "label": "מלכותך ה' אלהינ",
+      "full_label": "מלכותך ה' אלהינו ראו בניך בוקע ים לפני משה זה אלי ענו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מלכותך ה' אלהינו ראו בניך בוקע ים לפני משה זה אלי ענו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_yam",
+      "label": "ים",
+      "full_label": "ים",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ים\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_malchut",
+      "label": "מלכות",
+      "full_label": "מלכות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מלכות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_Exodus_15_2",
+      "label": "זה אלי",
+      "full_label": "זה אלי",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: זה אלי\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_ha_navie",
+      "label": "הנביא ע\"ה",
+      "full_label": "הנביא ע\"ה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: הנביא ע\"ה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_ha_shelosha_shemot",
+      "label": "השלשה שמות",
+      "full_label": "השלשה שמות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: השלשה שמות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_zal",
+      "label": "ז\"ל",
+      "full_label": "ז\"ל",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ז\"ל\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_baruch_shem",
+      "label": "ברוך שם כבוד מל",
+      "full_label": "ברוך שם כבוד מלכותו לעולם ועד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ברוך שם כבוד מלכותו לעולם ועד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_malkhuto",
+      "label": "מלכותו",
+      "full_label": "מלכותו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: מלכותו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_mashal_bat_melech",
+      "label": "משל נמרץ לבת מל",
+      "full_label": "משל נמרץ לבת מלך",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: משל נמרץ לבת מלך\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_tzikei_kedera",
+      "label": "ציקי קדרה",
+      "full_label": "ציקי קדרה",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ציקי קדרה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_he_avadeha",
+      "label": "עבדיה",
+      "full_label": "עבדיה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עבדיה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bat_melekh",
+      "label": "בת מלך",
+      "full_label": "בת מלך",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: בת מלך\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shekhina",
+      "label": "שכינה",
+      "full_label": "שכינה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שכינה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shvatim",
+      "label": "שבטים",
+      "full_label": "שבטים",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שבטים\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_yihud",
+      "label": "יחוד",
+      "full_label": "יחוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: יחוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_yisrael",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ישראל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_avdei_ha_shekhina",
+      "label": "עבדי השכינה",
+      "full_label": "עבדי השכינה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עבדי השכינה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_9d8c7b6a5e4f",
+      "label": "ברוך שם",
+      "full_label": "ברוך שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ברוך שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_yihud_takhton",
+      "label": "יחוד תחתון",
+      "full_label": "יחוד תחתון",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: יחוד תחתון\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shisha_ktzavot_maala",
+      "label": "ששה קצוות של מע",
+      "full_label": "ששה קצוות של מעלה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ששה קצוות של מעלה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shisha_ktzavot_mata",
+      "label": "ששה קצוות של מט",
+      "full_label": "ששה קצוות של מטה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: ששה קצוות של מטה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_kevoda",
+      "label": "כבודה",
+      "full_label": "כבודה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: כבודה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_shesh_tevot",
+      "label": "שש תיבות",
+      "full_label": "שש תיבות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: שש תיבות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_echad",
+      "label": "אחד",
+      "full_label": "אחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_haechad",
+      "label": "האחד",
+      "full_label": "האחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: האחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_asarah",
+      "label": "עשרה",
+      "full_label": "עשרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: עשרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_hameyached",
+      "label": "המיחד",
+      "full_label": "המיחד",
+      "entity_type": "ReligiousPractice",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: המיחד\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_koach_haechad",
+      "label": "כח האחד",
+      "full_label": "כח האחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: כח האחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_achdut_gemurah",
+      "label": "אחדות גמורה",
+      "full_label": "אחדות גמורה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחדות גמורה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_bq_Devarim_6_4_70017",
+      "label": "אחד",
+      "full_label": "אחד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_ha_meyached",
+      "label": "המיחד",
+      "full_label": "המיחד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: המיחד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_achdut",
+      "label": "אחדות",
+      "full_label": "אחדות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: אחדות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_koach_ha_echad",
+      "label": "כח האחד",
+      "full_label": "כח האחד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO Rabenu_Bahayii\nLabel: כח האחד\nType: KabbalisticConcept",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg6_kevoda",
+      "target": "sg3_kavod",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_devarim_20_3_4",
+      "target": "sg1_bq_devarim_20_3_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg1_bq_devarim_6_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg1_bq_b2c3d4e5f6a1",
+      "target": "sg6_bq_devarim_6_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_dalet_echad_gdolah",
+      "target": "sg3_bq_yesha_63_12",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: isCalled"
+    },
+    {
+      "source": "sg3_mashal_bat_melech_tzikik_kdara",
+      "target": "sg2_בבלי_פסחים_נו_ע״א",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg4_avodat_hayichud",
+      "target": "sg4_hakol_echad",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5",
+      "target": "sg1_devarim_verse_5_ref",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg1_bq_devarim_9_1_3",
+      "target": "sg1_yy_alohikha_theo",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg3_ה",
+      "target": "sg3_תשלום_הבנין",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_devarim_9_1_3",
+      "target": "sg2_ישראל",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_he_shalosh_maalot",
+      "target": "sg1_ha_ma_alot_ha_elyonot",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5",
+      "target": "sg1_bq_devarim_6_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg4_malchut",
+      "target": "sg5_bq_Isaiah_63_12",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg5_he_ha_navie",
+      "target": "sg5_bq_Isaiah_63_12",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg5_he_avadeha",
+      "target": "sg2_בת_מלך",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg7_hameyached",
+      "target": "sg7_echad",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg7_koach_haechad",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg4_bq_shemot_15_2",
+      "target": "sg4_tefillah",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg6_bat_melekh",
+      "target": "sg6_shekhina",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg3_bq_yesha_63_12",
+      "target": "sg3_bq_yesha_63_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg7_shesh_tevot",
+      "target": "sg6_shisha_ktzavot_mata",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_ha_katuv",
+      "target": "sg1_alohikha",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg7_shesh_tevot",
+      "target": "sg6_bq_devarim_6_4",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg5_he_mashal_bat_melech",
+      "target": "sg2_בת_מלך",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_ha_yichud",
+      "target": "sg1_ha_yichud",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg6_bq_9d8c7b6a5e4f",
+      "target": "sg6_shisha_ktzavot_mata",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_he_alohenu_kabb_01",
+      "target": "sg2_he_hagedulah_sfir",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_ha_parshiyot",
+      "target": "sg2_ישראל",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg7_echad",
+      "target": "sg7_bq_Devarim_6_4_70017",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg6_shekhina",
+      "target": "sg6_kevoda",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg4_bq_shemot_15_2",
+      "target": "sg2_משה",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg5_he_mashal_bat_melech",
+      "target": "sg4_malchut",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg1_ve_al_derekh_ha_kabbalah",
+      "target": "sg6_bq_devarim_6_4",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg6_bq_9d8c7b6a5e4f",
+      "target": "sg6_bq_devarim_6_4",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg6_yisrael",
+      "target": "sg6_avdei_ha_shekhina",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg1_bq_b2c3d4e5f6a1",
+      "target": "sg1_bq_b2c3d4e5f6a1",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg1_bq_c3d4e5f6a1b2",
+      "target": "sg1_bq_c3d4e5f6a1b2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg4_bq_shemot_15_2",
+      "target": "sg4_yam",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg2_שם_עולם",
+      "target": "sg3_kavod",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg3_תפארת",
+      "target": "sg3_תשלום_הבנין",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_בת_מלך",
+      "target": "sg2_ציקי_קדרה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg2_bq_yy_alohikha",
+      "target": "sg2_bq_yy_alohikha",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg7_hameyached",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_ha_yichud",
+      "target": "sg1_yodei_ha_emet",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_כבוד_מלכותו",
+      "target": "sg2_bq_f6g7h8i9j0k1",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg7_asarah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg3_אחד",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg6_shekhina",
+      "target": "sg2_ציקי_קדרה",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_דל״ת_אחד",
+      "target": "sg3_bq_yesha_63_12",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg3_עשירית",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg7_koach_haechad",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg2_bq_d4e5f6g7h8i9",
+      "target": "sg2_bq_deuteronomy_6_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_bq_c3d4e5f6a1b2",
+      "target": "sg1_bq_b2c3d4e5f6a1",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg3_shem_havayah",
+      "target": "sg1_bq_devarim_6_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_bq_devarim_20_3_4",
+      "target": "sg1_yy_aloheikhem_theo",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_bq_echad_shema_01",
+      "target": "sg7_haeser",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5",
+      "target": "sg2_bq_yy_alohikha",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: isA"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg8_achdut",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg2_בת_מלך",
+      "target": "sg2_בבלי_פסחים_נו_ע״א",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg2_הגדולות_והנוראות",
+      "target": "sg2_שם_תפארת",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: causes"
+    },
+    {
+      "source": "sg3_א",
+      "target": "sg3_אין_המחשבה_משגת",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_b2c3d4e5f6a1",
+      "target": "sg1_pasuk",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg6_bq_devarim_6_4",
+      "target": "sg6_shisha_ktzavot_maala",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg6_bq_9d8c7b6a5e4f",
+      "target": "sg6_yihud_takhton",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg5_bq_Exodus_15_2",
+      "target": "sg4_bq_shemot_15_2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg2_bq_a1b2c3d4e5f6",
+      "target": "sg2_ישראל",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg4_yichud_mimatah_lmaalh",
+      "target": "sg4_maalin_bakodesh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg3_ve_amru",
+      "target": "sg3_mashal_bat_melech_tzikik_kdara",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg2_bq_deuteronomy_6_4",
+      "target": "sg2_bq_d4e5f6g7h8i9",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg6_shekhina",
+      "target": "sg6_shvatim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_ha_yichud",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg6_shvatim",
+      "target": "sg6_yihud",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_devarim_20_3",
+      "target": "sg1_bq_devarim_20_3_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg3_אחד",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_ha_katuv",
+      "target": "sg1_alohenu",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg1_yy_alohikha_theo",
+      "target": "sg1_bq_devarim_6_5_phrase",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg2_he_hvhy_kabb_0001",
+      "target": "sg2_he_shalosh_maalot",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg3_עטרת_זהב_גדולה",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg6_yisrael",
+      "target": "sg6_bq_9d8c7b6a5e4f",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg3_ליחד_ולחבר_את_הכל",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    },
+    {
+      "source": "sg1_sha_ul",
+      "target": "sg1_bq_c3d4e5f6a1b2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_sod_yichud_eser_sefirot",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_ha_shem",
+      "target": "sg2_he_shalosh_maalot",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_bq_Psalms_18_45",
+      "target": "sg1_bq_b2c3d4e5f6a1",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg4_malchut",
+      "target": "sg5_he_ha_shelosha_shemot",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg4_bq_shemot_15_2",
+      "target": "sg5_bq_Exodus_15_2",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5",
+      "target": "sg3_sefer_devarim",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg1_bq_devarim_20_3_4",
+      "target": "sg2_ישראל",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg3_ה",
+      "target": "sg3_תפארת",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_ישראל",
+      "target": "sg1_bq_devarim_9_1_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_yy_aloheikhem_theo",
+      "target": "sg1_bq_devarim_20_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg6_bat_melekh",
+      "target": "sg2_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg6_shvatim",
+      "target": "sg2_שם_עולם",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_ha_parshiyot",
+      "target": "sg1_alohikha",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: hasPart"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg4_malchut",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_bq_f6g7h8i9j0k1",
+      "target": "sg2_כבוד_מלכותו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg3_ד",
+      "target": "sg7_echad",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5_phrase",
+      "target": "sg1_bq_devarim_9_1_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg5_bq_Isaiah_63_12",
+      "target": "sg5_bq_Isaiah_63_12",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_devarim_9_1_3",
+      "target": "sg1_devarim_9_1_3_ref",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg8_koach_ha_echad",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_שם_כבוד_מלכותו",
+      "target": "sg2_bq_f6g7h8i9j0k1",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg3_עשירית",
+      "target": "sg3_עטרת_זהב_גדולה",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg1_sefirot",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg5_he_zal",
+      "target": "sg5_bq_baruch_shem",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isCalled"
+    },
+    {
+      "source": "sg1_bq_e5f6a1b2c3d4",
+      "target": "sg2_he_shalosh_maalot",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg8_ha_meyached",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg4_yam",
+      "target": "sg5_bq_Isaiah_63_12",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg5_he_malkhuto",
+      "target": "sg5_bq_baruch_shem",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg4_hanavi_oha",
+      "target": "sg5_bq_Isaiah_63_12",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_yy_alohikha_theo",
+      "target": "sg1_bq_devarim_9_1_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg3_ליחד_ולחבר_את_הכל",
+      "target": "sg4_yichud_mimatah_lmaalh",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg2_he_hvhy_kabb_0001",
+      "target": "sg3_תפארת",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg2_הגדולות_והנוראות",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: causes"
+    },
+    {
+      "source": "sg1_bq_e5f6a1b2c3d4",
+      "target": "sg1_ha_shem",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: explains"
+    },
+    {
+      "source": "sg6_bq_devarim_6_4",
+      "target": "sg1_bq_b2c3d4e5f6a1",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg3_ba_torah",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg2_he_alohenu_kabb_01",
+      "target": "sg2_he_hagevurah_sfi",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_bq_f6g7h8i9j0k1",
+      "target": "sg2_קרית_שמע",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_bq_a1b2c3d4e5f6",
+      "target": "sg2_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: appearsIn"
+    },
+    {
+      "source": "sg3_א",
+      "target": "sg3_רמז",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg6_shekhina",
+      "target": "sg7_shesh_tevot",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_devarim_9_1_3",
+      "target": "sg1_bq_devarim_9_1_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_yy_aloheikhem_theo",
+      "target": "sg1_bq_devarim_20_3_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg2_שם_עולם",
+      "target": "sg3_bq_yesha_63_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg4_yam",
+      "target": "sg2_משה",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg3_bq_yesha_63_12",
+      "target": "sg2_שם_עולם",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg6_bq_devarim_6_4",
+      "target": "sg6_bq_devarim_6_4",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg2_ברמז",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg4_tefillah",
+      "target": "sg4_bq_shemot_15_2",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg1_bq_devarim_6_5",
+      "target": "sg1_yy_alohikha_theo",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_bq_d4e5f6g7h8i9",
+      "target": "sg2_משה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg3_malchuto",
+      "target": "sg2_bq_f6g7h8i9j0k1",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg7_achdut_gemurah",
+      "predicate": "isA",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: isA"
+    },
+    {
+      "source": "sg8_koach_ha_echad",
+      "target": "sg7_haeser",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg7_shesh_tevot",
+      "target": "sg6_shisha_ktzavot_maala",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: correspondsTo"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg4_bq_shemot_15_2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_ha_yichud",
+      "target": "sg1_sod_yichud_eser_sefirot",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: hasPart"
+    },
+    {
+      "source": "sg3_kavod",
+      "target": "sg2_bq_f6g7h8i9j0k1",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Psalms_18_45",
+      "target": "sg1_bq_Psalms_18_45",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg7_bq_Devarim_6_4_70017",
+      "target": "sg7_bq_Devarim_6_4_70017",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg1_bq_e5f6a1b2c3d4",
+      "target": "sg1_bq_e5f6a1b2c3d4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg3_bq_yesha_63_12",
+      "target": "sg2_ישעיהו_סג_יב",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_בת_מלך",
+      "target": "sg5_he_tzikei_kedera",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg1_bq_devarim_20_3_4",
+      "target": "sg1_devarim_20_3_4_ref",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: mentions"
+    },
+    {
+      "source": "sg2_he_hvhy_kabb_0001",
+      "target": "sg2_bq_echad_shema_01",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_bq_a1b2c3d4e5f6",
+      "target": "sg2_bq_deuteronomy_20_3",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: appearsIn"
+    },
+    {
+      "source": "sg1_alohenu",
+      "target": "sg1_alohikha",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_32: relatedTo"
+    },
+    {
+      "source": "sg7_haeser",
+      "target": "sg7_echad",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: appearsIn"
+    },
+    {
+      "source": "sg2_he_hvhy_kabb_0001",
+      "target": "sg1_bq_e5f6a1b2c3d4",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: relatedTo"
+    },
+    {
+      "source": "sg2_bq_a1b2c3d4e5f6",
+      "target": "sg3_ד",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: mentions"
+    },
+    {
+      "source": "sg3_עטרת_זהב_גדולה",
+      "target": "sg3_ליחד_ולחבר_את_הכל",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to Rabenu_Bahayii: causes"
+    }
+  ]
+}

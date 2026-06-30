@@ -1,0 +1,2962 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_6",
+    "graph2_name": "MeiratEinayim",
+    "creation_date": "2026-06-26T17:11:13.248690",
+    "total_nodes": 141,
+    "total_edges": 174,
+    "shared_nodes": 6,
+    "kg1_unique_nodes": 21,
+    "kg2_unique_nodes": 114,
+    "shared_edges": 2,
+    "kg1_unique_edges": 25,
+    "kg2_unique_edges": 147
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_shem_1a2b3c4d5e6f",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_4",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "box",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: ונעשה לנו שם\n【MeiratEinayim】: בנו עיר ומגדל\nReason: Anchor match",
+      "matched_with": "sg12_bq_Genesis_11_4"
+    },
+    {
+      "id": "sg1_migdal",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מגדל\n【MeiratEinayim】: מגדל\nReason: embedding cos=0.866 (no LLM verify)",
+      "matched_with": "sg2_מגדל"
+    },
+    {
+      "id": "sg1_midah_keneged_midah",
+      "label": "מדה כנגד מדה",
+      "full_label": "מדה כנגד מדה",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: מדה כנגד מדה\n【MeiratEinayim】: מידה כנגד מידה\nReason: embedding cos=0.891 (no LLM verify)",
+      "matched_with": "sg3_middah_keneged_middah"
+    },
+    {
+      "id": "sg1_kotzcin_bantiyot",
+      "label": "קוצצין בנטיעות",
+      "full_label": "קוצצין בנטיעות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: קוצצין בנטיעות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_avihem",
+      "label": "אביהם",
+      "full_label": "אביהם",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אביהם\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ravi_berachiah",
+      "label": "רבי ברכיה",
+      "full_label": "רבי ברכיה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: רבי ברכיה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Genesis_11_5",
+      "label": "אשר בנו בני האד",
+      "full_label": "אשר בנו בני האדם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אשר בנו בני האדם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_adam_kadmaah",
+      "label": "אדם קדמאה",
+      "full_label": "אדם קדמאה",
+      "entity_type": "BiblicalFigure",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: אדם קדמאה\n【MeiratEinayim】: אדם הראשון\nReason: embedding cos=0.822 (no LLM verify)",
+      "matched_with": "sg13_adam_kadmaah"
+    },
+    {
+      "id": "sg1_hamabul",
+      "label": "המבול",
+      "full_label": "המבול",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: המבול\nType: HistoricalEventOrPeriod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hafalgah",
+      "label": "הפלגה",
+      "full_label": "הפלגה",
+      "entity_type": "HistoricalEventOrPeriod",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: הפלגה\n【MeiratEinayim】: דור הפלגה\nReason: embedding cos=0.816 (no LLM verify)",
+      "matched_with": "sg2_דור_הפלגה"
+    },
+    {
+      "id": "sg1_elohim",
+      "label": "אלהים",
+      "full_label": "אלהים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: אלהים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashem_hamyuchad",
+      "label": "השם המיוחד",
+      "full_label": "השם המיוחד",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השם המיוחד\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hashchatat_haaretz",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_netiotav",
+      "label": "נטיעותיו",
+      "full_label": "נטיעותיו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: נטיעותיו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_shmo_hagadol",
+      "label": "שמו הגדול",
+      "full_label": "שמו הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "shared",
+      "color": "#90EE90",
+      "shape": "dot",
+      "title": "SHARED CONCEPT\n【RAMBAN_6】: שמו הגדול\n【MeiratEinayim】: שם ה'\nReason: embedding cos=0.836 (no LLM verify)",
+      "matched_with": "sg5_שם_ה"
+    },
+    {
+      "id": "sg2_ha_yerida",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_sdom",
+      "label": "סדום",
+      "full_label": "סדום",
+      "entity_type": "Place",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: סדום\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_darshu",
+      "label": "דרשו",
+      "full_label": "דרשו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: דרשו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_midat_sodom",
+      "label": "מדת סדום",
+      "full_label": "מדת סדום",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: מדת סדום\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chatam",
+      "label": "חטאם",
+      "full_label": "חטאם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטאם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_chat_avihem",
+      "label": "חטא אביהם",
+      "full_label": "חטא אביהם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: חטא אביהם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bnei_gamlaya",
+      "label": "בני חמריא",
+      "full_label": "בני חמריא",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: בני חמריא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Genesis_6_11",
+      "label": "השחתת הארץ",
+      "full_label": "השחתת הארץ",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: השחתת הארץ\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hayyeridah",
+      "label": "הירידה",
+      "full_label": "הירידה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: הירידה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_vhamaskil_yavin",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Daniel_12_10",
+      "label": "והמשכיל יבין",
+      "full_label": "והמשכיל יבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_6\nLabel: והמשכיל יבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shem",
+      "label": "שם",
+      "full_label": "שם",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שם\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shemi",
+      "label": "שמי",
+      "full_label": "שמי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שמי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_trh",
+      "label": "עטרה",
+      "full_label": "עטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: עטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "תפארת",
+      "label": "תפארתך",
+      "full_label": "תפארתך",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: תפארתך\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_שמות_20_24",
+      "label": "בכל מקום אשר אז",
+      "full_label": "בכל מקום אשר אזכיר את שמי וגו'",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: בכל מקום אשר אזכיר את שמי וגו'\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_Psalms_29_2",
+      "label": "ומהללים את שם ת",
+      "full_label": "ומהללים את שם תפארתך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ומהללים את שם תפארתך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_רבי_מנחם_אשכנזי",
+      "label": "רבי מנחם אשכנזי",
+      "full_label": "רבי מנחם אשכנזי",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: רבי מנחם אשכנזי\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כסא_הכבוד",
+      "label": "כסא הכבוד",
+      "full_label": "כסא הכבוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא הכבוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כסא_מלכותו",
+      "label": "כסא מלכותו",
+      "full_label": "כסא מלכותו",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא מלכותו\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_קציצת_בנטיעות",
+      "label": "קציצת בנטיעות",
+      "full_label": "קציצת בנטיעות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: קציצת בנטיעות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_כסא_השכינה",
+      "label": "כסא השכינה",
+      "full_label": "כסא השכינה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא השכינה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שכינה",
+      "label": "שכינה",
+      "full_label": "שכינה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שכינה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_lahem",
+      "label": "להם",
+      "full_label": "להם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: להם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_המגדל",
+      "label": "מגדל",
+      "full_label": "מגדל",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מגדל\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_kise_hashekhinah",
+      "label": "כסא השכינה",
+      "full_label": "כסא השכינה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא השכינה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_zolata",
+      "label": "זולתה",
+      "full_label": "זולתה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: זולתה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_niktseku",
+      "label": "נקצצו",
+      "full_label": "נקצצו",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: נקצצו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_nifredu",
+      "label": "נפרדו",
+      "full_label": "נפרדו",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: נפרדו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hakabah",
+      "label": "הקב\"ה",
+      "full_label": "הקב\"ה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הקב\"ה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Bereshit_11_4",
+      "label": "לבנות מגדל",
+      "full_label": "לבנות מגדל",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: לבנות מגדל\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Yirmiyahu_3_16",
+      "label": "ועלה בלבם",
+      "full_label": "ועלה בלבם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ועלה בלבם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_שדי",
+      "label": "שדי",
+      "full_label": "שדי",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שדי\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_הכתוב",
+      "label": "הכתוב",
+      "full_label": "הכתוב",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הכתוב\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_7f8e9d0c1b2a",
+      "label": "השמים כסאי והאר",
+      "full_label": "השמים כסאי והארץ הדם רגלי",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: השמים כסאי והארץ הדם רגלי\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_שמים",
+      "label": "שמים",
+      "full_label": "שמים",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שמים\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_כסא",
+      "label": "כסא",
+      "full_label": "כסא",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_ארץ",
+      "label": "ארץ",
+      "full_label": "ארץ",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ארץ\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_הדום_רגלי",
+      "label": "הדום רגלי",
+      "full_label": "הדום רגלי",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הדום רגלי\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_מלוי",
+      "label": "מלוי",
+      "full_label": "מלוי",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מלוי\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_גי",
+      "label": "גי",
+      "full_label": "גי",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: גי\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_תק",
+      "label": "תק",
+      "full_label": "תק",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: תק\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_מהלך_העולם",
+      "label": "מהלך העולם",
+      "full_label": "מהלך העולם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מהלך העולם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_מהלך_חמש_מאות_שנה",
+      "label": "מהלך חמש מאות ש",
+      "full_label": "מהלך חמש מאות שנה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מהלך חמש מאות שנה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_כסא",
+      "label": "כסא",
+      "full_label": "כסא",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_חיות",
+      "label": "חיות",
+      "full_label": "חיות",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: חיות\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_כסא_העטרה",
+      "label": "כסא העטרה",
+      "full_label": "כסא העטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כסא העטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ראשי_החיות",
+      "label": "ראשי החיות",
+      "full_label": "ראשי החיות",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ראשי החיות\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_אור_טהור",
+      "label": "אור טהור",
+      "full_label": "אור טהור",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: אור טהור\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_כבודו",
+      "label": "כבודו",
+      "full_label": "כבודו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כבודו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_יחזקאל_3_12",
+      "label": "ברוך כבוד ה' ממ",
+      "full_label": "ברוך כבוד ה' ממקומו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ברוך כבוד ה' ממקומו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_מקומו",
+      "label": "ממקומו",
+      "full_label": "ממקומו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ממקומו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_עולמים",
+      "label": "עולמים",
+      "full_label": "עולמים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: עולמים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_עטרה",
+      "label": "עטרה",
+      "full_label": "עטרה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: עטרה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_2a3b4c5d6e7f",
+      "label": "הודו לה' קראו ב",
+      "full_label": "הודו לה' קראו בשמו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הודו לה' קראו בשמו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ברוך_הוא_וברוך_שמו",
+      "label": "ברוך הוא וברוך ",
+      "full_label": "ברוך הוא וברוך שמו",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ברוך הוא וברוך שמו\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_3a4b5c6d7e8f",
+      "label": "יהי שם ה' מבורך",
+      "full_label": "יהי שם ה' מבורך",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: יהי שם ה' מבורך\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_baruch_hu_uva",
+      "label": "ברוך הוא וברוך ",
+      "full_label": "ברוך הוא וברוך שמו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ברוך הוא וברוך שמו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_shem_h",
+      "label": "שם ה'",
+      "full_label": "שם ה'",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שם ה'\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_sodot_hatorah",
+      "label": "סודות התורה",
+      "full_label": "סודות התורה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: סודות התורה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_harav",
+      "label": "הרב",
+      "full_label": "הרב",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הרב\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_tk_shana",
+      "label": "ת\"ק שנה",
+      "full_label": "ת\"ק שנה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ת\"ק שנה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_kabbalat_emet",
+      "label": "קבלת אמת",
+      "full_label": "קבלת אמת",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: קבלת אמת\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_kibaliti",
+      "label": "קבלתי",
+      "full_label": "קבלתי",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: קבלתי\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_keter_shem_tov",
+      "label": "כתר שם טוב",
+      "full_label": "כתר שם טוב",
+      "entity_type": "KabbalisticWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כתר שם טוב\nType: KabbalisticWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_remizah",
+      "label": "רמיזה",
+      "full_label": "רמיזה",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: רמיזה\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_churva",
+      "label": "חורבא",
+      "full_label": "חורבא",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: חורבא\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_Mishlei_8_9",
+      "label": "טובים ונכוחים ל",
+      "full_label": "טובים ונכוחים למבין",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: טובים ונכוחים למבין\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_ha_rav",
+      "label": "הרב",
+      "full_label": "הרב",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הרב\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_kabbalat_emet",
+      "label": "קבלת אמת",
+      "full_label": "קבלת אמת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: קבלת אמת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_yhb",
+      "label": "יה\"ב",
+      "full_label": "יה\"ב",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: יה\"ב\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_shnr",
+      "label": "שנ\"ר",
+      "full_label": "שנ\"ר",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שנ\"ר\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_daato",
+      "label": "דעת\"ו",
+      "full_label": "דעת\"ו",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: דעת\"ו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_churba",
+      "label": "חורבא",
+      "full_label": "חורבא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: חורבא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_prqy_hyklwt",
+      "label": "פרקי היכלות",
+      "full_label": "פרקי היכלות",
+      "entity_type": "KabbalisticWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: פרקי היכלות\nType: KabbalisticWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_sefer_rav_hamai",
+      "label": "ספר רב חמאי",
+      "full_label": "ספר רב חמאי",
+      "entity_type": "KabbalisticWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ספר רב חמאי\nType: KabbalisticWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_v_alha_rhmn_v_hnn",
+      "label": "אלהא רחמנא וחננ",
+      "full_label": "אלהא רחמנא וחננא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: אלהא רחמנא וחננא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_rbi_yishm_al",
+      "label": "רבי ישמעאל",
+      "full_label": "רבי ישמעאל",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: רבי ישמעאל\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_ywtzr_brashyt",
+      "label": "יוצר בראשית",
+      "full_label": "יוצר בראשית",
+      "entity_type": "SpiritualEntity",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: יוצר בראשית\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_bn_h_olm_hb_a",
+      "label": "בן העולם הבא",
+      "full_label": "בן העולם הבא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: בן העולם הבא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_shiwur_qwmh",
+      "label": "שיעור קומה",
+      "full_label": "שיעור קומה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שיעור קומה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_bq_thlym_qmz_h",
+      "label": "גדול אדננו",
+      "full_label": "גדול אדננו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: גדול אדננו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_rb_kh",
+      "label": "ר\"ב כ\"ח",
+      "full_label": "ר\"ב כ\"ח",
+      "entity_type": "BiblicalSource",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ר\"ב כ\"ח\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_prswt_shl_mlh",
+      "label": "פרסאות של מעלה",
+      "full_label": "פרסאות של מעלה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: פרסאות של מעלה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_tzdyq",
+      "label": "צדיק",
+      "full_label": "צדיק",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: צדיק\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_kl",
+      "label": "כל",
+      "full_label": "כל",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כל\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_parsah",
+      "label": "פרסה",
+      "full_label": "פרסה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: פרסה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_mil",
+      "label": "מילין",
+      "full_label": "מילין",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מילין\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_amah",
+      "label": "אמה",
+      "full_label": "אמה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: אמה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_tefachim",
+      "label": "טפחים",
+      "full_label": "טפחים",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: טפחים\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_zeret",
+      "label": "זרתות",
+      "full_label": "זרתות",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: זרתות\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_bq_yeshayahu_40_12",
+      "label": "ושמים בזרת תכן",
+      "full_label": "ושמים בזרת תכן",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ושמים בזרת תכן\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_sefer_komah",
+      "label": "ספר קומה",
+      "full_label": "ספר קומה",
+      "entity_type": "KabbalisticWork",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ספר קומה\nType: KabbalisticWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_teshuvah",
+      "label": "התשובה",
+      "full_label": "התשובה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: התשובה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_ha_shalosh_ha_elyonot",
+      "label": "השלש העליונות",
+      "full_label": "השלש העליונות",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: השלש העליונות\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_neshamah",
+      "label": "נשמה",
+      "full_label": "נשמה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: נשמה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_ha_z_dvarim",
+      "label": "הז' דברים",
+      "full_label": "הז' דברים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הז' דברים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_guf",
+      "label": "גוף",
+      "full_label": "גוף",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: גוף\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_bq_tehillim_147_5",
+      "label": "ולתבונתו אין מס",
+      "full_label": "ולתבונתו אין מספר",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ולתבונתו אין מספר\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_ltvunato",
+      "label": "לתבונתו",
+      "full_label": "לתבונתו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: לתבונתו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_shamayim",
+      "label": "שמים",
+      "full_label": "שמים",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: שמים\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_hair",
+      "label": "העיר",
+      "full_label": "העיר",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: העיר\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_tiferet",
+      "label": "תפארת",
+      "full_label": "תפארת",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: תפארת\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_yichud",
+      "label": "ייחוד",
+      "full_label": "ייחוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ייחוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_yichud_shalem",
+      "label": "ייחוד שלם",
+      "full_label": "ייחוד שלם",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ייחוד שלם\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_maaseihem",
+      "label": "מעשיהם",
+      "full_label": "מעשיהם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מעשיהם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_hamaase",
+      "label": "המעשה",
+      "full_label": "המעשה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: המעשה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_kunatam",
+      "label": "כונתם",
+      "full_label": "כונתם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: כונתם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_bq_7f3a9b2c1d4e",
+      "label": "ונעשה לנו שם",
+      "full_label": "ונעשה לנו שם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ונעשה לנו שם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_bq_8e4b0c3d2e5f",
+      "label": "בנות העיר",
+      "full_label": "בנות העיר",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: בנות העיר\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_tachtonim",
+      "label": "תחתונים",
+      "full_label": "תחתונים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: תחתונים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_bnyan_haelyon",
+      "label": "בנין העליון",
+      "full_label": "בנין העליון",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: בנין העליון\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_hashgachatenu",
+      "label": "השגחתנו",
+      "full_label": "השגחתנו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: השגחתנו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_harav",
+      "label": "הרב",
+      "full_label": "הרב",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: הרב\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_yavin_kunatam",
+      "label": "יבין כונתם",
+      "full_label": "יבין כונתם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: יבין כונתם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_raayah",
+      "label": "ראיה",
+      "full_label": "ראיה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: ראיה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_leshon_harav",
+      "label": "לשון הרב",
+      "full_label": "לשון הרב",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: לשון הרב\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_yavin_kavanatam",
+      "label": "יבין כונתם",
+      "full_label": "יבין כונתם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: יבין כונתם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_ir",
+      "label": "עיר",
+      "full_label": "עיר",
+      "entity_type": "Place",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: עיר\nType: Place",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_maaseihem",
+      "label": "מעשיהם",
+      "full_label": "מעשיהם",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מעשיהם\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_bemachshavah",
+      "label": "במחשבה",
+      "full_label": "במחשבה",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: במחשבה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_machshevet",
+      "label": "מחשבת",
+      "full_label": "מחשבת",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: מחשבת\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_pri_etz_hadaat",
+      "label": "פרי עץ הדעת",
+      "full_label": "פרי עץ הדעת",
+      "entity_type": "PhysicalObject",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: פרי עץ הדעת\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_binuy",
+      "label": "בנוי",
+      "full_label": "בנוי",
+      "entity_type": "OtherConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: בנוי\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg13_bq_bereshit_2_3",
+      "label": "פרי עץ הדעת",
+      "full_label": "פרי עץ הדעת",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "box",
+      "title": "UNIQUE TO MeiratEinayim\nLabel: פרי עץ הדעת\nType: BiblicalQuotation",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg1_migdal",
+      "target": "sg2_כסא_השכינה",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: symbolizes"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "sg3_kise_hashekhinah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg8_shiwur_qwmh",
+      "target": "sg8_trh",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg1_bq_Psalms_29_2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg12_bq_7f3a9b2c1d4e",
+      "target": "sg12_kunatam",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg4_גי",
+      "target": "sg6_sodot_hatorah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_zolata",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg7_shnr",
+      "target": "sg7_daato",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg12_hamaase",
+      "target": "sg12_yichud",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_avihem",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: isCalled"
+    },
+    {
+      "source": "sg8_tzdyq",
+      "target": "sg8_kl",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg13_pri_etz_hadaat",
+      "target": "sg13_bq_bereshit_2_3",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg7_ha_rav",
+      "target": "sg7_kabbalat_emet",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_midat_sodom",
+      "target": "sg3_sdom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg5_חיות",
+      "target": "sg5_כבודו",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg2_netiotav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg8_bq_thlym_qmz_h",
+      "target": "sg8_bq_thlym_qmz_h",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg2_shmo_hagadol",
+      "target": "sg5_bq_3a4b5c6d7e8f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg8_trh",
+      "target": "sg2_כסא_הכבוד",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg5_bq_3a4b5c6d7e8f",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg4_המגדל",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg9_tefachim",
+      "target": "sg9_zeret",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg8_ywtzr_brashyt",
+      "target": "sg8_shiwur_qwmh",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_chat_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg4_המגדל",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg5_חיות",
+      "target": "sg5_bq_יחזקאל_3_12",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg13_ir",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg12_hair",
+      "target": "sg12_yichud_shalem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_bq_יחזקאל_3_12",
+      "target": "sg5_bq_יחזקאל_3_12",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_nifredu",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg9_ha_z_dvarim",
+      "target": "sg9_guf",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg9_parsah",
+      "target": "sg9_mil",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg13_maaseihem",
+      "target": "sg13_machshevet",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg12_yichud_shalem",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg9_bq_tehillim_147_5",
+      "target": "sg9_teshuvah",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: explains"
+    },
+    {
+      "source": "sg5_כסא_העטרה",
+      "target": "sg5_עטרה",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg5_bq_2a3b4c5d6e7f",
+      "target": "sg5_bq_2a3b4c5d6e7f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "sg3_bq_Bereshit_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg12_bq_7f3a9b2c1d4e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg8_shiwur_qwmh",
+      "target": "sg8_tzdyq",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: relatedTo"
+    },
+    {
+      "source": "sg5_מקומו",
+      "target": "sg5_bq_יחזקאל_3_12",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg4_ארץ",
+      "target": "sg9_shamayim",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg3_hayyeridah",
+      "target": "sg2_midat_sodom",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: correspondsTo"
+    },
+    {
+      "source": "sg4_הדום_רגלי",
+      "target": "sg4_תק",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg9_ha_z_dvarim",
+      "target": "sg9_teshuvah",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: hasPart"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg1_hamabul",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg2_netiotav",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg8_shiwur_qwmh",
+      "target": "sg8_bq_thlym_qmz_h",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "sg4_כסא",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg6_kibaliti",
+      "target": "sg7_kabbalat_emet",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg8_trh",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "sg8_trh",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg3_niktseku",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg2_כסא_הכבוד",
+      "target": "sg2_כסא_הכבוד",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: hasPart"
+    },
+    {
+      "source": "sg4_מהלך_העולם",
+      "target": "sg4_תק",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg5_bq_שמות_20_24",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_hashem_hamyuchad",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg13_binuy",
+      "target": "sg1_migdal",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_chatam",
+      "target": "sg2_midat_sodom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg5_כבודו",
+      "target": "sg5_bq_יחזקאל_3_12",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg3_hakabah",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg8_trh",
+      "target": "sg2_רבי_מנחם_אשכנזי",
+      "predicate": "studiedUnder",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: studiedUnder"
+    },
+    {
+      "source": "sg5_bq_יחזקאל_3_12",
+      "target": "sg5_כבודו",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg13_machshevet",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg4_ארץ",
+      "target": "sg4_bq_7f8e9d0c1b2a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_5",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: mentions"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "shared",
+      "color": "#228B22",
+      "title": "Shared Relation: appearsIn"
+    },
+    {
+      "source": "sg9_bq_yeshayahu_40_12",
+      "target": "sg9_zeret",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg4_כסא",
+      "target": "sg4_bq_7f8e9d0c1b2a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "תפארת",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg7_kabbalat_emet",
+      "target": "sg7_ha_rav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg13_maaseihem",
+      "target": "sg13_bemachshavah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_bq_2a3b4c5d6e7f",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg9_bq_yeshayahu_40_12",
+      "target": "sg9_bq_yeshayahu_40_12",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg9_ltvunato",
+      "target": "sg9_bq_tehillim_147_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg8_shiwur_qwmh",
+      "target": "sg8_bn_h_olm_hb_a",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg13_binuy",
+      "target": "sg13_ir",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg9_sefer_komah",
+      "target": "sg9_ha_z_dvarim",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg9_ha_shalosh_ha_elyonot",
+      "target": "sg9_neshamah",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg1_kotzcin_bantiyot",
+      "target": "sg1_hafalgah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg6_kibaliti",
+      "target": "sg6_churva",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg12_hashgachatenu",
+      "target": "sg8_trh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg8_trh",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: symbolizes"
+    },
+    {
+      "source": "sg4_שמים",
+      "target": "sg4_bq_7f8e9d0c1b2a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg6_shem_h",
+      "target": "sg6_bq_baruch_hu_uva",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg2_קציצת_בנטיעות",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: symbolizes"
+    },
+    {
+      "source": "sg9_zeret",
+      "target": "sg9_shamayim",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg8_bq_thlym_qmz_h",
+      "target": "sg8_rb_kh",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg8_shiwur_qwmh",
+      "target": "sg8_prswt_shl_mlh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg13_yavin_kavanatam",
+      "target": "sg12_bq_7f3a9b2c1d4e",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg12_hair",
+      "target": "sg8_trh",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: symbolizes"
+    },
+    {
+      "source": "sg1_ravi_berachiah",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg4_שדי",
+      "target": "sg4_מלוי",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg8_trh",
+      "target": "sg8_kl",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg8_trh",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg1_hashchatat_haaretz",
+      "target": "sg2_bq_Genesis_6_11",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg6_kibaliti",
+      "target": "sg6_kabbalat_emet",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_מהלך_חמש_מאות_שנה",
+      "target": "sg5_כסא",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg7_ha_rav",
+      "target": "sg6_tk_shana",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg6_harav",
+      "target": "sg4_גי",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_עולמים",
+      "target": "sg5_מקומו",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg9_bq_tehillim_147_5",
+      "target": "sg9_ltvunato",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg5_כסא",
+      "target": "sg5_ראשי_החיות",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_bnei_gamlaya",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "תפארת",
+      "target": "sg1_bq_Psalms_29_2",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg5_bq_שמות_20_24",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "תפארת",
+      "predicate": "symbolizes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: symbolizes"
+    },
+    {
+      "source": "sg7_yhb",
+      "target": "sg7_daato",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg4_הדום_רגלי",
+      "target": "sg4_גי",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg6_harav",
+      "target": "sg6_tk_shana",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg12_bq_8e4b0c3d2e5f",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_migdal",
+      "target": "sg12_tiferet",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg12_bq_7f3a9b2c1d4e",
+      "target": "sg12_bq_7f3a9b2c1d4e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg5_bq_שמות_20_24",
+      "target": "sg5_bq_שמות_20_24",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg6_kibaliti",
+      "target": "sg7_churba",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg3_hakabah",
+      "target": "sg1_midah_keneged_midah",
+      "predicate": "causes",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: causes"
+    },
+    {
+      "source": "sg6_harav",
+      "target": "sg6_bq_Mishlei_8_9",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg7_sefer_rav_hamai",
+      "target": "sg7_kabbalat_emet",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: explains"
+    },
+    {
+      "source": "sg6_shem_h",
+      "target": "sg5_bq_3a4b5c6d7e8f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg9_bq_tehillim_147_5",
+      "target": "sg9_bq_tehillim_147_5",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg12_kunatam",
+      "target": "sg8_trh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg4_הכתוב",
+      "target": "sg4_bq_7f8e9d0c1b2a",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg12_bq_8e4b0c3d2e5f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg13_raayah",
+      "target": "sg13_leshon_harav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_adam_kadmaah",
+      "target": "sg13_pri_etz_hadaat",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_bq_3a4b5c6d7e8f",
+      "target": "sg5_bq_3a4b5c6d7e8f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg4_ארץ",
+      "target": "sg4_הדום_רגלי",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg13_leshon_harav",
+      "target": "sg13_yavin_kavanatam",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg8_trh",
+      "target": "sg1_shem",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg7_daato",
+      "target": "sg7_ha_rav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg4_הדום_רגלי",
+      "target": "sg4_ארץ",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_ברוך_הוא_וברוך_שמו",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_חיות",
+      "target": "sg5_אור_טהור",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_avihem",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg9_mil",
+      "target": "sg9_amah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg5_חיות",
+      "target": "sg5_כסא_העטרה",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_כסא_השכינה",
+      "target": "sg2_שכינה",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg2_ha_yerida",
+      "target": "sg2_chatam",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg6_harav",
+      "target": "sg6_remizah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg12_bq_7f3a9b2c1d4e",
+      "target": "sg13_ir",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg1_shemi",
+      "target": "sg5_bq_שמות_20_24",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg6_kabbalat_emet",
+      "target": "sg6_harav",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg2_כסא_הכבוד",
+      "target": "sg2_כסא_מלכותו",
+      "predicate": "hasPart",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: hasPart"
+    },
+    {
+      "source": "sg6_shem_h",
+      "target": "sg5_bq_2a3b4c5d6e7f",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg8_prqy_hyklwt",
+      "target": "sg7_kabbalat_emet",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: explains"
+    },
+    {
+      "source": "sg1_hamabul",
+      "target": "sg1_elohim",
+      "predicate": "symbolizes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: symbolizes"
+    },
+    {
+      "source": "sg8_trh",
+      "target": "sg4_שדי",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg13_binuy",
+      "target": "sg1_adam_kadmaah",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg4_המגדל",
+      "target": "sg4_תק",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg12_bq_7f3a9b2c1d4e",
+      "target": "sg1_bq_Genesis_11_4",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg9_amah",
+      "target": "sg9_tefachim",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg12_harav",
+      "target": "sg12_yavin_kunatam",
+      "predicate": "explains",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: explains"
+    },
+    {
+      "source": "sg3_vhamaskil_yavin",
+      "target": "sg3_bq_Daniel_12_10",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: appearsIn"
+    },
+    {
+      "source": "sg5_bq_יחזקאל_3_12",
+      "target": "sg5_מקומו",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg5_עטרה",
+      "target": "sg2_shmo_hagadol",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg2_darshu",
+      "target": "sg1_bq_Genesis_11_5",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: relatedTo"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg12_hair",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    },
+    {
+      "source": "sg1_hafalgah",
+      "target": "sg1_kotzcin_bantiyot",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: causes"
+    },
+    {
+      "source": "sg9_ltvunato",
+      "target": "sg9_teshuvah",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg6_kabbalat_emet",
+      "target": "sg6_keter_shem_tov",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: relatedTo"
+    },
+    {
+      "source": "sg4_שמים",
+      "target": "sg4_כסא",
+      "predicate": "isCalled",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: isCalled"
+    },
+    {
+      "source": "sg4_bq_7f8e9d0c1b2a",
+      "target": "sg4_bq_7f8e9d0c1b2a",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_shem",
+      "target": "sg12_bq_7f3a9b2c1d4e",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg7_kabbalat_emet",
+      "target": "sg6_keter_shem_tov",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg12_bnyan_haelyon",
+      "target": "sg12_tachtonim",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: correspondsTo"
+    },
+    {
+      "source": "sg8_rbi_yishm_al",
+      "target": "sg8_prqy_hyklwt",
+      "predicate": "appearsIn",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: appearsIn"
+    },
+    {
+      "source": "sg1_bq_Genesis_11_4",
+      "target": "sg1_bq_shem_1a2b3c4d5e6f",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_6: explains"
+    },
+    {
+      "source": "sg12_bq_7f3a9b2c1d4e",
+      "target": "sg1_migdal",
+      "predicate": "mentions",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to MeiratEinayim: mentions"
+    }
+  ]
+}

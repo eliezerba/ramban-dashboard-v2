@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FF7F7F", "id": "sg1_bq_Exodus_13_21", "label": "\u05d5\u05d9\"\u05d9 \u05d4\u05d5\u05dc\u05da \u05dc\u05e4\u05e0\u05d9\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d5\u05d9\"\u05d9 \u05d4\u05d5\u05dc\u05da \u05dc\u05e4\u05e0\u05d9\u05d4\u05dd \u05d9\u05d5\u05de\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_yy", "label": "\u05d9\"\u05d9", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d9\"\u05d9\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_byt_dynw", "label": "\u05d1\u05d9\u05ea \u05d3\u05d9\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d1\u05d9\u05ea \u05d3\u05d9\u05e0\u05d5\nType: TheologicalConcept"}, {"color": "#90EE90", "id": "sg1_hqbbh", "label": "\u05d4\u05e7\u05d1\"\u05d4", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_1\u3011: \u05d4\u05e7\u05d1\"\u05d4\n\u3010KeterShemTov\u3011: \u05d4\u05e9\u05dd\nReason: embedding cos=0.856 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_hshm", "label": "\u05d4\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d4\u05e9\u05dd\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_amwd_hann", "label": "\u05e2\u05de\u05d5\u05d3 \u05d4\u05e2\u05e0\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e2\u05de\u05d5\u05d3 \u05d4\u05e2\u05e0\u05df\nType: PhysicalObject"}, {"color": "#FF7F7F", "id": "sg1_amwd_hash", "label": "\u05e2\u05de\u05d5\u05d3 \u05d4\u05d0\u05e9", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e2\u05de\u05d5\u05d3 \u05d4\u05d0\u05e9\nType: PhysicalObject"}, {"color": "#FF7F7F", "id": "sg1_bq_ashr_ayn_byn", "label": "\u05d0\u05e9\u05e8 \u05e2\u05d9\u05df \u05d1\u05e2\u05d9\u05df \u05e0\u05e8", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d0\u05e9\u05e8 \u05e2\u05d9\u05df \u05d1\u05e2\u05d9\u05df \u05e0\u05e8\u05d0\u05d4 \u05d0\u05ea\u05d4 \u05d9\"\u05d9 \u05d5\u05e2\u05e0\u05e0\u05da \u05e2\u05d5\u05de\u05d3 \u05e2\u05dc\u05d9\u05d4\u05dd \u05d5\u05d1\u05e2\u05de\u05d5\u05d3 \u05e2\u05e0\u05df \u05d0\u05ea\u05d4 \u05d4\u05d5\u05dc\u05da \u05dc\u05e4\u05e0\u05d9\u05d4\u05dd \u05d9\u05d5\u05de\u05dd \u05d5\u05d1\u05e2\u05de\u05d5\u05d3 \u05d0\u05e9 \u05dc\u05d9\u05dc\u05d4\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_shmvth_rbbh", "label": "\u05e9\u05de\u05d5\u05ea \u05e8\u05d1\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e9\u05de\u05d5\u05ea \u05e8\u05d1\u05d4\nType: MidrashicOrRabbinicWork"}, {"color": "#FF7F7F", "id": "sg1_bq_ky_hvlk_lpn", "label": "\u05db\u05d9 \u05dc\u05d0 \u05d1\u05d7\u05e4\u05d6\u05d5\u05df \u05ea\u05e6", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05db\u05d9 \u05dc\u05d0 \u05d1\u05d7\u05e4\u05d6\u05d5\u05df \u05ea\u05e6\u05d0\u05d5\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05e8_\u05d0\u05d1\u05e8\u05d4\u05dd", "label": "\u05d0\u05d1\u05df \u05e2\u05d6\u05e8\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d0\u05d1\u05df \u05e2\u05d6\u05e8\u05d0\nType: RabbinicAuthority"}, {"color": "#FF7F7F", "id": "sg1_gawlh_hrashvnh", "label": "\u05d2\u05d0\u05d5\u05dc\u05d4 \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d2\u05d0\u05d5\u05dc\u05d4 \u05d4\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4\nType: HistoricalEventOrPeriod"}, {"color": "#FF7F7F", "id": "sg1_laatyd_lba", "label": "\u05dc\u05e2\u05ea\u05d9\u05d3 \u05dc\u05d1\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05dc\u05e2\u05ea\u05d9\u05d3 \u05dc\u05d1\u05d0\nType: HistoricalEventOrPeriod"}, {"color": "#FF7F7F", "id": "sg2_\u05de\u05d3\u05ea_\u05d3\u05d9\u05e0\u05d5", "label": "\u05de\u05d9\u05d3\u05ea \u05d4\u05d3\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05de\u05d9\u05d3\u05ea \u05d4\u05d3\u05d9\u05df\nType: KabbalisticConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e8\u05d7\u05de\u05d9\u05dd", "label": "\u05de\u05d9\u05d3\u05ea \u05d4\u05e8\u05d7\u05de\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05de\u05d9\u05d3\u05ea \u05d4\u05e8\u05d7\u05de\u05d9\u05dd\nType: KabbalisticConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05d4\u05e9\u05dd_\u05d4\u05de\u05d9\u05d5\u05d7\u05d3", "label": "\u05d4\u05e9\u05dd \u05d4\u05de\u05d9\u05d5\u05d7\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d4\u05e9\u05dd \u05d4\u05de\u05d9\u05d5\u05d7\u05d3\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_yqb", "label": "\u05d9\u05e2\u05e7\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d9\u05e2\u05e7\u05d1\nType: BiblicalFigure"}, {"color": "#FF7F7F", "id": "sg1_alhy_yqb", "label": "\u05d0\u05dc\u05d4\u05d9 \u05d9\u05e2\u05e7\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d0\u05dc\u05d4\u05d9 \u05d9\u05e2\u05e7\u05d1\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_msh", "label": "\u05de\u05e9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05de\u05e9\u05d4\nType: BiblicalFigure"}, {"color": "#FF7F7F", "id": "sg1_bq_mwlyk_lymyn", "label": "\u05de\u05d5\u05dc\u05d9\u05da \u05dc\u05d9\u05de\u05d9\u05df \u05de\u05e9\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05de\u05d5\u05dc\u05d9\u05da \u05dc\u05d9\u05de\u05d9\u05df \u05de\u05e9\u05d4 \u05d6\u05e8\u05d5\u05e2 \u05ea\u05e4\u05d0\u05e8\u05ea\u05d5\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_bq_kn_nhgt_amk", "label": "\u05db\u05df \u05e0\u05d4\u05d2\u05ea \u05e2\u05de\u05da \u05dc\u05e2\u05e9", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05db\u05df \u05e0\u05d4\u05d2\u05ea \u05e2\u05de\u05da \u05dc\u05e2\u05e9\u05d5\u05ea \u05dc\u05da \u05e9\u05dd \u05ea\u05e4\u05d0\u05e8\u05ea\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_yshral", "label": "\u05d9\u05e9\u05e8\u05d0\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d9\u05e9\u05e8\u05d0\u05dc\nType: BiblicalFigure"}, {"color": "#FF7F7F", "id": "sg1_swd_hmdrsh", "label": "\u05e1\u05d5\u05d3 \u05d4\u05de\u05d3\u05e8\u05e9", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e1\u05d5\u05d3 \u05d4\u05de\u05d3\u05e8\u05e9\nType: CommentaryTypeOrMethod"}, {"color": "#FF7F7F", "id": "sg1_pyrwh_hktwb", "label": "\u05e4\u05d9\u05e8\u05d5\u05e9 \u05d4\u05db\u05ea\u05d5\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e4\u05d9\u05e8\u05d5\u05e9 \u05d4\u05db\u05ea\u05d5\u05d1\nType: CommentaryTypeOrMethod"}, {"color": "#FF7F7F", "id": "bq_tehillim_139_12", "label": "\u05d5\u05dc\u05d9\u05dc\u05d4 \u05db\u05d9\u05d5\u05dd \u05d9\u05d0\u05d9\u05e8", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d5\u05dc\u05d9\u05dc\u05d4 \u05db\u05d9\u05d5\u05dd \u05d9\u05d0\u05d9\u05e8 \u05db\u05d7\u05e9\u05db\u05d4 \u05db\u05d0\u05d5\u05e8\u05d4\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05d4\u05de\u05d3\u05e8\u05e9_\u05d4\u05d6\u05d4", "label": "\u05d4\u05de\u05d3\u05e8\u05e9 \u05d4\u05d6\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d4\u05de\u05d3\u05e8\u05e9 \u05d4\u05d6\u05d4\nType: MidrashicOrRabbinicWork"}, {"color": "#FF7F7F", "id": "sg2_\u05dc\u05e2\u05ea\u05d9\u05d3_\u05dc\u05d1\u05d0", "label": "\u05dc\u05e2\u05ea\u05d9\u05d3 \u05dc\u05d1\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05dc\u05e2\u05ea\u05d9\u05d3 \u05dc\u05d1\u05d0\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_bq_8a3f2c1d9e4b", "label": "\u05d0\u05dc\u05d4\u05d9 \u05d9\u05e2\u05e7\u05d1", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d0\u05dc\u05d4\u05d9 \u05d9\u05e2\u05e7\u05d1\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05d4\u05db\u05ea\u05d5\u05d1", "label": "\u05d4\u05db\u05ea\u05d5\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d4\u05db\u05ea\u05d5\u05d1\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg2_\u05db\u05d7_\u05d4\u05e9\u05dd", "label": "\u05db\u05d7 \u05d4\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05db\u05d7 \u05d4\u05e9\u05dd\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e9\u05dc\u05d5\u05d7\u05d5", "label": "\u05e9\u05dc\u05d5\u05d7\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e9\u05dc\u05d5\u05d7\u05d5\nType: SpiritualEntity"}, {"color": "#FF7F7F", "id": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc", "label": "\u05d9\u05e9\u05e8\u05d0\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05d9\u05e9\u05e8\u05d0\u05dc\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05ea\u05e4\u05d0\u05e8\u05ea\u05d5", "label": "\u05ea\u05e4\u05d0\u05e8\u05ea\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05ea\u05e4\u05d0\u05e8\u05ea\u05d5\nType: KabbalisticConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e9\u05dd_\u05ea\u05e4\u05d0\u05e8\u05ea", "label": "\u05e9\u05dd \u05ea\u05e4\u05d0\u05e8\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_1\nLabel: \u05e9\u05dd \u05ea\u05e4\u05d0\u05e8\u05ea\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg1_bq_\u05d0\u05d9\u05d5\u05d1_33_4", "label": "\u05de\u05e0\u05e9\u05de\u05ea\u05d5 \u05d9\u05ea\u05df \u05d1\u05d5", "shape": "box", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05de\u05e0\u05e9\u05de\u05ea\u05d5 \u05d9\u05ea\u05df \u05d1\u05d5\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_bq_\u05d1\u05e8\u05d0\u05e9\u05d9\u05ea_1_2", "label": "\u05d5\u05e8\u05d5\u05d7 \u05d0\u05dc\u05d4\u05d9\u05dd \u05de\u05e8\u05d7\u05e4", "shape": "box", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d5\u05e8\u05d5\u05d7 \u05d0\u05dc\u05d4\u05d9\u05dd \u05de\u05e8\u05d7\u05e4\u05ea \u05e2\u05dc \u05e4\u05e0\u05d9 \u05d4\u05de\u05d9\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_bq_\u05d1\u05e8\u05d0\u05e9\u05d9\u05ea_1_1", "label": "\u05d1\u05e8\u05d0\u05e9\u05d9\u05ea \u05d1\u05e8\u05d0 \u05d0\u05dc\u05d4\u05d9", "shape": "box", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d1\u05e8\u05d0\u05e9\u05d9\u05ea \u05d1\u05e8\u05d0 \u05d0\u05dc\u05d4\u05d9\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg2_sefirot", "label": "\u05e1\u05e4\u05d9\u05e8\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e1\u05e4\u05d9\u05e8\u05d5\u05ea\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg2_ruach", "label": "\u05e8\u05d5\u05d7", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e8\u05d5\u05d7\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg2_bq_Numbers_30_3_a", "label": "\u05d3\u05d1\u05e8\u05ea \u05e9\u05d1\u05d5\u05e2\u05ea \u05d4\u0027 \u05d0", "shape": "box", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d3\u05d1\u05e8\u05ea \u05e9\u05d1\u05d5\u05e2\u05ea \u05d4\u0027 \u05d0\u05dc\u05d4\u05d9\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg2_sod", "label": "\u05e1\u05d5\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e1\u05d5\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg2_ha_rav", "label": "\u05d4\u05e8\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05e8\u05d1\nType: RabbinicAuthority"}, {"color": "#87CEFA", "id": "sg2_katuv", "label": "\u05db\u05ea\u05d5\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05db\u05ea\u05d5\u05d1\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg3_bq_dbrtshbwt_al", "label": "\u05d3\u05d1\u05e8\u05ea \u05e9\u05d1\u05d5\u05e2\u05ea \u05d0\u05dc\u05d4\u05d9", "shape": "box", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d3\u05d1\u05e8\u05ea \u05e9\u05d1\u05d5\u05e2\u05ea \u05d0\u05dc\u05d4\u05d9\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg3_\u05e9\u05d1\u05d5\u05e2\u05d4", "label": "\u05e9\u05d1\u05d5\u05e2\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e9\u05d1\u05d5\u05e2\u05d4\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg3_\u05d1\u05e0\u05d9\u05d9\u05df_\u05e0\u05e4\u05e2\u05dc", "label": "\u05d1\u05e0\u05d9\u05d9\u05df \u05e0\u05e4\u05e2\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d1\u05e0\u05d9\u05d9\u05df \u05e0\u05e4\u05e2\u05dc\nType: CommentaryTypeOrMethod"}, {"color": "#87CEFA", "id": "sg3_\u05dc\u05e9\u05d5\u05df_\u05e9\u05d1\u05e2\u05d4", "label": "\u05dc\u05e9\u05d5\u05df \u05e9\u05d1\u05e2\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05dc\u05e9\u05d5\u05df \u05e9\u05d1\u05e2\u05d4\nType: CommentaryTypeOrMethod"}, {"color": "#87CEFA", "id": "sg3_\u05e0\u05d3\u05e8", "label": "\u05e0\u05d3\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e0\u05d3\u05e8\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg3_\u05d3\u05d1\u05e8_\u05de\u05e6\u05d5\u05d5\u05d4", "label": "\u05d3\u05d1\u05e8 \u05de\u05e6\u05d5\u05d5\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d3\u05d1\u05e8 \u05de\u05e6\u05d5\u05d5\u05d4\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg3_\u05ea\u05e9\u05d5\u05d1\u05d4", "label": "\u05ea\u05e9\u05d5\u05d1\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05ea\u05e9\u05d5\u05d1\u05d4\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg4_harei_alai", "label": "\u05d4\u05e8\u05d9 \u05e2\u05dc\u05d9 \u05db\u05da \u05d5\u05db\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05e8\u05d9 \u05e2\u05dc\u05d9 \u05db\u05da \u05d5\u05db\u05da\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg3_\u05d4\u05e9\u05dd", "label": "\u05d4\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05e9\u05dd\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg4_hannoder", "label": "\u05d4\u05e0\u05d5\u05d3\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05e0\u05d5\u05d3\u05e8\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg4_melech_hamachria_harishon", "label": "\u05de\u05dc\u05da \u05d4\u05de\u05db\u05e8\u05d9\u05e2 \u05d4\u05e8\u05d0\u05e9", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05de\u05dc\u05da \u05d4\u05de\u05db\u05e8\u05d9\u05e2 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_chayei_hamelech", "label": "\u05d7\u05d9\u05d9 \u05d4\u05de\u05dc\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d7\u05d9\u05d9 \u05d4\u05de\u05dc\u05da\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_binah", "label": "\u05d1\u05d9\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d1\u05d9\u05e0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_perush_shevuot", "label": "\u05e4\u05d9\u05e8\u05d5\u05e9 \u05e9\u05d1\u05d5\u05e2\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e4\u05d9\u05e8\u05d5\u05e9 \u05e9\u05d1\u05d5\u05e2\u05d5\u05ea\nType: Book"}, {"color": "#87CEFA", "id": "sg5_shevuot", "label": "\u05e9\u05d1\u05d5\u05e2\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e9\u05d1\u05d5\u05e2\u05d5\u05ea\nType: TalmudicSource"}, {"color": "#87CEFA", "id": "sg5_ha_lashon", "label": "\u05d4\u05dc\u05e9\u05d5\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05dc\u05e9\u05d5\u05df\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg5_teivot", "label": "\u05ea\u05d9\u05d1\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05ea\u05d9\u05d1\u05d5\u05ea\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg5_savara", "label": "\u05e1\u05d1\u05e8\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05e1\u05d1\u05e8\u05d0\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg5_ha_emet", "label": "\u05d4\u05d0\u05de\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO KeterShemTov\nLabel: \u05d4\u05d0\u05de\u05ea\nType: TheologicalConcept"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#87CEFA", "from": "sg4_hannoder", "label": "causes", "title": "Unique to KeterShemTov: causes", "to": "sg3_\u05ea\u05e9\u05d5\u05d1\u05d4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_ha_lashon", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg5_teivot"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e0\u05d3\u05e8", "label": "requires", "title": "Unique to KeterShemTov: requires", "to": "sg3_\u05d3\u05d1\u05e8_\u05de\u05e6\u05d5\u05d5\u05d4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_ha_lashon", "label": "causes", "title": "Unique to KeterShemTov: causes", "to": "sg5_ha_emet"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05d3\u05ea_\u05d3\u05d9\u05e0\u05d5", "label": "correspondsTo", "title": "Unique to RAMBAN_1: correspondsTo", "to": "sg2_\u05dc\u05e2\u05ea\u05d9\u05d3_\u05dc\u05d1\u05d0"}, {"arrows": "to", "color": "#FF7F7F", "from": "bq_tehillim_139_12", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "bq_tehillim_139_12"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e9\u05d1\u05d5\u05e2\u05d4", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg3_\u05d4\u05e9\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_alhy_yqb", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_yshral"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_byt_dynw"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e8_\u05d0\u05d1\u05e8\u05d4\u05dd", "label": "mentions", "title": "Unique to RAMBAN_1: mentions", "to": "sg1_bq_mwlyk_lymyn"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_hannoder", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg4_harei_alai"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_msh", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_mwlyk_lymyn"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e8_\u05d0\u05d1\u05e8\u05d4\u05dd", "label": "commentedOn", "title": "Unique to RAMBAN_1: commentedOn", "to": "sg1_bq_Exodus_13_21"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_ha_rav", "label": "explains", "title": "Unique to KeterShemTov: explains", "to": "sg2_sod"}, {"arrows": "to", "color": "#FF7F7F", "from": "bq_tehillim_139_12", "label": "explains", "title": "Unique to RAMBAN_1: explains", "to": "sg2_\u05e8\u05d7\u05de\u05d9\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05ea\u05e4\u05d0\u05e8\u05ea\u05d5", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_mwlyk_lymyn"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e0\u05d3\u05e8", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg4_hannoder"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e8_\u05d0\u05d1\u05e8\u05d4\u05dd", "label": "commentedOn", "title": "Unique to RAMBAN_1: commentedOn", "to": "sg2_\u05d4\u05db\u05ea\u05d5\u05d1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_Numbers_30_3_a", "label": "appearsIn", "title": "Unique to KeterShemTov: appearsIn", "to": "sg2_bq_Numbers_30_3_a"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_mwlyk_lymyn", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_mwlyk_lymyn"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e9\u05dd_\u05ea\u05e4\u05d0\u05e8\u05ea", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_kn_nhgt_amk"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e0\u05d3\u05e8", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg3_\u05ea\u05e9\u05d5\u05d1\u05d4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_Numbers_30_3_a", "label": "isCalled", "title": "Unique to KeterShemTov: isCalled", "to": "sg3_bq_dbrtshbwt_al"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_Exodus_13_21", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_ashr_ayn_byn"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_shmvth_rbbh", "label": "commentedOn", "title": "Unique to RAMBAN_1: commentedOn", "to": "sg1_bq_Exodus_13_21"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e9\u05d1\u05d5\u05e2\u05d4", "label": "isA", "title": "Unique to KeterShemTov: isA", "to": "sg3_\u05dc\u05e9\u05d5\u05df_\u05e9\u05d1\u05e2\u05d4"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_Exodus_13_21", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_Exodus_13_21"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hqbbh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_amwd_hann"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e0\u05d3\u05e8", "label": "isCalled", "title": "Unique to KeterShemTov: isCalled", "to": "sg4_harei_alai"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_laatyd_lba", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg2_\u05d4\u05e9\u05dd_\u05d4\u05de\u05d9\u05d5\u05d7\u05d3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_byt_dynw", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_gawlh_hrashvnh"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d4\u05de\u05d3\u05e8\u05e9_\u05d4\u05d6\u05d4", "label": "mentions", "title": "Unique to RAMBAN_1: mentions", "to": "sg1_hqbbh"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_sefirot", "label": "isCalled", "title": "Unique to KeterShemTov: isCalled", "to": "sg2_ruach"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hqbbh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_gawlh_hrashvnh"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_kn_nhgt_amk", "label": "mentions", "title": "Unique to RAMBAN_1: mentions", "to": "sg2_\u05e9\u05dd_\u05ea\u05e4\u05d0\u05e8\u05ea"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_dbrtshbwt_al", "label": "appearsIn", "title": "Unique to KeterShemTov: appearsIn", "to": "sg2_katuv"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_ha_rav", "label": "commentedOn", "title": "Unique to KeterShemTov: commentedOn", "to": "sg4_perush_shevuot"}, {"arrows": "to", "color": "#FF7F7F", "from": "bq_tehillim_139_12", "label": "explains", "title": "Unique to RAMBAN_1: explains", "to": "sg2_\u05dc\u05e2\u05ea\u05d9\u05d3_\u05dc\u05d1\u05d0"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_ha_rav", "label": "mentions", "title": "Unique to KeterShemTov: mentions", "to": "sg1_hqbbh"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_kn_nhgt_amk", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_kn_nhgt_amk"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05d3\u05ea_\u05d3\u05d9\u05e0\u05d5", "label": "correspondsTo", "title": "Unique to RAMBAN_1: correspondsTo", "to": "sg2_\u05e8\u05d7\u05de\u05d9\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_8a3f2c1d9e4b", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_yqb"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_msh", "label": "correspondsTo", "title": "Unique to RAMBAN_1: correspondsTo", "to": "sg2_\u05ea\u05e4\u05d0\u05e8\u05ea\u05d5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e9\u05d1\u05d5\u05e2\u05d4", "label": "isA", "title": "Unique to KeterShemTov: isA", "to": "sg3_\u05d1\u05e0\u05d9\u05d9\u05df_\u05e0\u05e4\u05e2\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_teivot", "label": "causes", "title": "Unique to KeterShemTov: causes", "to": "sg5_ha_emet"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_swd_hmdrsh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_gawlh_hrashvnh"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_ky_hvlk_lpn", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_ky_hvlk_lpn"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_gawlh_hrashvnh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_byt_dynw"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_ashr_ayn_byn", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_ashr_ayn_byn"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e9\u05d1\u05d5\u05e2\u05d4", "label": "derivedFrom", "title": "Unique to KeterShemTov: derivedFrom", "to": "sg3_bq_dbrtshbwt_al"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_dbrtshbwt_al", "label": "appearsIn", "title": "Unique to KeterShemTov: appearsIn", "to": "sg3_bq_dbrtshbwt_al"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_sod", "label": "relatedTo", "title": "Unique to KeterShemTov: relatedTo", "to": "sg2_ha_rav"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_ha_lashon", "label": "appearsIn", "title": "Unique to KeterShemTov: appearsIn", "to": "sg5_shevuot"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yqb", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg2_bq_8a3f2c1d9e4b"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_ha_rav", "label": "commentedOn", "title": "Unique to KeterShemTov: commentedOn", "to": "sg5_shevuot"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy", "label": "appearsIn", "title": "Unique to RAMBAN_1: appearsIn", "to": "sg1_bq_Exodus_13_21"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_gawlh_hrashvnh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_hqbbh"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_chayei_hamelech", "label": "correspondsTo", "title": "Unique to KeterShemTov: correspondsTo", "to": "sg4_binah"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hshm", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_amwd_hann"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_yshral"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_ky_hvlk_lpn", "label": "mentions", "title": "Unique to RAMBAN_1: mentions", "to": "sg1_laatyd_lba"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05db\u05d7_\u05d4\u05e9\u05dd", "label": "hasPart", "title": "Unique to RAMBAN_1: hasPart", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_dbrtshbwt_al", "label": "mentions", "title": "Unique to KeterShemTov: mentions", "to": "sg3_\u05d4\u05e9\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d4\u05e9\u05dd_\u05d4\u05de\u05d9\u05d5\u05d7\u05d3", "label": "causes", "title": "Unique to RAMBAN_1: causes", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e9\u05dc\u05d5\u05d7\u05d5", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_savara", "label": "causes", "title": "Unique to KeterShemTov: causes", "to": "sg5_ha_emet"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_byt_dynw", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg1_amwd_hash"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_gawlh_hrashvnh", "label": "relatedTo", "title": "Unique to RAMBAN_1: relatedTo", "to": "sg2_\u05dc\u05e2\u05ea\u05d9\u05d3_\u05dc\u05d1\u05d0"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_ha_rav", "label": "commentedOn", "title": "Unique to KeterShemTov: commentedOn", "to": "sg5_ha_lashon"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -30000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,3645 @@
+{
+  "metadata": {
+    "graph1_name": "RAMBAN_17",
+    "graph2_name": "DaatChachamVatokan107",
+    "creation_date": "2026-06-26T17:11:19.711581",
+    "total_nodes": 182,
+    "total_edges": 203,
+    "shared_nodes": 0,
+    "kg1_unique_nodes": 175,
+    "kg2_unique_nodes": 7,
+    "shared_edges": 0,
+    "kg1_unique_edges": 198,
+    "kg2_unique_edges": 5
+  },
+  "nodes": [
+    {
+      "id": "sg1_bq_devarim_5_12",
+      "label": "שמור את יום השב",
+      "full_label": "שמור את יום השבת לקדשו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שמור את יום השבת לקדשו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shem_hamyuchad_yitbarach",
+      "label": "שם המיוחד יתברך",
+      "full_label": "שם המיוחד יתברך",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שם המיוחד יתברך\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bore",
+      "label": "הבורא",
+      "full_label": "הבורא",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הבורא\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_mitzvat_hashabbat",
+      "label": "מצות השבת",
+      "full_label": "מצות השבת",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות השבת\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_מעשה_בראשית",
+      "label": "מעשה בראשית",
+      "full_label": "מעשה בראשית",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מעשה בראשית\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_bq_shemot_20_8",
+      "label": "זכור את יום השב",
+      "full_label": "זכור את יום השבת לקדשו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור את יום השבת לקדשו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_mishneh_torah",
+      "label": "משנה תורה",
+      "full_label": "משנה תורה",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: משנה תורה\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_raboteinu",
+      "label": "רבותינו",
+      "full_label": "רבותינו",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רבותינו\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_zachor_veshamor_bedibur_echad_neemru",
+      "label": "זכור ושמור בדבו",
+      "full_label": "זכור ושמור בדבור אחד נאמרו",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור ושמור בדבור אחד נאמרו\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_zachor",
+      "label": "זכור",
+      "full_label": "זכור",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_shamor",
+      "label": "שמור",
+      "full_label": "שמור",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שמור\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_עשה",
+      "label": "מצות עשה",
+      "full_label": "מצות עשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות עשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_mitzvat_lo_taaseh",
+      "label": "מצות לא תעשה",
+      "full_label": "מצות לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_שבת",
+      "label": "יום השבת",
+      "full_label": "יום השבת",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יום השבת\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_hishamer_pan_veal",
+      "label": "השמר, פן, ואל",
+      "full_label": "השמר, פן, ואל",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: השמר, פן, ואל\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_זכור",
+      "label": "זכור",
+      "full_label": "זכור",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_לקדשו",
+      "label": "לקדשו",
+      "full_label": "לקדשו",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לקדשו\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_שמור",
+      "label": "שמור",
+      "full_label": "שמור",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שמור\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_מצות_לא_תעשה",
+      "label": "מצות לא תעשה",
+      "full_label": "מצות לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_השמר",
+      "label": "השמר",
+      "full_label": "השמר",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: השמר\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_פן",
+      "label": "פן",
+      "full_label": "פן",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: פן\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_אל",
+      "label": "אל",
+      "full_label": "אל",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אל\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_לא_תעשה",
+      "label": "לא תעשה",
+      "full_label": "לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_משה",
+      "label": "משה",
+      "full_label": "משה",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: משה\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_דברי_השם",
+      "label": "דברי השם",
+      "full_label": "דברי השם",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דברי השם\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_הדבור_השני",
+      "label": "הדבור השני",
+      "full_label": "הדבור השני",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הדבור השני\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_כל_תמונה",
+      "label": "כל תמונה",
+      "full_label": "כל תמונה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: כל תמונה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_תמונה",
+      "label": "תמונה",
+      "full_label": "תמונה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: תמונה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_ו\"ו",
+      "label": "ו\"ו",
+      "full_label": "ו\"ו",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ו\"ו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_שאר_הדברות",
+      "label": "שאר הדברות",
+      "full_label": "שאר הדברות",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שאר הדברות\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Deuteronomy_5_12_נשמור",
+      "label": "נשמור אותו לקדש",
+      "full_label": "נשמור אותו לקדשו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נשמור אותו לקדשו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg2_bq_Exodus_20_4",
+      "label": "וכל תמונה",
+      "full_label": "וכל תמונה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: וכל תמונה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_dibur_hasheni",
+      "label": "דבור השני",
+      "full_label": "דבור השני",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דבור השני\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_temunah",
+      "label": "תמונה",
+      "full_label": "תמונה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: תמונה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hadibrot",
+      "label": "הדברות",
+      "full_label": "הדברות",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הדברות\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_תלמוד",
+      "label": "תלמוד",
+      "full_label": "תלמוד",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: תלמוד\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg_nashim_chayavot_kiddush_hayom",
+      "label": "נשים חייבות בקד",
+      "full_label": "נשים חייבות בקדוש היום",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נשים חייבות בקדוש היום\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_kiddush_hayom",
+      "label": "קדוש היום",
+      "full_label": "קדוש היום",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדוש היום\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_devar_torah",
+      "label": "דבר תורה",
+      "full_label": "דבר תורה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דבר תורה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_a1b2c3d4e5f6",
+      "label": "זכור ושמור",
+      "full_label": "זכור ושמור",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור ושמור\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shmirah",
+      "label": "שמירה",
+      "full_label": "שמירה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שמירה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_mitzvot_lo_taaseh",
+      "label": "מצות לא תעשה",
+      "full_label": "מצות לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_shehazman_grama",
+      "label": "שהזמן גרמא",
+      "full_label": "שהזמן גרמא",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שהזמן גרמא\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_mipi_hagevurah",
+      "label": "מפי הגבורה",
+      "full_label": "מפי הגבורה",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מפי הגבורה\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_luchot_harishonot",
+      "label": "לוחות הראשונות",
+      "full_label": "לוחות הראשונות",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לוחות הראשונות\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_bq_Exodus_20_8",
+      "label": "זכור",
+      "full_label": "זכור",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_yisrael",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ישראל\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_nashim",
+      "label": "נשים",
+      "full_label": "נשים",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נשים\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg3_hahekesh",
+      "label": "ההיקש",
+      "full_label": "ההיקש",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ההיקש\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_luchot_hashniot",
+      "label": "לוחות השניות",
+      "full_label": "לוחות השניות",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לוחות השניות\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_bq_a1b2c3d4e5f6",
+      "label": "זכור",
+      "full_label": "זכור",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכור\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_midrash_rabi_nahonia_ben_hakana",
+      "label": "מדרשו של רבי נח",
+      "full_label": "מדרשו של רבי נחוניא בן הקנה",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדרשו של רבי נחוניא בן הקנה\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_rabi_nahonia_ben_hakana",
+      "label": "רבי נחוניא בן ה",
+      "full_label": "רבי נחוניא בן הקנה",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רבי נחוניא בן הקנה\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_sod_gadol",
+      "label": "סוד גדול",
+      "full_label": "סוד גדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: סוד גדול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hazkhira_layom",
+      "label": "הזכירה ליום",
+      "full_label": "הזכירה ליום",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הזכירה ליום\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hashmira_lalaila",
+      "label": "השמירה ללילה",
+      "full_label": "השמירה ללילה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: השמירה ללילה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hachamim",
+      "label": "החכמים",
+      "full_label": "החכמים",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: החכמים\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_erev_shabbat",
+      "label": "ערב שבת",
+      "full_label": "ערב שבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ערב שבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_boi_kalla_boi_kalla",
+      "label": "בואי כלה בואי כ",
+      "full_label": "בואי כלה בואי כלה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: בואי כלה בואי כלה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_shabbat_malka",
+      "label": "שבת מלכה",
+      "full_label": "שבת מלכה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שבת מלכה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_kiddusha_rabba",
+      "label": "קִדושה רבה",
+      "full_label": "קִדושה רבה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קִדושה רבה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_hakadosh_hagadol",
+      "label": "הקדוש הגדול",
+      "full_label": "הקדוש הגדול",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הקדוש הגדול\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_midat_zachor",
+      "label": "מדת זכור",
+      "full_label": "מדת זכור",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת זכור\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_midat_haahava",
+      "label": "מדת האהבה",
+      "full_label": "מדת האהבה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת האהבה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_midat_harahamim",
+      "label": "מדת הרחמים",
+      "full_label": "מדת הרחמים",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת הרחמים\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg4_adonav",
+      "label": "אדוניו",
+      "full_label": "אדוניו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אדוניו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_zakhira",
+      "label": "זכירה",
+      "full_label": "זכירה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכירה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_shemira",
+      "label": "שמירה",
+      "full_label": "שמירה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שמירה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_yom",
+      "label": "יום",
+      "full_label": "יום",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יום\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_laila",
+      "label": "לילה",
+      "full_label": "לילה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לילה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_maamar_hachamim",
+      "label": "מאמר החכמים",
+      "full_label": "מאמר החכמים",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מאמר החכמים\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_bq_boi_kalla_i9j0k1",
+      "label": "בואי כלה",
+      "full_label": "בואי כלה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: בואי כלה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_birkat_hayom",
+      "label": "ברכת היום",
+      "full_label": "ברכת היום",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ברכת היום\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_kidusha_raba",
+      "label": "קִדושה רבה",
+      "full_label": "קִדושה רבה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קִדושה רבה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_mitzvat_adonav",
+      "label": "מצות אדוניו",
+      "full_label": "מצות אדוניו",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות אדוניו\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_midat_shamor",
+      "label": "מדת שמור",
+      "full_label": "מדת שמור",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת שמור\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_mitzvat_lo_taaseh",
+      "label": "מצות לא תעשה",
+      "full_label": "מצות לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_midat_hadin",
+      "label": "מדת הדין",
+      "full_label": "מדת הדין",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת הדין\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_midat_hayirah",
+      "label": "מדת היראה",
+      "full_label": "מדת היראה",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדת היראה\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_רצון_אדוניו",
+      "label": "רצון אדוניו",
+      "full_label": "רצון אדוניו",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רצון אדוניו\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_gufo",
+      "label": "גופו",
+      "full_label": "גופו",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: גופו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_mamono",
+      "label": "ממונו",
+      "full_label": "ממונו",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ממונו\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ati_aseh_ve_dachi_lo_taaseh",
+      "label": "אתי עשה ודחי לא",
+      "full_label": "אתי עשה ודחי לא תעשה",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אתי עשה ודחי לא תעשה\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_onesh",
+      "label": "עונש",
+      "full_label": "עונש",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עונש\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_מלקות",
+      "label": "מלקות",
+      "full_label": "מלקות",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מלקות\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_mita",
+      "label": "מיתה",
+      "full_label": "מיתה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מיתה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_mordin",
+      "label": "מורדין",
+      "full_label": "מורדין",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מורדין\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_lulav",
+      "label": "לולב",
+      "full_label": "לולב",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לולב\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_suka",
+      "label": "סוכה",
+      "full_label": "סוכה",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: סוכה\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_nafsho",
+      "label": "נפשו",
+      "full_label": "נפשו",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נפשו\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_דרך_הפשט",
+      "label": "דרך הפשט",
+      "full_label": "דרך הפשט",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דרך הפשט\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_shear_hayamim",
+      "label": "שאר הימים",
+      "full_label": "שאר הימים",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שאר הימים\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg5_ot",
+      "label": "אות",
+      "full_label": "אות",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אות\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg_bq_exodus_31_13",
+      "label": "כי אות היא ביני",
+      "full_label": "כי אות היא ביני וביניכם",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: כי אות היא ביני וביניכם\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_מצות_לא_תעשה",
+      "label": "מצות לא תעשה",
+      "full_label": "מצות לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצות לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_לא_תעשה",
+      "label": "לא תעשה",
+      "full_label": "לא תעשה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לא תעשה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_לולב",
+      "label": "לולב",
+      "full_label": "לולב",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לולב\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_סוכה",
+      "label": "סוכה",
+      "full_label": "סוכה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: סוכה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_שבת",
+      "label": "שבת",
+      "full_label": "שבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_אמונת_האל",
+      "label": "אמונת האל",
+      "full_label": "אמונת האל",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אמונת האל\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_Isaiah_58_13",
+      "label": "וקראת לשבת עונג",
+      "full_label": "וקראת לשבת עונג לקדוש י\"י מכובד",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: וקראת לשבת עונג לקדוש י\"י מכובד\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_עונג",
+      "label": "עונג",
+      "full_label": "עונג",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עונג\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_שביתה",
+      "label": "שביתה",
+      "full_label": "שביתה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שביתה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_יום_קדוש",
+      "label": "יום קדוש",
+      "full_label": "יום קדוש",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יום קדוש\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_חכמים",
+      "label": "חכמים",
+      "full_label": "חכמים",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: חכמים\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_נביאים",
+      "label": "נביאים",
+      "full_label": "נביאים",
+      "entity_type": "BiblicalFigure",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נביאים\nType: BiblicalFigure",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_דברי_י_י",
+      "label": "דברי י\"י",
+      "full_label": "דברי י\"י",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דברי י\"י\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_bq_2_Kings_4_23",
+      "label": "מדוע את הולכת א",
+      "full_label": "מדוע את הולכת אליו היום לא חדש ולא שבת",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדוע את הולכת אליו היום לא חדש ולא שבת\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_חדש",
+      "label": "חדש",
+      "full_label": "חדש",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: חדש\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_ז_ל",
+      "label": "ז\"ל",
+      "full_label": "ז\"ל",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ז\"ל\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg6_אמרו_ז_ל",
+      "label": "אמרו ז\"ל",
+      "full_label": "אמרו ז\"ל",
+      "entity_type": "TraditionOrAttribution",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אמרו ז\"ל\nType: TraditionOrAttribution",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_שביתה",
+      "label": "שביתה",
+      "full_label": "שביתה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שביתה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_עסקי_המחשבות",
+      "label": "עסקי המחשבות",
+      "full_label": "עסקי המחשבות",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עסקי המחשבות\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_הבלי_הזמנים",
+      "label": "הבלי הזמנים",
+      "full_label": "הבלי הזמנים",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הבלי הזמנים\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_ענג_לנפשותינו",
+      "label": "ענג לנפשותינו",
+      "full_label": "ענג לנפשותינו",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ענג לנפשותינו\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_דרכי_י\"י",
+      "label": "דרכי י\"י",
+      "full_label": "דרכי י\"י",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דרכי י\"י\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_מכלל_דבחדש_ושבת_בעי_למיזל",
+      "label": "מכלל דבחדש ושבת",
+      "full_label": "מכלל דבחדש ושבת בעי למיזל",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מכלל דבחדש ושבת בעי למיזל\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_שביתת_הבהמה",
+      "label": "שביתת הבהמה",
+      "full_label": "שביתת הבהמה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שביתת הבהמה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_כל_המצות_שבתורה",
+      "label": "כל המצות שבתורה",
+      "full_label": "כל המצות שבתורה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: כל המצות שבתורה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_עבודה_זרה",
+      "label": "עבודה זרה",
+      "full_label": "עבודה זרה",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עבודה זרה\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_עיקרי_האמונה",
+      "label": "עיקרי האמונה",
+      "full_label": "עיקרי האמונה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עיקרי האמונה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_חדוש",
+      "label": "חדוש",
+      "full_label": "חדוש",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: חדוש\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_השגחה",
+      "label": "השגחה",
+      "full_label": "השגחה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: השגחה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_נבואה",
+      "label": "נבואה",
+      "full_label": "נבואה",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: נבואה\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_מכילתא",
+      "label": "מכילתא",
+      "full_label": "מכילתא",
+      "entity_type": "MidrashicOrRabbinicWork",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מכילתא\nType: MidrashicOrRabbinicWork",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_רבי_יצחק",
+      "label": "רבי יצחק",
+      "full_label": "רבי יצחק",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רבי יצחק\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_גוים",
+      "label": "גוים",
+      "full_label": "גוים",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: גוים\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_ישראל",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ישראל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_אחד_בשבת",
+      "label": "אחד בשבת",
+      "full_label": "אחד בשבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אחד בשבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_שני_בשבת",
+      "label": "שני בשבת",
+      "full_label": "שני בשבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שני בשבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_לזוכרו_תמיד",
+      "label": "לזוכרו תמיד",
+      "full_label": "לזוכרו תמיד",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לזוכרו תמיד\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg7_י\"י",
+      "label": "י\"י",
+      "full_label": "י\"י",
+      "entity_type": "SpiritualEntity",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: י\"י\nType: SpiritualEntity",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_yemei_hashavua",
+      "label": "ימי השבוע",
+      "full_label": "ימי השבוע",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ימי השבוע\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_yisrael",
+      "label": "ישראל",
+      "full_label": "ישראל",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ישראל\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_echad_bashabbat",
+      "label": "אחד בשבת",
+      "full_label": "אחד בשבת",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אחד בשבת\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_sheni_bashabbat",
+      "label": "שני בשבת",
+      "full_label": "שני בשבת",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: שני בשבת\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_rabi_avraham",
+      "label": "רבי אברהם",
+      "full_label": "רבי אברהם",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רבי אברהם\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_midrash",
+      "label": "מדרש",
+      "full_label": "מדרש",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מדרש\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_bq_1a2b3c4d5e6f",
+      "label": "לקדשו",
+      "full_label": "לקדשו",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לקדשו\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_zichron",
+      "label": "זכרון",
+      "full_label": "זכרון",
+      "entity_type": "TheologicalConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: זכרון\nType: TheologicalConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_bq_vqdshem_d4e5f6",
+      "label": "וקדשתם את שנת ה",
+      "full_label": "וקדשתם את שנת החמשים שנה",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: וקדשתם את שנת החמשים שנה\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_yovel",
+      "label": "יובל",
+      "full_label": "יובל",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יובל\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_kiddush_beit_din",
+      "label": "קידוש בית דין",
+      "full_label": "קידוש בית דין",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קידוש בית דין\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_kadeshehu_bibracha",
+      "label": "קדשהו בברכה",
+      "full_label": "קדשהו בברכה",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדשהו בברכה\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_al_hayayin",
+      "label": "מקדשין על היין",
+      "full_label": "מקדשין על היין",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מקדשין על היין\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_yayin",
+      "label": "יין",
+      "full_label": "יין",
+      "entity_type": "PhysicalObject",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יין\nType: PhysicalObject",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_bq_9d4f2a1c8e3b",
+      "label": "ושמרתם את יום ה",
+      "full_label": "ושמרתם את יום השבת",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ושמרתם את יום השבת\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_kiddush_hayom",
+      "label": "קדוש היום",
+      "full_label": "קדוש היום",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדוש היום\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_min_hatorah",
+      "label": "מן התורה",
+      "full_label": "מן התורה",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מן התורה\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg8_asmachta",
+      "label": "אסמכתא",
+      "full_label": "אסמכתא",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אסמכתא\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_kidsho_b_bracha",
+      "label": "קדשהו בברכה",
+      "full_label": "קדשהו בברכה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדשהו בברכה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_dvar_torah",
+      "label": "דבר תורה",
+      "full_label": "דבר תורה",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: דבר תורה\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_kiddush_halayla",
+      "label": "קדוש הלילה",
+      "full_label": "קדוש הלילה",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדוש הלילה\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_hateunin_kiddush",
+      "label": "הטעונין קדוש",
+      "full_label": "הטעונין קדוש",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: הטעונין קדוש\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_kiddush_hachodesh",
+      "label": "קדוש החדש",
+      "full_label": "קדוש החדש",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדוש החדש\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_kiddush_hayovel",
+      "label": "קדוש היובל",
+      "full_label": "קדוש היובל",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קדוש היובל\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_bayom",
+      "label": "ביום",
+      "full_label": "ביום",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ביום\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_mekudash",
+      "label": "מקודש",
+      "full_label": "מקודש",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מקודש\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg9_keva",
+      "label": "קבע",
+      "full_label": "קבע",
+      "entity_type": "LegalReference",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קבע\nType: LegalReference",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_אסמכתא",
+      "label": "אסמכתא",
+      "full_label": "אסמכתא",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: אסמכתא\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_he_3c4d5e6f7a8b_t100002",
+      "label": "גמרא",
+      "full_label": "גמרא",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: גמרא\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_he_4d5e6f7a8b9c_t100003",
+      "label": "פסחים",
+      "full_label": "פסחים",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: פסחים\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_he_6f7a8b9c0d1e_t100006",
+      "label": "תנא",
+      "full_label": "תנא",
+      "entity_type": "RabbinicAuthority",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: תנא\nType: RabbinicAuthority",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_he_7a8b9c0d1e2f_t100007",
+      "label": "מקרא",
+      "full_label": "מקרא",
+      "entity_type": "BiblicalSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מקרא\nType: BiblicalSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_kiddush_merged",
+      "label": "קידוש",
+      "full_label": "קידוש",
+      "entity_type": "ReligiousPractice",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: קידוש\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_בריתא",
+      "label": "בריתא",
+      "full_label": "בריתא",
+      "entity_type": "TalmudicSource",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: בריתא\nType: TalmudicSource",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_לילה",
+      "label": "לילה",
+      "full_label": "לילה",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: לילה\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_yom_merged",
+      "label": "יום",
+      "full_label": "יום",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: יום\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg10_bq_Shemot_20_8_t100018",
+      "label": "את יום",
+      "full_label": "את יום",
+      "entity_type": "BiblicalQuotation",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "box",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: את יום\nType: BiblicalQuotation",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_עיקר_הקדוש",
+      "label": "עיקר הקדוש",
+      "full_label": "עיקר הקדוש",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: עיקר הקדוש\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_ליום",
+      "label": "ליום",
+      "full_label": "ליום",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: ליום\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_המצווה_הזו",
+      "label": "המצווה הזו",
+      "full_label": "המצווה הזו",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: המצווה הזו\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg11_בכל_יום",
+      "label": "בכל יום",
+      "full_label": "בכל יום",
+      "entity_type": "OtherConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: בכל יום\nType: OtherConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_מצות_הזכירה",
+      "label": "מצוות הזכירה",
+      "full_label": "מצוות הזכירה",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: מצוות הזכירה\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg12_רמח_מצות",
+      "label": "רמח מצוות",
+      "full_label": "רמח מצוות",
+      "entity_type": "HalakhicConcept",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "shape": "dot",
+      "title": "UNIQUE TO RAMBAN_17\nLabel: רמח מצוות\nType: HalakhicConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ve_dibber_bamah",
+      "label": "ודיבר במה",
+      "full_label": "ודיבר במה",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: ודיבר במה\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_kadosh_ha_gadol",
+      "label": "הקדוש הגדול",
+      "full_label": "הקדוש הגדול",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדוש הגדול\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yesod",
+      "label": "יסוד",
+      "full_label": "יסוד",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יסוד\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_yom_ha_shabbat",
+      "label": "יום השבת",
+      "full_label": "יום השבת",
+      "entity_type": "ReligiousPractice",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יום השבת\nType: ReligiousPractice",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_kodesh",
+      "label": "הקדש",
+      "full_label": "הקדש",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדש\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ha_kadosh",
+      "label": "הקדוש",
+      "full_label": "הקדוש",
+      "entity_type": "KabbalisticConcept",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדוש\nType: KabbalisticConcept",
+      "matched_with": null
+    },
+    {
+      "id": "sg1_ad_kan_divrav",
+      "label": "עד כאן דבריו",
+      "full_label": "עד כאן דבריו",
+      "entity_type": "CommentaryTypeOrMethod",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "shape": "dot",
+      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: עד כאן דבריו\nType: CommentaryTypeOrMethod",
+      "matched_with": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "sg5_midrash_rabi_nahonia_ben_hakana",
+      "target": "sg5_rabi_nahonia_ben_hakana",
+      "predicate": "cites",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: cites"
+    },
+    {
+      "source": "sg10_kiddush_merged",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: derivedFrom"
+    },
+    {
+      "source": "sg_bq_exodus_31_13",
+      "target": "sg5_ot",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: explains"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg5_ot",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg3_nashim",
+      "target": "sg6_עשה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg_nashim_chayavot_kiddush_hayom",
+      "target": "sg9_dvar_torah",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg8_yayin",
+      "target": "sg11_אסמכתא",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg9_bayom",
+      "target": "sg9_mekudash",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg3_bq_Exodus_20_8",
+      "target": "sg2_bq_שמור",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_bq_זכור",
+      "target": "sg2_bq_זכור",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_sod_gadol",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg1_ha_kadosh",
+      "target": "sg1_yesod",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg7_שבת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg4_midat_haahava",
+      "target": "sg5_midat_hayirah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg4_adonav",
+      "target": "sg5_midat_harahamim",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg2_פן",
+      "target": "sg2_לא_תעשה",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg9_kiddush_halayla",
+      "target": "sg8_min_hatorah",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg2_bq_זכור",
+      "target": "sg2_לקדשו",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg8_zichron",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg8_yovel",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_bq_זכור",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_kiddusha_rabba",
+      "target": "sg4_hakadosh_hagadol",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg6_עשה",
+      "target": "sg5_mordin",
+      "predicate": "requires",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: requires"
+    },
+    {
+      "source": "sg9_al_hayayin",
+      "target": "sg9_keva",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg1_mitzvat_hashabbat",
+      "target": "sg6_מעשה_בראשית",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg3_hahekesh",
+      "target": "sg3_nashim",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg8_kiddush_hayom",
+      "target": "sg8_min_hatorah",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg5_lulav",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg2_bq_Exodus_20_4",
+      "target": "sg2_bq_כל_תמונה",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg11_תלמוד",
+      "target": "sg_nashim_chayavot_kiddush_hayom",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg9_hateunin_kiddush",
+      "target": "sg9_kiddush_hachodesh",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg3_nashim",
+      "target": "sg3_mitzvot_lo_taaseh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg12_מצות_הזכירה",
+      "target": "sg12_רמח_מצות",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg1_shem_hamyuchad_yitbarach",
+      "target": "sg5_bore",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg6_עשה",
+      "target": "sg6_לא_תעשה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg4_hashmira_lalaila",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg6_bq_Isaiah_58_13",
+      "target": "sg6_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg10_yom_merged",
+      "target": "sg10_bq_Shemot_20_8_t100018",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg1_bq_shemot_20_8",
+      "target": "sg7_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg10_bq_Shemot_20_8_t100018",
+      "target": "sg10_yom_merged",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg10_he_4d5e6f7a8b9c_t100003",
+      "target": "sg10_kiddush_merged",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: explains"
+    },
+    {
+      "source": "sg3_nashim",
+      "target": "sg3_kiddush_hayom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg9_bq_9d4f2a1c8e3b",
+      "target": "sg9_bq_9d4f2a1c8e3b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg3_bq_Exodus_20_8",
+      "target": "sg3_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg6_שבת",
+      "target": "sg6_מעשה_בראשית",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_שבת",
+      "target": "sg6_אמונת_האל",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg9_kidsho_b_bracha",
+      "target": "sg9_al_hayayin",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg6_סוכה",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg4_midat_zachor",
+      "target": "sg5_midat_harahamim",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: correspondsTo"
+    },
+    {
+      "source": "sg5_kidusha_raba",
+      "target": "sg4_hakadosh_hagadol",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_bore",
+      "target": "sg6_שבת",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg3_hahekesh",
+      "target": "sg3_shmirah",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_shemira",
+      "target": "sg5_laila",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_חדש",
+      "target": "sg6_bq_2_Kings_4_23",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_zakhira",
+      "target": "sg5_yom",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg3_mipi_hagevurah",
+      "target": "sg3_luchot_harishonot",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_עשה",
+      "target": "sg5_mitzvat_lo_taaseh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg4_bq_a1b2c3d4e5f6",
+      "target": "sg4_hazkhira_layom",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg2_תמונה",
+      "target": "sg2_bq_כל_תמונה",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_אל",
+      "target": "sg2_לא_תעשה",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg_bq_exodus_31_13",
+      "target": "sg_bq_exodus_31_13",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg2_מצות_לא_תעשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg6_bq_2_Kings_4_23",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg7_גוים",
+      "target": "sg8_yemei_hashavua",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_suka",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg2_bq_זכור",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg4_luchot_hashniot",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg5_mita",
+      "target": "sg5_onesh",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg10_kiddush_merged",
+      "target": "sg8_yayin",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg1_shamor",
+      "target": "sg1_bq_devarim_5_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_maamar_hachamim",
+      "target": "sg4_erev_shabbat",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_דרך_הפשט",
+      "target": "sg1_zachor",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_gufo",
+      "target": "sg6_רצון_אדוניו",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_bq_2_Kings_4_23",
+      "target": "sg6_חדש",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg1_raboteinu",
+      "target": "sg11_bq_1a2b3c4d5e6f",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg2_bq_שמור",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg3_luchot_harishonot",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg6_עונג",
+      "target": "sg6_bq_Isaiah_58_13",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_bq_a1b2c3d4e5f6",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg6_מלקות",
+      "target": "sg5_onesh",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg6_שביתה",
+      "target": "sg6_יום_קדוש",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg4_hachamim",
+      "target": "sg4_boi_kalla_boi_kalla",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg3_bq_a1b2c3d4e5f6",
+      "target": "sg3_bq_Exodus_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg3_temunah",
+      "target": "sg2_bq_כל_תמונה",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_birkat_hayom",
+      "target": "sg5_kidusha_raba",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg6_bq_Isaiah_58_13",
+      "target": "sg6_bq_Isaiah_58_13",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_boi_kalla_boi_kalla",
+      "target": "sg4_shabbat_malka",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg10_he_3c4d5e6f7a8b_t100002",
+      "target": "sg10_he_4d5e6f7a8b9c_t100003",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg10_he_6f7a8b9c0d1e_t100006",
+      "target": "sg10_he_7a8b9c0d1e2f_t100007",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: commentedOn"
+    },
+    {
+      "source": "sg11_לילה",
+      "target": "sg10_yom_merged",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg3_yisrael",
+      "predicate": "studiedUnder",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: studiedUnder"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_bq_כל_תמונה",
+      "target": "sg2_bq_Exodus_20_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg1_ha_kadosh_ha_gadol",
+      "target": "sg1_yesod",
+      "predicate": "correspondsTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+    },
+    {
+      "source": "sg7_מכילתא",
+      "target": "sg8_kadeshehu_bibracha",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg2_לקדשו",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg7_מכילתא",
+      "target": "sg_nashim_chayavot_kiddush_hayom",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg11_לילה",
+      "target": "sg11_עיקר_הקדוש",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_mordin",
+      "target": "sg6_עשה",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg1_bq_devarim_5_12",
+      "target": "sg7_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg_bq_exodus_31_13",
+      "target": "sg6_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg1_yom_ha_shabbat",
+      "target": "sg1_ha_kodesh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan107: relatedTo"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg2_bq_שמור",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_ati_aseh_ve_dachi_lo_taaseh",
+      "target": "sg6_עשה",
+      "predicate": "permits",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: permits"
+    },
+    {
+      "source": "sg2_bq_זכור",
+      "target": "sg7_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg6_רצון_אדוניו",
+      "target": "sg4_adonav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_לקדשו",
+      "target": "sg9_kidsho_b_bracha",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg1_ve_dibber_bamah",
+      "target": "sg1_ha_kadosh_ha_gadol",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan107: relatedTo"
+    },
+    {
+      "source": "sg11_אסמכתא",
+      "target": "sg10_kiddush_merged",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg8_kiddush_hayom",
+      "target": "sg8_asmachta",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg11_בכל_יום",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg1_shamor",
+      "target": "sg1_mitzvat_lo_taaseh",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg3_dibur_hasheni",
+      "target": "sg3_temunah",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg3_bq_a1b2c3d4e5f6",
+      "target": "sg1_zachor",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg10_bq_Shemot_20_8_t100018",
+      "target": "sg10_bq_Shemot_20_8_t100018",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_bq_Exodus_20_4",
+      "target": "sg2_ו\"ו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg8_yovel",
+      "target": "sg8_kiddush_beit_din",
+      "predicate": "requires",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: requires"
+    },
+    {
+      "source": "sg3_kiddush_hayom",
+      "target": "sg8_min_hatorah",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg4_sod_gadol",
+      "target": "sg5_midrash_rabi_nahonia_ben_hakana",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_bq_a1b2c3d4e5f6",
+      "target": "sg2_bq_זכור",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg10_kiddush_merged",
+      "target": "sg11_לילה",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg8_yisrael",
+      "target": "sg8_echad_bashabbat",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg1_shamor",
+      "target": "sg7_שבת",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg1_raboteinu",
+      "target": "sg1_zachor_veshamor_bedibur_echad_neemru",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg3_shmirah",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg4_adonav",
+      "target": "sg4_midat_haahava",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg7_ישראל",
+      "target": "sg7_שבת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg8_rabi_avraham",
+      "target": "sg6_דרך_הפשט",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg9_bayom",
+      "target": "sg8_asmachta",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg1_bq_devarim_5_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg5_mamono",
+      "target": "sg6_רצון_אדוניו",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg_nashim_chayavot_kiddush_hayom",
+      "target": "sg3_devar_torah",
+      "predicate": "requires",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: requires"
+    },
+    {
+      "source": "sg10_yom_merged",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_משה",
+      "target": "sg2_דברי_השם",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg3_shmirah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg1_mishneh_torah",
+      "target": "sg1_bq_devarim_5_12",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg1_zachor",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg9_al_hayayin",
+      "target": "sg8_asmachta",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg6_נביאים",
+      "target": "sg6_דברי_י_י",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg6_מעשה_בראשית",
+      "target": "sg5_bore",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_השמר",
+      "target": "sg2_לא_תעשה",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg6_לא_תעשה",
+      "target": "sg6_מלקות",
+      "predicate": "requires",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: requires"
+    },
+    {
+      "source": "sg11_לילה",
+      "target": "sg11_ליום",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg7_מכילתא",
+      "target": "sg2_לקדשו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg8_kadeshehu_bibracha",
+      "target": "sg9_al_hayayin",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg_nashim_chayavot_kiddush_hayom",
+      "target": "sg9_kiddush_halayla",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg4_hachamim",
+      "target": "sg4_erev_shabbat",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_midat_shamor",
+      "target": "sg5_midat_hayirah",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: correspondsTo"
+    },
+    {
+      "source": "sg2_תמונה",
+      "target": "sg2_bq_Exodus_20_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg6_bq_2_Kings_4_23",
+      "target": "sg6_שבת",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg3_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg6_מעשה_בראשית",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: explains"
+    },
+    {
+      "source": "sg6_עשה",
+      "target": "sg3_shehazman_grama",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_הדבור_השני",
+      "target": "sg2_bq_כל_תמונה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg5_bq_boi_kalla_i9j0k1",
+      "target": "sg4_shabbat_malka",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg2_bq_שמור",
+      "target": "sg2_לא_תעשה",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg3_hahekesh",
+      "target": "sg1_zachor",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg3_dibur_hasheni",
+      "target": "sg3_hadibrot",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg9_al_hayayin",
+      "target": "sg8_yayin",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg11_בריתא",
+      "target": "sg11_אסמכתא",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg4_midat_zachor",
+      "target": "sg4_midat_haahava",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: correspondsTo"
+    },
+    {
+      "source": "sg6_דרך_הפשט",
+      "target": "sg6_שבת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg2_שאר_הדברות",
+      "target": "sg2_ו\"ו",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg11_בריתא",
+      "target": "sg7_מכילתא",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg11_המצווה_הזו",
+      "target": "sg11_bq_1a2b3c4d5e6f",
+      "predicate": "derivedFrom",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: derivedFrom"
+    },
+    {
+      "source": "sg8_yisrael",
+      "target": "sg8_sheni_bashabbat",
+      "predicate": "isCalled",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isCalled"
+    },
+    {
+      "source": "sg5_mitzvat_adonav",
+      "target": "sg4_adonav",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg5_onesh",
+      "target": "sg5_mitzvat_lo_taaseh",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_bq_2_Kings_4_23",
+      "target": "sg6_bq_2_Kings_4_23",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg3_bq_a1b2c3d4e5f6",
+      "target": "sg3_shmirah",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg3_bq_Exodus_20_8",
+      "target": "sg3_bq_Exodus_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg2_bq_כל_תמונה",
+      "target": "sg2_bq_כל_תמונה",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg8_bq_vqdshem_d4e5f6",
+      "target": "sg8_yovel",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg9_hateunin_kiddush",
+      "target": "sg9_kiddush_hayovel",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg2_bq_Exodus_20_4",
+      "target": "sg2_bq_Exodus_20_4",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg6_לא_תעשה",
+      "target": "sg5_mita",
+      "predicate": "requires",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: requires"
+    },
+    {
+      "source": "sg5_midat_shamor",
+      "target": "sg5_midat_hadin",
+      "predicate": "correspondsTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: correspondsTo"
+    },
+    {
+      "source": "sg1_bq_shemot_20_8",
+      "target": "sg4_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_sod_gadol",
+      "target": "sg2_bq_שמור",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg5_midat_shamor",
+      "target": "sg5_mitzvat_lo_taaseh",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg4_midat_zachor",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg3_bq_a1b2c3d4e5f6",
+      "target": "sg3_bq_a1b2c3d4e5f6",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg1_hishamer_pan_veal",
+      "target": "sg1_mitzvat_lo_taaseh",
+      "predicate": "forbids",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: forbids"
+    },
+    {
+      "source": "sg6_חכמים",
+      "target": "sg6_דברי_י_י",
+      "predicate": "commentedOn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: commentedOn"
+    },
+    {
+      "source": "sg1_bq_shemot_20_8",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg3_bq_Exodus_20_8",
+      "target": "sg1_zachor",
+      "predicate": "mentions",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: mentions"
+    },
+    {
+      "source": "sg3_kiddush_hayom",
+      "target": "sg8_asmachta",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg9_bq_9d4f2a1c8e3b",
+      "target": "sg8_kiddush_hayom",
+      "predicate": "causes",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: causes"
+    },
+    {
+      "source": "sg8_midrash",
+      "target": "sg1_raboteinu",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg6_שבת",
+      "target": "sg6_נביאים",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg8_yisrael",
+      "target": "sg7_שבת",
+      "predicate": "relatedTo",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: relatedTo"
+    },
+    {
+      "source": "sg10_bq_Shemot_20_8_t100018",
+      "target": "sg1_bq_shemot_20_8",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg6_לולב",
+      "target": "sg6_עשה",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg11_תלמוד",
+      "target": "sg11_המצווה_הזו",
+      "predicate": "explains",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: explains"
+    },
+    {
+      "source": "sg6_שבת",
+      "target": "sg6_עונג",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg7_שבת",
+      "target": "sg9_bq_9d4f2a1c8e3b",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    },
+    {
+      "source": "sg4_bq_a1b2c3d4e5f6",
+      "target": "sg1_zachor",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg11_bq_1a2b3c4d5e6f",
+      "target": "sg8_zichron",
+      "predicate": "isA",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: isA"
+    },
+    {
+      "source": "sg1_ad_kan_divrav",
+      "target": "sg1_ha_kadosh",
+      "predicate": "relatedTo",
+      "status": "kg2_unique",
+      "color": "#87CEFA",
+      "title": "Unique to DaatChachamVatokan107: relatedTo"
+    },
+    {
+      "source": "sg6_שבת",
+      "target": "sg6_חכמים",
+      "predicate": "hasPart",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: hasPart"
+    },
+    {
+      "source": "sg1_bq_devarim_5_12",
+      "target": "sg1_bq_devarim_5_12",
+      "predicate": "appearsIn",
+      "status": "kg1_unique",
+      "color": "#FF7F7F",
+      "title": "Unique to RAMBAN_17: appearsIn"
+    }
+  ]
+}

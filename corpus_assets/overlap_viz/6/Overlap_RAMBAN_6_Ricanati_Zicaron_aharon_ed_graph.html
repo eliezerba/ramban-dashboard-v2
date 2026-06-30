@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FF7F7F", "id": "sg1_bq_shem_1a2b3c4d5e6f", "label": "\u05e9\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05e9\u05dd\nType: BiblicalQuotation"}, {"color": "#90EE90", "id": "sg1_bq_Genesis_11_4", "label": "\u05d5\u05e0\u05e2\u05e9\u05d4 \u05dc\u05e0\u05d5 \u05e9\u05dd", "shape": "box", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d5\u05e0\u05e2\u05e9\u05d4 \u05dc\u05e0\u05d5 \u05e9\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d5\u05e8\u05d0\u05e9\u05d5 \u05d1\u05e9\u05de\u05d9\u05dd\nReason: Anchor match"}, {"color": "#90EE90", "id": "sg1_migdal", "label": "\u05de\u05d2\u05d3\u05dc", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05de\u05d2\u05d3\u05dc\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05de\u05d2\u05d3\u05dc\nReason: embedding cos=0.863 (no LLM verify)"}, {"color": "#90EE90", "id": "sg1_midah_keneged_midah", "label": "\u05de\u05d3\u05d4 \u05db\u05e0\u05d2\u05d3 \u05de\u05d3\u05d4", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05de\u05d3\u05d4 \u05db\u05e0\u05d2\u05d3 \u05de\u05d3\u05d4\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05de\u05d3\u05d4 \u05db\u05e0\u05d2\u05d3 \u05de\u05d3\u05d4\nReason: embedding cos=0.897 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_kotzcin_bantiyot", "label": "\u05e7\u05d5\u05e6\u05e6\u05d9\u05df \u05d1\u05e0\u05d8\u05d9\u05e2\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05e7\u05d5\u05e6\u05e6\u05d9\u05df \u05d1\u05e0\u05d8\u05d9\u05e2\u05d5\u05ea\nType: TheologicalConcept"}, {"color": "#90EE90", "id": "sg1_avihem", "label": "\u05d0\u05d1\u05d9\u05d4\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d0\u05d1\u05d9\u05d4\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d0\u05d3\u05dd\nReason: embedding cos=0.864 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_ravi_berachiah", "label": "\u05e8\u05d1\u05d9 \u05d1\u05e8\u05db\u05d9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05e8\u05d1\u05d9 \u05d1\u05e8\u05db\u05d9\u05d4\nType: RabbinicAuthority"}, {"color": "#FF7F7F", "id": "sg1_bq_Genesis_11_5", "label": "\u05d0\u05e9\u05e8 \u05d1\u05e0\u05d5 \u05d1\u05e0\u05d9 \u05d4\u05d0\u05d3", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d0\u05e9\u05e8 \u05d1\u05e0\u05d5 \u05d1\u05e0\u05d9 \u05d4\u05d0\u05d3\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_adam_kadmaah", "label": "\u05d0\u05d3\u05dd \u05e7\u05d3\u05de\u05d0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d0\u05d3\u05dd \u05e7\u05d3\u05de\u05d0\u05d4\nType: BiblicalFigure"}, {"color": "#90EE90", "id": "sg1_hamabul", "label": "\u05d4\u05de\u05d1\u05d5\u05dc", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d4\u05de\u05d1\u05d5\u05dc\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d4\u05de\u05d1\u05d5\u05dc\nReason: embedding cos=0.903 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_hafalgah", "label": "\u05d4\u05e4\u05dc\u05d2\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d4\u05e4\u05dc\u05d2\u05d4\nType: HistoricalEventOrPeriod"}, {"color": "#90EE90", "id": "sg1_elohim", "label": "\u05d0\u05dc\u05d4\u05d9\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d0\u05dc\u05d4\u05d9\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05e9\u05dd \u05d0\u05dc\u05d4\u05d9\u05dd\nReason: embedding cos=0.941 (no LLM verify)"}, {"color": "#90EE90", "id": "sg1_hashem_hamyuchad", "label": "\u05d4\u05e9\u05dd \u05d4\u05de\u05d9\u05d5\u05d7\u05d3", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d4\u05e9\u05dd \u05d4\u05de\u05d9\u05d5\u05d7\u05d3\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05e9\u05dd \u05d4\u05de\u05d9\u05d5\u05d7\u05d3\nReason: embedding cos=0.847 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_hashchatat_haaretz", "label": "\u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_netiotav", "label": "\u05e0\u05d8\u05d9\u05e2\u05d5\u05ea\u05d9\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05e0\u05d8\u05d9\u05e2\u05d5\u05ea\u05d9\u05d5\nType: TheologicalConcept"}, {"color": "#90EE90", "id": "sg2_shmo_hagadol", "label": "\u05e9\u05de\u05d5 \u05d4\u05d2\u05d3\u05d5\u05dc", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05e9\u05de\u05d5 \u05d4\u05d2\u05d3\u05d5\u05dc\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d4\u05e9\u05dd \u05d4\u05d2\u05d3\u05d5\u05dc\nReason: embedding cos=0.809 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg2_ha_yerida", "label": "\u05d4\u05d9\u05e8\u05d9\u05d3\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d4\u05d9\u05e8\u05d9\u05d3\u05d4\nType: TheologicalConcept"}, {"color": "#90EE90", "id": "sg3_sdom", "label": "\u05e1\u05d3\u05d5\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05e1\u05d3\u05d5\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05e1\u05d3\u05d5\u05dd\nReason: embedding cos=0.916 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg2_darshu", "label": "\u05d3\u05e8\u05e9\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d3\u05e8\u05e9\u05d5\nType: CommentaryTypeOrMethod"}, {"color": "#90EE90", "id": "sg2_midat_sodom", "label": "\u05de\u05d3\u05ea \u05e1\u05d3\u05d5\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05de\u05d3\u05ea \u05e1\u05d3\u05d5\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d3\u05d9\u05df\nReason: embedding cos=0.869 (no LLM verify)"}, {"color": "#90EE90", "id": "sg2_chatam", "label": "\u05d7\u05d8\u05d0\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d7\u05d8\u05d0\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d7\u05d8\u05d0\u05dd\nReason: embedding cos=0.943 (no LLM verify)"}, {"color": "#90EE90", "id": "sg2_chat_avihem", "label": "\u05d7\u05d8\u05d0 \u05d0\u05d1\u05d9\u05d4\u05dd", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_6\u3011: \u05d7\u05d8\u05d0 \u05d0\u05d1\u05d9\u05d4\u05dd\n\u3010Ricanati_Zicaron_aharon_ed\u3011: \u05d7\u05d8\u05d0 \u05d0\u05d1\u05d9\u05d4\u05dd\nReason: embedding cos=0.938 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg2_bnei_gamlaya", "label": "\u05d1\u05e0\u05d9 \u05d7\u05de\u05e8\u05d9\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d1\u05e0\u05d9 \u05d7\u05de\u05e8\u05d9\u05d0\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg2_bq_Genesis_6_11", "label": "\u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg3_hayyeridah", "label": "\u05d4\u05d9\u05e8\u05d9\u05d3\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d4\u05d9\u05e8\u05d9\u05d3\u05d4\nType: KabbalisticConcept"}, {"color": "#FF7F7F", "id": "sg3_vhamaskil_yavin", "label": "\u05d5\u05d4\u05de\u05e9\u05db\u05d9\u05dc \u05d9\u05d1\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d5\u05d4\u05de\u05e9\u05db\u05d9\u05dc \u05d9\u05d1\u05d9\u05df\nType: TraditionOrAttribution"}, {"color": "#FF7F7F", "id": "sg3_bq_Daniel_12_10", "label": "\u05d5\u05d4\u05de\u05e9\u05db\u05d9\u05dc \u05d9\u05d1\u05d9\u05df", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_6\nLabel: \u05d5\u05d4\u05de\u05e9\u05db\u05d9\u05dc \u05d9\u05d1\u05d9\u05df\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_bq_7f8a9b0c1d2e", "label": "\u05d5\u05d9\u05d0\u05de\u05e8\u05d5 \u05d4\u05d1\u05d4 \u05e0\u05d1\u05e0\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05d9\u05d0\u05de\u05e8\u05d5 \u05d4\u05d1\u05d4 \u05e0\u05d1\u05e0\u05d4 \u05dc\u05e0\u05d5 \u05e2\u05d9\u05e8 \u05d5\u05de\u05d2\u05d3\u05dc \u05d5\u05d2\u05d5\u0027\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg4_ha_ir", "label": "\u05e2\u05d9\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e2\u05d9\u05e8\nType: Place"}, {"color": "#87CEFA", "id": "sg1_he_3c4d5e6f7g8h", "label": "\u05d4\u05e2\u05d9\u05e8 \u05d4\u05e0\u05d6\u05db\u05e8\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e2\u05d9\u05e8 \u05d4\u05e0\u05d6\u05db\u05e8\u05ea\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg1_bq_8g9h0i1j2k3l", "label": "\u05d5\u05e9\u05dd \u05d4\u05e7\u05d8\u05e0\u05d4 \u05e8\u05d7\u05dc", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05e9\u05dd \u05d4\u05e7\u05d8\u05e0\u05d4 \u05e8\u05d7\u05dc\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_he_4d5e6f7g8h9i", "label": "\u05e8\u05d7\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e8\u05d7\u05dc\nType: BiblicalFigure"}, {"color": "#87CEFA", "id": "bq_proverbs_18_10", "label": "\u05de\u05d2\u05d3\u05dc \u05e2\u05d5\u05d6 \u05e9\u05dd \u05d9\u05d9\u0027", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05d2\u05d3\u05dc \u05e2\u05d5\u05d6 \u05e9\u05dd \u05d9\u05d9\u0027\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_he_5e6f7g8h9i0j", "label": "\u05e9\u05dd \u05d9\u05d9\u0027", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05dd \u05d9\u05d9\u0027\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg1_he_6f7g8h9i0j1k", "label": "\u05e9\u05de\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05de\u05d9\u05dd\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg1_he_7g8h9i0j1k2l", "label": "\u05e9\u05de\u05d9\u05dd \u05d4\u05e2\u05dc\u05d9\u05d5\u05e0\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05de\u05d9\u05dd \u05d4\u05e2\u05dc\u05d9\u05d5\u05e0\u05d9\u05dd\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg2_shem", "label": "\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05dd\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg2_shekhinah", "label": "\u05d4\u05e9\u05db\u05d9\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e9\u05db\u05d9\u05e0\u05d4\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df", "label": "\u05d1\u05e0\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05e0\u05d9\u05df\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg2_kochot_hatumah", "label": "\u05db\u05d7\u05d5\u05ea \u05d4\u05d8\u05d5\u05de\u05d0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05db\u05d7\u05d5\u05ea \u05d4\u05d8\u05d5\u05de\u05d0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_nachash", "label": "\u05d4\u05e0\u05d7\u05e9", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e0\u05d7\u05e9\nType: BiblicalFigure"}, {"color": "#87CEFA", "id": "sg2_bq_3c4d5e6f7a8b", "label": "\u05d1\u05d9\u05ea \u05e7\u05d3\u05e9\u05e0\u05d5 \u05d5\u05ea\u05e4\u05d0\u05e8", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05d9\u05ea \u05e7\u05d3\u05e9\u05e0\u05d5 \u05d5\u05ea\u05e4\u05d0\u05e8\u05ea\u05e0\u05d5 \u05d4\u05d9\u05d4 \u05dc\u05e9\u05e8\u05e4\u05ea \u05d0\u05e9\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg2_tifartenu", "label": "\u05ea\u05e4\u05d0\u05e8\u05ea\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05ea\u05e4\u05d0\u05e8\u05ea\u05e0\u05d5\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg2_beit_kodshenu", "label": "\u05d1\u05d9\u05ea \u05e7\u05d3\u05e9\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05d9\u05ea \u05e7\u05d3\u05e9\u05e0\u05d5\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg2_mikdash_yy", "label": "\u05de\u05e7\u05d3\u05e9 \u05d9\u05d9\u0027", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05e7\u05d3\u05e9 \u05d9\u05d9\u0027\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg3_bq_Eichah_1_10", "label": "\u05db\u05d9 \u05d0\u05ea \u05de\u05e7\u05d3\u05e9 \u05d9\u05d9\u0027 ", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05db\u05d9 \u05d0\u05ea \u05de\u05e7\u05d3\u05e9 \u05d9\u05d9\u0027 \u05d8\u05de\u05d0\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "bq_genesis_11_3", "label": "\u05d5\u05ea\u05d4\u05d9 \u05dc\u05d4\u05dd \u05d4\u05dc\u05d1\u05e0\u05d4 ", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05ea\u05d4\u05d9 \u05dc\u05d4\u05dd \u05d4\u05dc\u05d1\u05e0\u05d4 \u05dc\u05d0\u05d1\u05df\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg2_halevenah", "label": "\u05d4\u05dc\u05d1\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05dc\u05d1\u05e0\u05d4\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg2_even", "label": "\u05d0\u05d1\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05d1\u05df\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg2_bq_Bereshit_28_12", "label": "\u05d5\u05e8\u05d0\u05e9\u05d5 \u05d1\u05e9\u05de\u05d9\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05e8\u05d0\u05e9\u05d5 \u05d1\u05e9\u05de\u05d9\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg3_shem", "label": "\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05dd\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_levanah", "label": "\u05dc\u05d1\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05dc\u05d1\u05e0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_even", "label": "\u05d0\u05d1\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05d1\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_shiur_komah", "label": "\u05e9\u05d9\u05e2\u05d5\u05e8 \u05e7\u05d5\u05de\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05d9\u05e2\u05d5\u05e8 \u05e7\u05d5\u05de\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_even_haroshah", "label": "\u05d0\u05d1\u05df \u05d4\u05e8\u05d0\u05e9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05d1\u05df \u05d4\u05e8\u05d0\u05e9\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "\u05e1\u05d5\u05d3", "label": "\u05e1\u05d5\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e1\u05d5\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_ha_even_ha_roshah", "label": "\u05d4\u05d0\u05d1\u05df \u05d4\u05e8\u05d0\u05e9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05d0\u05d1\u05df \u05d4\u05e8\u05d0\u05e9\u05d4\nType: PhysicalObject"}, {"color": "#87CEFA", "id": "sg4_ha_migdal", "label": "\u05d4\u05de\u05d2\u05d3\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05de\u05d2\u05d3\u05dc\nType: Place"}, {"color": "#87CEFA", "id": "sg4_shem", "label": "\u05e9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05dd\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg4_manhig", "label": "\u05de\u05e0\u05d4\u05d9\u05d2", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05e0\u05d4\u05d9\u05d2\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg4_bereshit_rabbah", "label": "\u05d1\u05e8\u05d0\u05e9\u05d9\u05ea \u05e8\u05d1\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05e8\u05d0\u05e9\u05d9\u05ea \u05e8\u05d1\u05d4\nType: MidrashicOrRabbinicWork"}, {"color": "#87CEFA", "id": "sg4_rabi_chiya", "label": "\u05e8\u05d1\u05d9 \u05d7\u05d9\u05d9\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e8\u05d1\u05d9 \u05d7\u05d9\u05d9\u05d0\nType: RabbinicAuthority"}, {"color": "#87CEFA", "id": "sg4_avodah_zarah", "label": "\u05e2\u05d1\u05d5\u05d3\u05d4 \u05d6\u05e8\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e2\u05d1\u05d5\u05d3\u05d4 \u05d6\u05e8\u05d4\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg5_avodah_zarah", "label": "\u05e2\u05d1\u05d5\u05d3\u05d4 \u05d6\u05e8\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e2\u05d1\u05d5\u05d3\u05d4 \u05d6\u05e8\u05d4\nType: HalakhicConcept"}, {"color": "#87CEFA", "id": "sg5_ha_olam_ha_zeh", "label": "\u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e4\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e2\u05d5\u05dc\u05dd \u05d4\u05e9\u05e4\u05dc\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_bq_b2c3d4e5f6a7", "label": "\u05d5\u05ea\u05ea\u05df \u05d8\u05e8\u05e3 \u05dc\u05d1\u05d9\u05ea\u05d4 ", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05ea\u05ea\u05df \u05d8\u05e8\u05e3 \u05dc\u05d1\u05d9\u05ea\u05d4 \u05d5\u05d7\u05e7 \u05dc\u05e0\u05e2\u05e8\u05d5\u05ea\u05d9\u05d4\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg5_eshet_chayil", "label": "\u05d0\u05e9\u05ea \u05d7\u05d9\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e9\u05ea \u05d7\u05d9\u05dc\nType: BiblicalFigure"}, {"color": "#87CEFA", "id": "sg5_bq_Iyov_28_5", "label": "\u05d0\u05e8\u05e5 \u05de\u05de\u05e0\u05d4 \u05d9\u05e6\u05d0 \u05dc\u05d7", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e8\u05e5 \u05de\u05de\u05e0\u05d4 \u05d9\u05e6\u05d0 \u05dc\u05d7\u05dd \u05d5\u05ea\u05d7\u05ea\u05d9\u05d4 \u05e0\u05d4\u05e4\u05da \u05db\u05de\u05d5 \u05d0\u05e9\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg5_eretz_ha_elyonah", "label": "\u05d0\u05e8\u05e5 \u05d4\u05e2\u05dc\u05d9\u05d5\u05e0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e8\u05e5 \u05d4\u05e2\u05dc\u05d9\u05d5\u05e0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_ha_binyan", "label": "\u05d4\u05d1\u05e0\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05d1\u05e0\u05d9\u05df\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg5_bq_d4e5f6a7b8c9", "label": "\u05d1\u05dc\u05e9\u05d5\u05e0\u05d5\u05ea \u05d5\u05d1\u05d0\u05e8\u05e6\u05d5\u05ea", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05dc\u05e9\u05d5\u05e0\u05d5\u05ea \u05d5\u05d1\u05d0\u05e8\u05e6\u05d5\u05ea\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_\u05dc\u05e9\u05d5\u05e0\u05d5\u05ea", "label": "\u05dc\u05e9\u05d5\u05e0\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05dc\u05e9\u05d5\u05e0\u05d5\u05ea\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg6_\u05d0\u05e8\u05e6\u05d5\u05ea", "label": "\u05d0\u05e8\u05e6\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e8\u05e6\u05d5\u05ea\nType: Place"}, {"color": "#87CEFA", "id": "sg6_bq_60005_hash", "label": "\u05de\u05e7\u05d3\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05e7\u05d3\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_\u05de\u05d6\u05e8\u05d7", "label": "\u05de\u05d6\u05e8\u05d7", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05d6\u05e8\u05d7\nType: Place"}, {"color": "#87CEFA", "id": "sg6_\u05de\u05e2\u05e8\u05d1", "label": "\u05de\u05e2\u05e8\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05de\u05e2\u05e8\u05d1\nType: Place"}, {"color": "#87CEFA", "id": "sg6_bq_60008_hash", "label": "\u05d0\u05e0\u05e9\u05d9 \u05d3\u05de\u05d9\u05dd \u05d5\u05de\u05e8\u05de\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e0\u05e9\u05d9 \u05d3\u05de\u05d9\u05dd \u05d5\u05de\u05e8\u05de\u05d4 \u05dc\u05d0 \u05d9\u05d7\u05e6\u05d5 \u05d9\u05de\u05d9\u05d4\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_\u05e9\u05e0\u05d5\u05ea_\u05d4\u05d0\u05d3\u05dd", "label": "\u05e9\u05e0\u05d5\u05ea \u05d4\u05d0\u05d3\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e9\u05e0\u05d5\u05ea \u05d4\u05d0\u05d3\u05dd\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg6_bq_60010_hash", "label": "\u05d5\u05d9\u05e8\u05d3 \u05d9\u05d9\u0027 \u05dc\u05e8\u05d0\u05d5\u05ea ", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05d9\u05e8\u05d3 \u05d9\u05d9\u0027 \u05dc\u05e8\u05d0\u05d5\u05ea \u05d0\u05ea \u05d4\u05e2\u05d9\u05e8 \u05d5\u05d2\u05d5\u0027\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_\u05d9\u05d9", "label": "\u05d9\u05d9\u0027", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d9\u05d9\u0027\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg6_\u05d9\u05e8\u05d9\u05d3\u05d4", "label": "\u05d9\u05e8\u05d9\u05d3\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d9\u05e8\u05d9\u05d3\u05d4\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg6_bq_60015_hash", "label": "\u05d0\u05e8\u05d3\u05d4 \u05e0\u05d0 \u05d5\u05d0\u05e8\u05d0\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e8\u05d3\u05d4 \u05e0\u05d0 \u05d5\u05d0\u05e8\u05d0\u05d4\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_bq_60016_hash", "label": "\u05d5\u05d9\u05d0\u05de\u05e8 \u05d9\u05d9\u0027 \u05d0\u05dc \u05dc\u05d1", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05d9\u05d0\u05de\u05e8 \u05d9\u05d9\u0027 \u05d0\u05dc \u05dc\u05d1\u05d5\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg6_bq_Genesis_11_2", "label": "\u05d5\u05d9\u05d4\u05d9 \u05d1\u05e0\u05e1\u05e2\u05dd \u05de\u05e7\u05d3\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05d9\u05d4\u05d9 \u05d1\u05e0\u05e1\u05e2\u05dd \u05de\u05e7\u05d3\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg8_remez", "label": "\u05e8\u05de\u05d6", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e8\u05de\u05d6\nType: CommentaryTypeOrMethod"}, {"color": "#87CEFA", "id": "sg8_bq_bneihada0004", "label": "\u05d1\u05e0\u05d9 \u05d4\u05d0\u05d3\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d1\u05e0\u05d9 \u05d4\u05d0\u05d3\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg8_bq_veatahlo0006", "label": "\u05d5\u05e2\u05ea\u05d4 \u05dc\u05d0 \u05d9\u05d1\u05e6\u05e8 \u05de\u05d4", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d5\u05e2\u05ea\u05d4 \u05dc\u05d0 \u05d9\u05d1\u05e6\u05e8 \u05de\u05d4\u05dd\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg8_hester_panym", "label": "\u05d4\u05e1\u05ea\u05d9\u05e8 \u05e4\u05e0\u05d9\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e1\u05ea\u05d9\u05e8 \u05e4\u05e0\u05d9\u05d5\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg8_haanan_hanireh_lanu", "label": "\u05d4\u05e2\u05e0\u05df \u05d4\u05e0\u05e8\u05d0\u05d4 \u05dc\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e2\u05e0\u05df \u05d4\u05e0\u05e8\u05d0\u05d4 \u05dc\u05e0\u05d5\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg8_eretz_hachaim", "label": "\u05d0\u05e8\u05e5 \u05d4\u05d7\u05d9\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d0\u05e8\u05e5 \u05d4\u05d7\u05d9\u05d9\u05dd\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg8_heider_hakoach", "label": "\u05d4\u05e2\u05d3\u05e8 \u05d4\u05db\u05d7", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e2\u05d3\u05e8 \u05d4\u05db\u05d7\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg8_hitrachaka", "label": "\u05d4\u05ea\u05e8\u05d7\u05e7\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05ea\u05e8\u05d7\u05e7\u05d4\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg9_he_999999999999", "label": "\u05e8\u05d7\u05de\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05e8\u05d7\u05de\u05d9\u05dd\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg9_bq_Psalms_29_10", "label": "\u05d9\u05d9\u0027 \u05dc\u05de\u05d1\u05d5\u05dc \u05d9\u05e9\u05d1", "shape": "box", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d9\u05d9\u0027 \u05dc\u05de\u05d1\u05d5\u05dc \u05d9\u05e9\u05d1\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg9_he_cccccccccccc", "label": "\u05d4\u05e9\u05dd \u05d4\u05e0\u05db\u05d1\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e9\u05dd \u05d4\u05e0\u05db\u05d1\u05d3\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg9_he_eeeeeeeeeeee", "label": "\u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d4\u05e9\u05d7\u05ea\u05ea \u05d4\u05d0\u05e8\u05e5\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg9_he_ffffffffffff", "label": "\u05d9\u05d5\u05e9\u05d1\u05d9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d9\u05d5\u05e9\u05d1\u05d9\u05d4\nType: OtherConcept"}, {"color": "#87CEFA", "id": "sg9_he_111111111112", "label": "\u05d3\u05d5\u05e8 \u05d4\u05de\u05d1\u05d5\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO Ricanati_Zicaron_aharon_ed\nLabel: \u05d3\u05d5\u05e8 \u05d4\u05de\u05d1\u05d5\u05dc\nType: HistoricalEventOrPeriod"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_8g9h0i1j2k3l", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_8g9h0i1j2k3l"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_ha_ir", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60008_hash", "label": "explains", "title": "Unique to Ricanati_Zicaron_aharon_ed: explains", "to": "sg2_chatam"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60010_hash", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg6_\u05d9\u05d9"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_remez", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg2_chatam"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df", "label": "locatedIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: locatedIn", "to": "sg6_\u05d0\u05e8\u05e6\u05d5\u05ea"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_hester_panym", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg8_hitrachaka"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_avodah_zarah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg5_ha_olam_ha_zeh"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_shmo_hagadol", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_genesis_11_3", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_even"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_Eichah_1_10", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_mikdash_yy"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_migdal", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_7f8a9b0c1d2e"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_ha_olam_ha_zeh", "label": "correspondsTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo", "to": "sg5_ha_olam_ha_zeh"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_avihem", "label": "isCalled", "title": "Unique to RAMBAN_6: isCalled", "to": "sg1_adam_kadmaah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_bereshit_rabbah", "label": "cites", "title": "Unique to Ricanati_Zicaron_aharon_ed: cites", "to": "sg4_rabi_chiya"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_3c4d5e6f7a8b", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg2_bq_3c4d5e6f7a8b"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_genesis_11_3", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg3_levanah"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_midat_sodom", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg3_sdom"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ravi_berachiah", "label": "mentions", "title": "Unique to RAMBAN_6: mentions", "to": "sg1_adam_kadmaah"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_genesis_11_3", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_genesis_11_3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_kotzcin_bantiyot", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg2_netiotav"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60010_hash", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg6_bq_60010_hash"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_Genesis_11_5", "label": "appearsIn", "title": "Unique to RAMBAN_6: appearsIn", "to": "sg1_bq_Genesis_11_5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_Iyov_28_5", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg5_bq_Iyov_28_5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60005_hash", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg6_\u05de\u05d6\u05e8\u05d7"}, {"arrows": "to", "color": "#228B22", "from": "sg2_chatam", "label": "relatedTo", "title": "Shared Relation: relatedTo", "to": "sg2_chat_avihem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_he_cccccccccccc", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_bq_Psalms_29_10", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_even", "label": "correspondsTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo", "to": "sg3_even_haroshah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60008_hash", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg6_\u05e9\u05e0\u05d5\u05ea_\u05d4\u05d0\u05d3\u05dd"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_even", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_genesis_11_3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hafalgah", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg1_migdal"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_genesis_11_3", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg3_even"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_4d5e6f7g8h9i", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_8g9h0i1j2k3l"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_chatam", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg2_shmo_hagadol"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_hayyeridah", "label": "correspondsTo", "title": "Unique to RAMBAN_6: correspondsTo", "to": "sg2_midat_sodom"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hashchatat_haaretz", "label": "causes", "title": "Unique to RAMBAN_6: causes", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_6f7g8h9i0j1k", "label": "isA", "title": "Unique to Ricanati_Zicaron_aharon_ed: isA", "to": "sg1_he_7g8h9i0j1k2l"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60005_hash", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg6_bq_Genesis_11_2"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_netiotav", "label": "causes", "title": "Unique to RAMBAN_6: causes", "to": "sg1_hafalgah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_Genesis_11_4", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_7f8a9b0c1d2e"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_migdal", "label": "symbolizes", "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes", "to": "sg1_he_5e6f7g8h9i0j"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_levanah", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_genesis_11_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_migdal", "label": "isCalled", "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled", "to": "bq_proverbs_18_10"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_5e6f7g8h9i0j", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_proverbs_18_10"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hafalgah", "label": "symbolizes", "title": "Unique to RAMBAN_6: symbolizes", "to": "sg1_midah_keneged_midah"}, {"arrows": "to", "color": "#87CEFA", "from": "\u05e1\u05d5\u05d3", "label": "hasPart", "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart", "to": "sg3_shiur_komah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_\u05d9\u05d9", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg6_\u05d9\u05e8\u05d9\u05d3\u05d4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_d4e5f6a7b8c9", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg5_ha_binyan"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_halevenah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg2_even"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_shmo_hagadol", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg3_sdom"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_sdom", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg1_hashem_hamyuchad"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_mikdash_yy", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg3_bq_Eichah_1_10"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_Eichah_1_10", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg3_bq_Eichah_1_10"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_midah_keneged_midah", "label": "hasPart", "title": "Unique to Ricanati_Zicaron_aharon_ed: hasPart", "to": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_Bereshit_28_12", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg1_he_7g8h9i0j1k2l"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_bq_veatahlo0006", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg8_bq_veatahlo0006"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hafalgah", "label": "symbolizes", "title": "Unique to RAMBAN_6: symbolizes", "to": "sg1_hashem_hamyuchad"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_chatam", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg2_midat_sodom"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_3c4d5e6f7a8b", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "\u05e1\u05d5\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_Eichah_1_10", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "\u05e1\u05d5\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_6f7g8h9i0j1k", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_halevenah", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_genesis_11_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_rabi_chiya", "label": "commentedOn", "title": "Unique to Ricanati_Zicaron_aharon_ed: commentedOn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_levanah", "label": "isA", "title": "Unique to Ricanati_Zicaron_aharon_ed: isA", "to": "sg3_even"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_hamabul", "label": "symbolizes", "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes", "to": "sg8_hester_panym"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_avihem", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg8_bq_bneihada0004"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_Genesis_11_5", "label": "mentions", "title": "Unique to RAMBAN_6: mentions", "to": "sg1_adam_kadmaah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60016_hash", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg6_bq_60016_hash"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60015_hash", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg3_sdom"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_Genesis_11_4", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_shem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_\u05d9\u05d9", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg6_bq_60010_hash"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_he_ffffffffffff", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg8_hester_panym"}, {"arrows": "to", "color": "#228B22", "from": "sg1_bq_Genesis_11_4", "label": "appearsIn", "title": "Shared Relation: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_7f8a9b0c1d2e", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_Genesis_11_4", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg5_avodah_zarah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_haanan_hanireh_lanu", "label": "symbolizes", "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes", "to": "sg2_shmo_hagadol"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_migdal", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_\u05d9\u05e8\u05d9\u05d3\u05d4", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg3_sdom"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_3c4d5e6f7g8h", "label": "isA", "title": "Unique to Ricanati_Zicaron_aharon_ed: isA", "to": "sg4_ha_ir"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_b2c3d4e5f6a7", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg5_ha_olam_ha_zeh"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_mikdash_yy", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_tifartenu", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg2_bq_3c4d5e6f7a8b"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_kotzcin_bantiyot", "label": "causes", "title": "Unique to RAMBAN_6: causes", "to": "sg1_hafalgah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_\u05dc\u05e9\u05d5\u05e0\u05d5\u05ea"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_shem", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_shem", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg4_manhig"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_3c4d5e6f7a8b", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_beit_kodshenu"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_8g9h0i1j2k3l", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg4_ha_ir"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_he_eeeeeeeeeeee", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bq_Genesis_11_4", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg1_he_7g8h9i0j1k2l"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60015_hash", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg6_bq_60015_hash"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_rabi_chiya", "label": "commentedOn", "title": "Unique to Ricanati_Zicaron_aharon_ed: commentedOn", "to": "sg4_shem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_hester_panym", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg8_heider_hakoach"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_ha_ir", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg1_bq_7f8a9b0c1d2e"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ravi_berachiah", "label": "explains", "title": "Unique to RAMBAN_6: explains", "to": "sg1_bq_Genesis_11_5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_shekhinah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_\u05d4\u05d1\u05e0\u05d9\u05df"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_shem", "label": "isA", "title": "Unique to Ricanati_Zicaron_aharon_ed: isA", "to": "sg4_avodah_zarah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_3c4d5e6f7a8b", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_tifartenu"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_haanan_hanireh_lanu", "label": "correspondsTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo", "to": "sg8_eretz_hachaim"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_even", "label": "isCalled", "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled", "to": "sg4_ha_even_ha_roshah"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hashchatat_haaretz", "label": "appearsIn", "title": "Unique to RAMBAN_6: appearsIn", "to": "sg2_bq_Genesis_6_11"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_bq_bneihada0004", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg1_avihem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_Iyov_28_5", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg5_eretz_ha_elyonah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60008_hash", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_bq_60008_hash"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bnei_gamlaya", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg1_adam_kadmaah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_eretz_hachaim", "label": "symbolizes", "title": "Unique to Ricanati_Zicaron_aharon_ed: symbolizes", "to": "sg8_hester_panym"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_shem", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_proverbs_18_10"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_shmo_hagadol", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg8_hester_panym"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_proverbs_18_10", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_proverbs_18_10"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_midah_keneged_midah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg5_ha_binyan"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_bereshit_rabbah", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg1_bq_Genesis_11_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_bq_veatahlo0006", "label": "explains", "title": "Unique to Ricanati_Zicaron_aharon_ed: explains", "to": "sg2_chatam"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_b2c3d4e5f6a7", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg5_bq_b2c3d4e5f6a7"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_kochot_hatumah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg3_nachash"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_sdom", "label": "causes", "title": "Unique to Ricanati_Zicaron_aharon_ed: causes", "to": "sg1_hamabul"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_he_4d5e6f7g8h9i", "label": "isCalled", "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled", "to": "sg4_ha_ir"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hafalgah", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg1_avihem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_bq_b2c3d4e5f6a7", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg5_eshet_chayil"}, {"arrows": "to", "color": "#87CEFA", "from": "\u05e1\u05d5\u05d3", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_bq_Genesis_11_2"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_ha_yerida", "label": "causes", "title": "Unique to RAMBAN_6: causes", "to": "sg2_chatam"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_genesis_11_3", "label": "mentions", "title": "Unique to Ricanati_Zicaron_aharon_ed: mentions", "to": "sg2_halevenah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg8_bq_bneihada0004", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg4_bereshit_rabbah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_shem", "label": "correspondsTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: correspondsTo", "to": "\u05e1\u05d5\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_beit_kodshenu", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg2_bq_3c4d5e6f7a8b"}, {"arrows": "to", "color": "#228B22", "from": "sg1_hamabul", "label": "symbolizes", "title": "Shared Relation: symbolizes", "to": "sg1_elohim"}, {"arrows": "to", "color": "#87CEFA", "from": "bq_proverbs_18_10", "label": "isCalled", "title": "Unique to Ricanati_Zicaron_aharon_ed: isCalled", "to": "sg2_shem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_ha_ir", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg4_ha_migdal"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_vhamaskil_yavin", "label": "appearsIn", "title": "Unique to RAMBAN_6: appearsIn", "to": "sg3_bq_Daniel_12_10"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_darshu", "label": "relatedTo", "title": "Unique to RAMBAN_6: relatedTo", "to": "sg1_bq_Genesis_11_5"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_hafalgah", "label": "causes", "title": "Unique to RAMBAN_6: causes", "to": "sg1_kotzcin_bantiyot"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_even", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "bq_genesis_11_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_he_111111111112", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg3_sdom"}, {"arrows": "to", "color": "#87CEFA", "from": "sg6_bq_60005_hash", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg6_\u05de\u05e2\u05e8\u05d1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_hamabul", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg9_he_999999999999"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_eretz_ha_elyonah", "label": "relatedTo", "title": "Unique to Ricanati_Zicaron_aharon_ed: relatedTo", "to": "sg5_ha_binyan"}, {"arrows": "to", "color": "#87CEFA", "from": "sg9_bq_Psalms_29_10", "label": "appearsIn", "title": "Unique to Ricanati_Zicaron_aharon_ed: appearsIn", "to": "sg9_bq_Psalms_29_10"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_Genesis_11_4", "label": "explains", "title": "Unique to RAMBAN_6: explains", "to": "sg1_bq_shem_1a2b3c4d5e6f"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -30000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

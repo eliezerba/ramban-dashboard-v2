@@ -1,0 +1,416 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FF7F7F", "id": "sg1_ha_katuv", "label": "\u05d4\u05db\u05ea\u05d5\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d4\u05db\u05ea\u05d5\u05d1\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg1_alohenu", "label": "\u05d0\u05dc\u05d4\u05d9\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_alohikha", "label": "\u05d0\u05dc\u05d4\u05d9\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d0\u05dc\u05d4\u05d9\u05da\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_bq_devarim_9_1_3", "label": "\u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc \u05d0\u05ea\u05d4 \u05e2", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc \u05d0\u05ea\u05d4 \u05e2\u05d5\u05d1\u05e8 \u05d4\u05d9\u05d5\u05dd... \u05db\u05d9 \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_yy_alohikha_theo", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da\nType: TheologicalConcept"}, {"color": "#90EE90", "id": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc", "label": "\u05d9\u05e9\u05e8\u05d0\u05dc", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_32\u3011: \u05d9\u05e9\u05e8\u05d0\u05dc\n\u3010DaatChachamVatokan107\u3011: \u05d9\u05e9\u05e8\u05d0\u05dc\nReason: embedding cos=0.807 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg1_devarim_9_1_3_ref", "label": "\u05dc\u05d4\u05dc\u05df \u05d8, \u05d0-\u05d2", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05dc\u05d4\u05dc\u05df \u05d8, \u05d0-\u05d2\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg1_bq_devarim_20_3_4", "label": "\u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc \u05d0\u05ea\u05dd \u05e7", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc \u05d0\u05ea\u05dd \u05e7\u05e8\u05d1\u05d9\u05dd \u05d4\u05d9\u05d5\u05dd... \u05db\u05d9 \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_yy_aloheikhem_theo", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg1_devarim_20_3_4_ref", "label": "\u05e9\u05dd \u05db, \u05d2-\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05dd \u05db, \u05d2-\u05d3\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg1_ha_parshiyot", "label": "\u05d4\u05e4\u05e8\u05e9\u05d9\u05d5\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d4\u05e4\u05e8\u05e9\u05d9\u05d5\u05ea\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg1_bq_devarim_6_5", "label": "\u05d5\u05d0\u05d4\u05d1\u05ea \u05d0\u05ea \u05d9\u05f4\u05d9 \u05d0\u05dc", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d5\u05d0\u05d4\u05d1\u05ea \u05d0\u05ea \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_devarim_verse_5_ref", "label": "\u05dc\u05d4\u05dc\u05df \u05e4\u05e1\u05d5\u05e7 \u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05dc\u05d4\u05dc\u05df \u05e4\u05e1\u05d5\u05e7 \u05d4\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg1_bq_devarim_20_3", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg1_bq_devarim_6_5_phrase", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_bq_a1b2c3d4e5f6", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_bq_yy_alohikha", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05da\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_bq_d4e5f6g7h8i9", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05de\u05e9\u05d4", "label": "\u05de\u05e9\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05de\u05e9\u05d4\nType: BiblicalFigure"}, {"color": "#FF7F7F", "id": "sg2_\u05e9\u05dd_\u05ea\u05e4\u05d0\u05e8\u05ea", "label": "\u05e9\u05dd \u05ea\u05e4\u05d0\u05e8\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05dd \u05ea\u05e4\u05d0\u05e8\u05ea\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05d3\u05dc\u05f4\u05ea_\u05d0\u05d7\u05d3", "label": "\u05d3\u05dc\u05f4\u05ea \u05d0\u05d7\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d3\u05dc\u05f4\u05ea \u05d0\u05d7\u05d3\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg3_bq_yesha_63_12", "label": "\u05d1\u05d5\u05e7\u05e2 \u05de\u05d9\u05dd \u05de\u05e4\u05e0\u05d9\u05d4\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d1\u05d5\u05e7\u05e2 \u05de\u05d9\u05dd \u05de\u05e4\u05e0\u05d9\u05d4\u05dd \u05dc\u05e2\u05e9\u05d5\u05ea \u05dc\u05d5 \u05e9\u05dd \u05e2\u05d5\u05dc\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05d9\u05e9\u05e2\u05d9\u05d4\u05d5_\u05e1\u05d2_\u05d9\u05d1", "label": "\u05d9\u05e9\u05e2\u05d9\u05d4\u05d5 \u05e1\u05d2, \u05d9\u05d1", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05e9\u05e2\u05d9\u05d4\u05d5 \u05e1\u05d2, \u05d9\u05d1\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg2_\u05e9\u05dd_\u05e2\u05d5\u05dc\u05dd", "label": "\u05e9\u05dd \u05e2\u05d5\u05dc\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05dd \u05e2\u05d5\u05dc\u05dd\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e7\u05e8\u05d9\u05ea_\u05e9\u05de\u05e2", "label": "\u05e7\u05e8\u05d9\u05ea \u05e9\u05de\u05e2", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e7\u05e8\u05d9\u05ea \u05e9\u05de\u05e2\nType: ReligiousPractice"}, {"color": "#FF7F7F", "id": "sg2_bq_f6g7h8i9j0k1", "label": "\u05d1\u05e8\u05d5\u05da \u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d1\u05e8\u05d5\u05da \u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5 \u05dc\u05e2\u05d5\u05dc\u05dd \u05d5\u05e2\u05d3\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_\u05db\u05d1\u05d5\u05d3_\u05de\u05dc\u05db\u05d5\u05ea\u05d5", "label": "\u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05d1\u05ea_\u05de\u05dc\u05da", "label": "\u05d1\u05ea \u05de\u05dc\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d1\u05ea \u05de\u05dc\u05da\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e6\u05d9\u05e7\u05d9_\u05e7\u05d3\u05e8\u05d4", "label": "\u05e6\u05d9\u05e7\u05d9 \u05e7\u05d3\u05e8\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e6\u05d9\u05e7\u05d9 \u05e7\u05d3\u05e8\u05d4\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05d1\u05d1\u05dc\u05d9_\u05e4\u05e1\u05d7\u05d9\u05dd_\u05e0\u05d5_\u05e2\u05f4\u05d0", "label": "\u05d1\u05d1\u05dc\u05d9 \u05e4\u05e1\u05d7\u05d9\u05dd \u05e0\u05d5 \u05e2", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d1\u05d1\u05dc\u05d9 \u05e4\u05e1\u05d7\u05d9\u05dd \u05e0\u05d5 \u05e2\u05f4\u05d0\nType: TalmudicSource"}, {"color": "#90EE90", "id": "sg2_\u05d1\u05e8\u05de\u05d6", "label": "\u05d1\u05e8\u05de\u05d6", "shape": "dot", "size": 20, "title": "SHARED CONCEPT\n\u3010RAMBAN_32\u3011: \u05d1\u05e8\u05de\u05d6\n\u3010DaatChachamVatokan107\u3011: \u05e8\u05de\u05d6\nReason: embedding cos=0.817 (no LLM verify)"}, {"color": "#FF7F7F", "id": "sg2_\u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea_\u05d5\u05d4\u05e0\u05d5\u05e8\u05d0\u05d5\u05ea", "label": "\u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea \u05d5\u05d0\u05ea \u05d4\u05e0\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea \u05d5\u05d0\u05ea \u05d4\u05e0\u05d5\u05e8\u05d0\u05d5\u05ea\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_\u05e9\u05dd_\u05db\u05d1\u05d5\u05d3_\u05de\u05dc\u05db\u05d5\u05ea\u05d5", "label": "\u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg2_bq_deuteronomy_20_3", "label": "\u05db\u05d9 \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05db\u05d9 \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05db\u05dd\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg2_bq_deuteronomy_6_4", "label": "\u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5", "shape": "box", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d9\u05f4\u05d9 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5\nType: BiblicalQuotation"}, {"color": "#FF7F7F", "id": "sg3_dalet_echad_gdolah", "label": "\u05d3\u05dc\u05f4\u05ea \u05d0\u05d7\u05d3 \u05d2\u05d3\u05d5\u05dc\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d3\u05dc\u05f4\u05ea \u05d0\u05d7\u05d3 \u05d2\u05d3\u05d5\u05dc\u05d4\nType: PhysicalObject"}, {"color": "#FF7F7F", "id": "sg3_mashal_bat_melech_tzikik_kdara", "label": "\u05de\u05e9\u05dc \u05d1\u05ea \u05de\u05dc\u05da \u05d5\u05e6\u05d9\u05e7", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05de\u05e9\u05dc \u05d1\u05ea \u05de\u05dc\u05da \u05d5\u05e6\u05d9\u05e7\u05d9 \u05e7\u05d3\u05e8\u05d4\nType: OtherConcept"}, {"color": "#FF7F7F", "id": "sg3_shem_havayah", "label": "\u05e9\u05dd \u05d4\u05d5\u05d9\u05f4\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e9\u05dd \u05d4\u05d5\u05d9\u05f4\u05d4\nType: SpiritualEntity"}, {"color": "#FF7F7F", "id": "sg3_sefer_devarim", "label": "\u05e1\u05e4\u05e8 \u05d3\u05d1\u05e8\u05d9\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05e1\u05e4\u05e8 \u05d3\u05d1\u05e8\u05d9\u05dd\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg3_ba_torah", "label": "\u05ea\u05d5\u05e8\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05ea\u05d5\u05e8\u05d4\nType: BiblicalSource"}, {"color": "#FF7F7F", "id": "sg3_kavod", "label": "\u05db\u05d1\u05d5\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05db\u05d1\u05d5\u05d3\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg3_malchuto", "label": "\u05de\u05dc\u05db\u05d5\u05ea\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05de\u05dc\u05db\u05d5\u05ea\u05d5\nType: TheologicalConcept"}, {"color": "#FF7F7F", "id": "sg3_ve_amru", "label": "\u05d5\u05d0\u05de\u05e8\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO RAMBAN_32\nLabel: \u05d5\u05d0\u05de\u05e8\u05d5\nType: TraditionOrAttribution"}, {"color": "#87CEFA", "id": "sg1_wd_h", "label": "\u05d5\u05d3\"\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d5\u05d3\"\u05d4\nType: CommentaryTypeOrMethod"}, {"color": "#87CEFA", "id": "sg1_ot_ahad", "label": "\u05d0\u05d5\u05ea \u05d0\u05d7\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05d5\u05ea \u05d0\u05d7\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_bh_a", "label": "\u05d1\u05d4\"\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05d4\"\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_dl_t", "label": "\u05d3\u05dc\"\u05ea", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d3\u05dc\"\u05ea\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_\u05d7\u05d3", "label": "\u05d0\u05d7\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05d7\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_yihud", "label": "\u05d9\u05d7\u05d5\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d7\u05d5\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_shkmlo", "label": "\u05e9\u05db\u05de\u05dc\"\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05db\u05de\u05dc\"\u05d5\nType: ReligiousPractice"}, {"color": "#87CEFA", "id": "sg1_melekh", "label": "\u05de\u05dc\u05da", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05de\u05dc\u05da\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg1_ekhd", "label": "\u05e2\u05db\"\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e2\u05db\"\u05d3\nType: CommentaryTypeOrMethod"}, {"color": "#87CEFA", "id": "sg1_zohar", "label": "\u05d6\u05d5\u05d4\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d6\u05d5\u05d4\u05e8\nType: KabbalisticWork"}, {"color": "#87CEFA", "id": "sg1_ha_rav_zal", "label": "\u05d4\u05e8\u05d1 \u05d6\"\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d4\u05e8\u05d1 \u05d6\"\u05dc\nType: RabbinicAuthority"}, {"color": "#87CEFA", "id": "sg2_bq_8f3a2c1d9e4b", "label": "\u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05de\u05e2 \u05d9\u05e9\u05e8\u05d0\u05dc\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_reo_shalem", "label": "\u05e8\u05e2\u05d5 \u05e9\u05dc\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e8\u05e2\u05d5 \u05e9\u05dc\u05dd\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_nehiro", "label": "\u05e0\u05d4\u05d9\u05e8\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e0\u05d4\u05d9\u05e8\u05d5\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_alma_ilaah", "label": "\u05e2\u05dc\u05de\u05d0 \u05e2\u05dc\u05d0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e2\u05dc\u05de\u05d0 \u05e2\u05dc\u05d0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_butzina_dqeriotah", "label": "\u05d1\u05d5\u05e6\u05d9\u05e0\u05d0 \u05d3\u05e7\u05e8\u05e2\u05d5\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05d5\u05e6\u05d9\u05e0\u05d0 \u05d3\u05e7\u05e8\u05e2\u05d5\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_shvain_nehorin", "label": "\u05e9\u05d1\u05e2\u05d9\u05df \u05e0\u05d4\u05d5\u05e8\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05d1\u05e2\u05d9\u05df \u05e0\u05d4\u05d5\u05e8\u05d9\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_shvain_anfin", "label": "\u05e9\u05d1\u05e2\u05d9\u05df \u05e2\u05e0\u05e4\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05d1\u05e2\u05d9\u05df \u05e2\u05e0\u05e4\u05d9\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_ilana", "label": "\u05d0\u05d9\u05dc\u05e0\u05d0 \u05d3\u05d7\u05d9\u05d9", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05d9\u05dc\u05e0\u05d0 \u05d3\u05d7\u05d9\u05d9\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_sirafin_ilaain", "label": "\u05e9\u05d9\u05e8\u05e4\u05d9\u05df \u05e2\u05d9\u05dc\u05d0\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05d9\u05e8\u05e4\u05d9\u05df \u05e2\u05d9\u05dc\u05d0\u05d9\u05df\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg1_reuta_hada", "label": "\u05e8\u05e2\u05d5\u05ea\u05d0 \u05d7\u05d3\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e8\u05e2\u05d5\u05ea\u05d0 \u05d7\u05d3\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_had_bla_piruda", "label": "\u05d7\u05d3 \u05d1\u05dc\u05d0 \u05e4\u05d9\u05e8\u05d5\u05d3\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d7\u05d3 \u05d1\u05dc\u05d0 \u05e4\u05d9\u05e8\u05d5\u05d3\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_balah", "label": "\u05d1\u05e2\u05dc\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05e2\u05dc\u05d4\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg2_bq_1f2e3d4c5b6a", "label": "\u05d9\u05d9\u0027 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5 \u05d9\u05d9\u0027 ", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d9\u0027 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5 \u05d9\u05d9\u0027 \u05d0\u05d7\u05d3\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_sheifin", "label": "\u05e9\u05d9\u05d9\u05e4\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05d9\u05d9\u05e4\u05d9\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_tiavuta", "label": "\u05ea\u05d9\u05d0\u05d5\u05d1\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05ea\u05d9\u05d0\u05d5\u05d1\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_itaruta", "label": "\u05d0\u05d9\u05ea\u05e2\u05e8\u05d5\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05d9\u05ea\u05e2\u05e8\u05d5\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_sitrin", "label": "\u05e9\u05d9\u05ea \u05e1\u05d9\u05d8\u05e8\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05d9\u05ea \u05e1\u05d9\u05d8\u05e8\u05d9\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_v_v", "label": "\u05d5\"\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d5\"\u05d5\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg2_bq_9z8y7x6w5v4u", "label": "\u05d9\u05d9\u0027 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d9\u0027 \u05d0\u05dc\u05d4\u05d9\u05e0\u05d5\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg1_y_yud", "label": "\u05d9\u05d5\"\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d5\"\u05d3\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_reisha_ilaah", "label": "\u05e8\u05d9\u05e9\u05d0 \u05e2\u05dc\u05d0\u05d4", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e8\u05d9\u05e9\u05d0 \u05e2\u05dc\u05d0\u05d4\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg1_shma_kadisha", "label": "\u05e9\u05de\u05d0 \u05e7\u05d3\u05d9\u05e9\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e9\u05de\u05d0 \u05e7\u05d3\u05d9\u05e9\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_rvza", "label": "\u05e8\u05d6\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e8\u05d6\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_chd", "label": "\u05d0\u05d7\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05d7\u05d3\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg2_kabbalistic_concept_havayah", "label": "\u05d9\u05d9\u0027", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d9\u0027\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_yy", "label": "\u05d9\u05d9", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d9\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg3_\u05e8\u05d6\u05d0_\u05d3\u05e8\u05e9\u05d9\u05de\u05d5", "label": "\u05e8\u05d6\u05d0 \u05d3\u05e8\u05e9\u05d9\u05de\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e8\u05d6\u05d0 \u05d3\u05e8\u05e9\u05d9\u05de\u05d5\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_\u05de\u05d8\u05e8\u05d5\u05e0\u05d9\u05ea\u05d0", "label": "\u05de\u05d8\u05e8\u05d5\u05e0\u05d9\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05de\u05d8\u05e8\u05d5\u05e0\u05d9\u05ea\u05d0\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg3_bq_7a8b9c0d1e2f", "label": "\u05d1\u05e8\u05d5\u05da \u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05e8\u05d5\u05da \u05e9\u05dd \u05db\u05d1\u05d5\u05d3 \u05de\u05dc\u05db\u05d5\u05ea\u05d5 \u05dc\u05e2\u05d5\u05dc\u05dd \u05d5\u05e2\u05d3\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg3_\u05d6\u05e8", "label": "\u05d6\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d6\u05e8\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg3_\u05d7\u05d3\u05d5\u05d0", "label": "\u05d7\u05d3\u05d5\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d7\u05d3\u05d5\u05d0\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg3_\u05de\u05d1\u05d5\u05e2\u05d0", "label": "\u05de\u05d1\u05d5\u05e2\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05de\u05d1\u05d5\u05e2\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg3_\u05d9\u05d9\u05d7\u05d5\u05d3", "label": "\u05d9\u05d9\u05d7\u05d5\u05d3", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d9\u05d9\u05d7\u05d5\u05d3\nType: TheologicalConcept"}, {"color": "#87CEFA", "id": "sg3_bq_3f4g5h6i7j8k", "label": "\u05d3\u05dc\u05d0 \u05d0\u05ea\u05e2\u05e8\u05d1 \u05d6\u05e8", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d3\u05dc\u05d0 \u05d0\u05ea\u05e2\u05e8\u05d1 \u05d6\u05e8\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg4_blchishu", "label": "\u05d1\u05dc\u05d7\u05d9\u05e9\u05d5", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05dc\u05d7\u05d9\u05e9\u05d5\nType: ReligiousPractice"}, {"color": "#87CEFA", "id": "sg4_zr", "label": "\u05d6\u05e8", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d6\u05e8\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_lilya", "label": "\u05dc\u05e2\u05d9\u05dc\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05dc\u05e2\u05d9\u05dc\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_ltata", "label": "\u05dc\u05ea\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05dc\u05ea\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_bq_a8f3c2d1e9b4", "label": "\u05d6\u05db\u05d0\u05d9 \u05e2\u05de\u05d0", "shape": "box", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d6\u05db\u05d0\u05d9 \u05e2\u05de\u05d0\nType: BiblicalQuotation"}, {"color": "#87CEFA", "id": "sg5_\u05de\u05e1\u05ea\u05e8_\u05d3\u05e8\u05d5\u05dd", "label": "\u05de\u05e1\u05ea\u05e8 \u05d3\u05e8\u05d5\u05dd", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05de\u05e1\u05ea\u05e8 \u05d3\u05e8\u05d5\u05dd\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_bv_al", "label": "\u05d1\u05d5 \u05d0\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d1\u05d5 \u05d0\u05dc\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_\u05d0\u05e8\u05d1\u05e2_\u05de\u05e4\u05ea\u05d7\u05df", "label": "\u05d0\u05e8\u05d1\u05e2 \u05de\u05e4\u05ea\u05d7\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05e8\u05d1\u05e2 \u05de\u05e4\u05ea\u05d7\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_arba_stri_olma", "label": "\u05d0\u05e8\u05d1\u05e2 \u05e1\u05d8\u05e8\u05d9 \u05e2\u05dc\u05de\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05e8\u05d1\u05e2 \u05e1\u05d8\u05e8\u05d9 \u05e2\u05dc\u05de\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_tlt_atvan", "label": "\u05ea\u05dc\u05ea \u05d0\u05ea\u05d5\u05d0\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05ea\u05dc\u05ea \u05d0\u05ea\u05d5\u05d0\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_\u05de\u05e9\u05e8\u05d9\u05d9\u05df_\u05e2\u05dc\u05d0\u05d9\u05df", "label": "\u05de\u05e9\u05e8\u05d9\u05d9\u05df \u05e2\u05dc\u05d0\u05d9\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05de\u05e9\u05e8\u05d9\u05d9\u05df \u05e2\u05dc\u05d0\u05d9\u05df\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg5_\u05ea\u05e8\u05d9\u05df_\u05de\u05e4\u05ea\u05d7\u05df", "label": "\u05ea\u05e8\u05d9\u05df \u05de\u05e4\u05ea\u05d7\u05df", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05ea\u05e8\u05d9\u05df \u05de\u05e4\u05ea\u05d7\u05df\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_gv_gvyvta", "label": "\u05d2\u05d5 \u05d2\u05d5\u05d9\u05d5\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d2\u05d5 \u05d2\u05d5\u05d9\u05d5\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg4_dltata", "label": "\u05d3\u05dc\u05ea\u05ea\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d3\u05dc\u05ea\u05ea\u05d0\nType: KabbalisticConcept"}, {"color": "#87CEFA", "id": "sg5_\u05d0\u05dc", "label": "\u05d0\u05dc", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05d0\u05dc\nType: SpiritualEntity"}, {"color": "#87CEFA", "id": "sg5_\u05e2\u05de\u05d0", "label": "\u05e2\u05de\u05d0", "shape": "dot", "size": 20, "title": "UNIQUE TO DaatChachamVatokan107\nLabel: \u05e2\u05de\u05d0\nType: OtherConcept"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#87CEFA", "from": "sg1_reuta_hada", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_had_bla_piruda"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_yy", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg3_\u05d9\u05d9\u05d7\u05d5\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_9z8y7x6w5v4u", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05de\u05e9\u05e8\u05d9\u05d9\u05df_\u05e2\u05dc\u05d0\u05d9\u05df", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg4_dltata"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_v_v", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_v_v"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05d6\u05e8", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg3_\u05d7\u05d3\u05d5\u05d0"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_20_3_4", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_20_3_4"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05e9\u05d4", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg1_bq_devarim_6_5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05ea\u05e8\u05d9\u05df_\u05de\u05e4\u05ea\u05d7\u05df", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg4_gv_gvyvta"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_dalet_echad_gdolah", "label": "isCalled", "title": "Unique to RAMBAN_32: isCalled", "to": "sg3_bq_yesha_63_12"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_chd", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_mashal_bat_melech_tzikik_kdara", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_\u05d1\u05d1\u05dc\u05d9_\u05e4\u05e1\u05d7\u05d9\u05dd_\u05e0\u05d5_\u05e2\u05f4\u05d0"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_shvain_anfin", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_ilana"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_devarim_verse_5_ref"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_itaruta", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_sitrin"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_9_1_3", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_yy_alohikha_theo"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_9_1_3", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_nehiro", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_butzina_dqeriotah"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_6_5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_sheifin", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_rvza", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg5_\u05de\u05e1\u05ea\u05e8_\u05d3\u05e8\u05d5\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_bq_yesha_63_12", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg3_bq_yesha_63_12"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_lilya", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_sitrin"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_8f3a2c1d9e4b", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_sirafin_ilaain", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_reuta_hada"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_shkmlo", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg1_yihud"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ha_katuv", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_alohikha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_nehiro", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_shvain_nehorin"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ha_parshiyot", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_1f2e3d4c5b6a", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_7a8b9c0d1e2f", "label": "mentions", "title": "Unique to DaatChachamVatokan107: mentions", "to": "sg3_\u05de\u05d8\u05e8\u05d5\u05e0\u05d9\u05ea\u05d0"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bh_a", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d1\u05ea_\u05de\u05dc\u05da", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg2_\u05e6\u05d9\u05e7\u05d9_\u05e7\u05d3\u05e8\u05d4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05d6\u05e8", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg3_bq_3f4g5h6i7j8k"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_yy_alohikha", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_yy_alohikha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_ltata", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_sitrin"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05db\u05d1\u05d5\u05d3_\u05de\u05dc\u05db\u05d5\u05ea\u05d5", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_f6g7h8i9j0k1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_reisha_ilaah", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_shma_kadisha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_v_v", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_had_bla_piruda"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bh_a", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_shma_kadisha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05de\u05d8\u05e8\u05d5\u05e0\u05d9\u05ea\u05d0", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg3_\u05d9\u05d9\u05d7\u05d5\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_v_v", "label": "symbolizes", "title": "Unique to DaatChachamVatokan107: symbolizes", "to": "sg2_kabbalistic_concept_havayah"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d3\u05dc\u05f4\u05ea_\u05d0\u05d7\u05d3", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg3_bq_yesha_63_12"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_dl_t", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_kabbalistic_concept_havayah", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_7a8b9c0d1e2f", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg3_bq_7a8b9c0d1e2f"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_shvain_nehorin", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_shvain_anfin"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_d4e5f6g7h8i9", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_deuteronomy_6_4"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_balah", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_ilana"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_balah", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg1_yihud"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_nehiro", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_alma_ilaah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_sirafin_ilaain", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg4_chd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_shem_havayah", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_6_5"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_20_3_4", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_yy_aloheikhem_theo"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_v_v", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg3_\u05de\u05d1\u05d5\u05e2\u05d0"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_sitrin", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5", "label": "isA", "title": "Unique to RAMBAN_32: isA", "to": "sg2_bq_yy_alohikha"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d1\u05ea_\u05de\u05dc\u05da", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_\u05d1\u05d1\u05dc\u05d9_\u05e4\u05e1\u05d7\u05d9\u05dd_\u05e0\u05d5_\u05e2\u05f4\u05d0"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea_\u05d5\u05d4\u05e0\u05d5\u05e8\u05d0\u05d5\u05ea", "label": "causes", "title": "Unique to RAMBAN_32: causes", "to": "sg2_\u05e9\u05dd_\u05ea\u05e4\u05d0\u05e8\u05ea"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_ilana", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_ilana"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_chd", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_1f2e3d4c5b6a"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_a1b2c3d4e5f6", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_ve_amru", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg3_mashal_bat_melech_tzikik_kdara"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_deuteronomy_6_4", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_d4e5f6g7h8i9"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_yy", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg3_\u05e8\u05d6\u05d0_\u05d3\u05e8\u05e9\u05d9\u05de\u05d5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_y_yud", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_shma_kadisha"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_20_3", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_20_3_4"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ha_katuv", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_alohenu"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy_alohikha_theo", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_6_5_phrase"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_ot_ahad", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_\u05e8\u05d6\u05d0_\u05d3\u05e8\u05e9\u05d9\u05de\u05d5", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_v_v"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_butzina_dqeriotah", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_shvain_nehorin"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_9z8y7x6w5v4u", "label": "isCalled", "title": "Unique to DaatChachamVatokan107: isCalled", "to": "sg1_y_yud"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d7\u05d3", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg3_sefer_devarim"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_20_3_4", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_shvain_nehorin", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_ilana"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_zr", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg3_\u05d7\u05d3\u05d5\u05d0"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_9_1_3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy_aloheikhem_theo", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_20_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05e2\u05de\u05d0", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg4_rvza"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_ha_parshiyot", "label": "hasPart", "title": "Unique to RAMBAN_32: hasPart", "to": "sg1_alohikha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d0\u05e8\u05d1\u05e2_\u05de\u05e4\u05ea\u05d7\u05df", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg4_tlt_atvan"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_bq_a8f3c2d1e9b4", "label": "mentions", "title": "Unique to DaatChachamVatokan107: mentions", "to": "sg4_rvza"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_f6g7h8i9j0k1", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05db\u05d1\u05d5\u05d3_\u05de\u05dc\u05db\u05d5\u05ea\u05d5"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_y_yud", "label": "symbolizes", "title": "Unique to DaatChachamVatokan107: symbolizes", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5_phrase", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_9_1_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d0\u05dc", "label": "symbolizes", "title": "Unique to DaatChachamVatokan107: symbolizes", "to": "sg5_\u05d0\u05e8\u05d1\u05e2_\u05de\u05e4\u05ea\u05d7\u05df"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_9_1_3", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_devarim_9_1_3_ref"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05de\u05e9\u05e8\u05d9\u05d9\u05df_\u05e2\u05dc\u05d0\u05d9\u05df", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05ea\u05e8\u05d9\u05df_\u05de\u05e4\u05ea\u05d7\u05df"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e9\u05dd_\u05db\u05d1\u05d5\u05d3_\u05de\u05dc\u05db\u05d5\u05ea\u05d5", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_f6g7h8i9j0k1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_9z8y7x6w5v4u", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_1f2e3d4c5b6a"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_zohar", "label": "cites", "title": "Unique to DaatChachamVatokan107: cites", "to": "sg1_ha_rav_zal"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_9z8y7x6w5v4u", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_8f3a2c1d9e4b"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_7a8b9c0d1e2f", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg3_\u05d6\u05e8"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_blchishu", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg4_zr"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy_alohikha_theo", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_9_1_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_shkmlo", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg1_melekh"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_y_yud", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_reisha_ilaah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_bv_al", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg5_\u05d0\u05e8\u05d1\u05e2_\u05de\u05e4\u05ea\u05d7\u05df"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_kabbalistic_concept_havayah", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_1f2e3d4c5b6a"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05e9\u05d4", "label": "causes", "title": "Unique to RAMBAN_32: causes", "to": "sg2_\u05d4\u05d2\u05d3\u05d5\u05dc\u05d5\u05ea_\u05d5\u05d4\u05e0\u05d5\u05e8\u05d0\u05d5\u05ea"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05e9\u05d4", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg3_ba_torah"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_tlt_atvan", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg4_chd"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_1f2e3d4c5b6a", "label": "explains", "title": "Unique to DaatChachamVatokan107: explains", "to": "sg1_had_bla_piruda"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_f6g7h8i9j0k1", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05e7\u05e8\u05d9\u05ea_\u05e9\u05de\u05e2"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_a1b2c3d4e5f6", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_a1b2c3d4e5f6"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg1_reo_shalem"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_tlt_atvan", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg5_\u05d7\u05d3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_bh_a", "label": "symbolizes", "title": "Unique to DaatChachamVatokan107: symbolizes", "to": "sg2_bq_9z8y7x6w5v4u"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_9_1_3", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_9_1_3"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_yy_aloheikhem_theo", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg1_bq_devarim_20_3_4"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05e9\u05dd_\u05e2\u05d5\u05dc\u05dd", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg3_bq_yesha_63_12"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_8f3a2c1d9e4b", "label": "mentions", "title": "Unique to DaatChachamVatokan107: mentions", "to": "sg2_bq_1f2e3d4c5b6a"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_bq_yesha_63_12", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05e9\u05dd_\u05e2\u05d5\u05dc\u05dd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_\u05de\u05e9\u05d4", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg2_\u05d1\u05e8\u05de\u05d6"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_6_5", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_yy_alohikha_theo"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_8f3a2c1d9e4b", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_8f3a2c1d9e4b"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_d4e5f6g7h8i9", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05de\u05e9\u05d4"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_malchuto", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_f6g7h8i9j0k1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_chd", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg4_chd"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_kavod", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_f6g7h8i9j0k1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg3_bq_7a8b9c0d1e2f", "label": "explains", "title": "Unique to DaatChachamVatokan107: explains", "to": "sg3_bq_3f4g5h6i7j8k"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg3_bq_yesha_63_12", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg2_\u05d9\u05e9\u05e2\u05d9\u05d4\u05d5_\u05e1\u05d2_\u05d9\u05d1"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d7\u05d3", "label": "correspondsTo", "title": "Unique to DaatChachamVatokan107: correspondsTo", "to": "sg1_itaruta"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_bq_devarim_20_3_4", "label": "mentions", "title": "Unique to RAMBAN_32: mentions", "to": "sg1_devarim_20_3_4_ref"}, {"arrows": "to", "color": "#87CEFA", "from": "sg1_sheifin", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg1_tiavuta"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg2_bq_a1b2c3d4e5f6", "label": "appearsIn", "title": "Unique to RAMBAN_32: appearsIn", "to": "sg2_bq_deuteronomy_20_3"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_bq_1f2e3d4c5b6a", "label": "appearsIn", "title": "Unique to DaatChachamVatokan107: appearsIn", "to": "sg2_bq_1f2e3d4c5b6a"}, {"arrows": "to", "color": "#87CEFA", "from": "sg2_\u05d9\u05e9\u05e8\u05d0\u05dc", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg2_bq_8f3a2c1d9e4b"}, {"arrows": "to", "color": "#FF7F7F", "from": "sg1_alohenu", "label": "relatedTo", "title": "Unique to RAMBAN_32: relatedTo", "to": "sg1_alohikha"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d0\u05e8\u05d1\u05e2_\u05de\u05e4\u05ea\u05d7\u05df", "label": "relatedTo", "title": "Unique to DaatChachamVatokan107: relatedTo", "to": "sg4_arba_stri_olma"}, {"arrows": "to", "color": "#87CEFA", "from": "sg5_\u05d0\u05dc", "label": "symbolizes", "title": "Unique to DaatChachamVatokan107: symbolizes", "to": "sg4_rvza"}, {"arrows": "to", "color": "#87CEFA", "from": "sg4_chd", "label": "hasPart", "title": "Unique to DaatChachamVatokan107: hasPart", "to": "sg1_v_v"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -30000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
