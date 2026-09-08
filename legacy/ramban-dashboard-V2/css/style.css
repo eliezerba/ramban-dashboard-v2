@@ -1191,3 +1191,8 @@ mark.term-mark.is-pulsed {
     min-height: 520px;
   }
 }
+
+
+/* Bundled navigation back to the integrated dashboard */
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.new-dashboard-link{display:inline-flex;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.86);color:var(--brand);border-radius:999px;padding:7px 11px;font-size:.78rem;font-weight:750;text-decoration:none;box-shadow:var(--shadow-sm);white-space:nowrap}.new-dashboard-link:hover{background:#fff;border-color:var(--brand)}
+@media(max-width:720px){.topbar{flex-direction:column}.new-dashboard-link{align-self:flex-start}}

@@ -1,47 +1,75 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>דשבורד רמב"ן - גרסה 2</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>רמב״ן — טקסט, רשת וכימות | V8</title>
+  <link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <div class="eyebrow">Ramban Supercommentaries · Integrated Research Dashboard V8</div>
+      <h1>טקסט → רשת → כימות</h1>
+      <p class="subtitle">מערכת מחקרית אחת: טקסטים מתויגים, גרפי־ידע, כימות, אשכולות ופיזור — וכל מדד חוזר למקור שמאחוריו.</p>
+    </div>
+    <div class="header-actions">
+      <div class="header-mini-actions"><button class="legacy-link glossary-link" id="openGlossary" type="button">מילון מונחים</button><a class="legacy-link" href="./legacy/ramban-dashboard-V2/index.html" title="פתח את הדשבורד הישן (V2)">מעבר לדשבורד הישן</a></div>
+      <div class="lineage-mini" aria-label="שרשרת הנתונים">
+        <span class="source-pill source-text">נתונים ישנים · טקסט ותיוג</span><b>←</b>
+        <span class="source-pill source-net">נתונים ישנים · רשת E2/E3</span><b>←</b>
+        <span class="source-pill source-quant">נתונים חדשים · כימות השוואתי</span>
+      </div>
+    </div>
+  </header>
 
-    <header class="topbar">
-      <h1>דשבורד מחקרי רמב"ן - גרסה 2</h1>
-      <p>כלי חקירה דו-כיווני: ממקור למסקנה, וממסקנה למקור.</p>
-    </header>
-
-    <nav class="tabs" aria-label="ניווט ראשי">
-      <button class="tab is-active" data-tab="by-source">לפי מקור</button>
-      <button class="tab" data-tab="by-commentator">לפי פרשן</button>
-      <button class="tab" data-tab="flow-atlas">אטלס זרימות</button>
-      <button class="tab" data-tab="overview">מבט כללי / אשכולות</button>
-      <button class="tab" data-tab="corpus-analysis">ניתוח קורפוס</button>
-      <button class="tab" data-tab="data-archive">ארכיון נתונים / ממצאים</button>
+  <div class="workspace-sticky" id="workspaceSticky">
+    <nav class="main-tabs" aria-label="ניווט ראשי">
+      <button class="main-tab is-active" data-tab="journey">קטע: טקסט → רשת → כימות</button>
+      <button class="main-tab" data-tab="commentator">לפי פרשן</button>
+      <button class="main-tab" data-tab="corpus">מפות רוחב</button>
+      <button class="main-tab" data-tab="clusters">אשכולות ופיזור</button>
+      <button class="main-tab" data-tab="dispersion">מעבדת פיזור</button>
+      <button class="main-tab" data-tab="reports">דוחות מלאים</button>
+      <button class="main-tab" data-tab="data">נתונים / QA</button>
     </nav>
 
-    <main id="app" class="layout">
-      <section id="view-by-source" class="view is-active"></section>
-      <section id="view-by-commentator" class="view"></section>
-      <section id="view-flow-atlas" class="view"></section>
-      <section id="view-overview" class="view"></section>
-      <section id="view-corpus-analysis" class="view"></section>
-      <section id="view-data-archive" class="view"></section>
-    </main>
+    <section class="context-bar" id="contextBar">
+      <div class="context-field context-section" data-context-field="section">
+        <label for="sectionSelect">מקור / קטע</label>
+        <select id="sectionSelect"></select>
+        <div id="sectionCaption" class="context-caption"></div>
+      </div>
+      <div class="context-field" data-context-field="a">
+        <label for="commentatorASelect">פרשן א׳</label>
+        <select id="commentatorASelect"></select>
+      </div>
+      <div class="context-field" data-context-field="b">
+        <label for="commentatorBSelect">פרשן ב׳</label>
+        <select id="commentatorBSelect"></select>
+      </div>
+      <div class="context-status" id="contextStatus" data-context-field="status"></div>
+    </section>
+  </div>
 
-    <script src="./data/data-index.js"></script>
-    <script>
-      window.RAMBAN_V2_SECTIONS = window.RAMBAN_V2_SECTIONS || {};
-      window.RAMBAN_V2_COMMENTATORS = window.RAMBAN_V2_COMMENTATORS || {};
-    </script>
-    <script src="./js/data-loader.js"></script>
-    <script src="./js/graph-view.js"></script>
-    <script src="./js/tables.js"></script>
-    <script src="./js/text-view.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
+  <main id="app">
+    <section id="tab-journey" class="tab-view is-active"></section>
+    <section id="tab-commentator" class="tab-view"></section>
+    <section id="tab-corpus" class="tab-view"></section>
+    <section id="tab-clusters" class="tab-view"></section>
+    <section id="tab-dispersion" class="tab-view"></section>
+    <section id="tab-reports" class="tab-view"></section>
+    <section id="tab-data" class="tab-view"></section>
+  </main>
+
+  <footer>
+    <span>V8 · טקסט → תיוג → גרף־ידע → כימות → אשכולות → מעבדת פיזור.</span>
+    <span>אין חיבור מספרי בין מדדים ממקורות שונים ללא סימון מפורש.</span>
+  </footer>
+
+  <script>window.RAMBAN_V2_SECTIONS={};window.RAMBAN_V2_COMMENTATORS={};</script>
+  <script src="./data/old-index.js"></script>
+  <script src="./data/quant-reports.js"></script>
+  <script src="./app.js"></script>
+</body>
 </html>

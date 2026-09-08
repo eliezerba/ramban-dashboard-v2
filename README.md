@@ -1,93 +1,27 @@
-# דשבורד רמב"ן - גרסה 2
+# Ramban Dashboard V8
 
-דשבורד מחקרי עצמאי לחקר היחסים בין פירוש הרמב"ן לתורה לבין פרשניו, על בסיס הנתונים הקיימים בתיקיית Data.
+V8 is a focused performance and responsive-layout refinement of V7. No research data, report, tab, visualization, glossary entry, or old-dashboard navigation was removed.
 
-## 1. מה הדשבורד עושה
-- קריאה לפי מקור: טקסט, גרפים, טבלת דמיון ומעבר לישויות קשורות.
-- קריאה לפי פרשן: פריסה רוחבית, מדדים חוזרים, גרף אגרגטיבי וניווט למקורות.
-- מבט כללי/אשכולות: זוגות דמיון, אשכולות, דגלי איכות ומעבר חזרה למקורות.
+## Responsive graphs
 
-## 2. הפעלה למשתמש קצה
-פתח את הקובץ:
-- index.html
+- SVG charts now scale to the width of their actual panel instead of retaining fixed pixel heights.
+- Knowledge-graph canvases use viewport-aware `clamp()` heights and refit automatically through `ResizeObserver` when their container changes size.
+- Grid children are allowed to shrink correctly (`min-width: 0`), avoiding charts forcing a panel wider than the browser window.
+- The main network, cluster networks, dispersion plots, dendrograms, histograms, bar charts and profile charts all use responsive sizing.
+- Heatmaps and large tables retain horizontal scrolling where shrinking cells would make the data unreadable.
 
-אין צורך להריץ שרת.
-אין צורך להריץ build.
+## Performance changes
 
-אפשר גם להפעיל דרך:
-- INDEX.cmd
-- INDEX.ps1
+- Knowledge-graph layouts are cached. Switching labels, relation filters, or “מה זה? / מי זה?” no longer recomputes the expensive force layout when the graph itself is unchanged.
+- First-time force-layout iterations were reduced for large networks while preserving the same soft-boundary layout logic.
+- The “אשכולות ופיזור” page renders charts only for the currently visible research sub-tab instead of drawing every hidden visualization on entry.
+- The 1,534-row ranked-pairs table and the 1,869-row dispersion table are now lazy-loaded only when their `<details>` section is opened.
+- Technical-term decoration is restricted to the active tab, deferred to browser idle time, and skips large table bodies.
+- Live hover tooltip work is throttled to one update per animation frame.
+- Window resize work is also animation-frame throttled.
 
-קבצי INDEX בגרסה 2 בודקים אוטומטית שיש data/data-index.js.
-אם הקובץ חסר, הם מריצים בנייה מחדש דרך scripts/build-data-index.js ואז פותחים את index.html.
+## Source preservation
 
-## 3. מבנה תיקייה
-- index.html
-- css/style.css
-- js/
-- data/
-- data-index.json
-- DATA_ANALYSIS.md
-- scripts/build-data-index.js
+The contents of `data/`, `source/`, and `legacy/ramban-dashboard-V2/` remain unchanged from V7. The old dashboard is still bundled and navigation works in both directions.
 
-## 4. איך בנויה תיקיית הנתונים
-מקורות הנתונים החיצוניים:
-- Data/E2_full_corpus: גרפים וטקסטים ברמת מקור-פרשן.
-- Data/E3_comparative_analysis: מדדים, השוואות, פרופילי פרשנים ודמיון רוחבי.
-
-הפלט המקומי של גרסה 2:
-- data/data-index.js
-- data/sections/section_<id>.js
-- data/commentators/commentator_<id>.js
-- data-index.json (עותק קריא חיצוני)
-
-## 5. איך נוצר data-index.json
-הפקה מתבצעת על ידי:
-- scripts/build-data-index.js
-
-הסקריפט:
-1. קורא קבצי CSV/JSON מ-E2/E3.
-2. ממפה מקורות, פרשנים, גרפים והשוואות.
-3. בונה אינדקס ראשי + קבצי נתונים מפוצלים.
-4. מייצר גם פורמט .js לטעינה ישירה בדפדפן ללא fetch.
-
-## 6. עדכון נתונים כש-Data משתנה
-לאחר שינוי ב-Data, יש להריץ מחדש:
-
-```bash
-cd "ramban-dashboard V2"
-node scripts/build-data-index.js
-```
-
-ולאחר מכן לפתוח שוב את index.html.
-
-## 6.1 אבחון מהיר במקרה של "אין DATA"
-בדיקה ידנית:
-
-```bash
-cd "ramban-dashboard V2"
-dir data\data-index.js
-dir data\sections
-dir data\commentators
-```
-
-אם data-index.js חסר:
-
-```bash
-cd "ramban-dashboard V2"
-node scripts/build-data-index.js
-```
-
-ואז לפתוח שוב את INDEX.cmd או index.html.
-
-## 7. העלאה עתידית ל-GitHub Pages
-הפרויקט מותאם לקבצים סטטיים:
-- כל הנתונים נטענים מקבצי .js מקומיים.
-- אין תלות בשרת צד-שרת.
-
-לכן ניתן להעלות את תוכן התיקייה כמו שהוא ל-GitHub Pages.
-
-## 8. הערות אמינות
-- אשכולות מוצגים ככלי עזר מחקרי, לא כהכרעה סופית.
-- בחלק מהמקרים אין עוגן טקסטואלי מדויק לכל מושג.
-- יש להתייחס לדגלי איכות (למשל THIN-RAMBAN, SPARSE/DIVERGENT) בזמן פרשנות.
+Open `index.html` (or `OPEN_DASHBOARD.cmd` on Windows).
