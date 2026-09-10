@@ -1,27 +1,48 @@
-# Ramban Dashboard V8
+# Ramban Dashboard V9
 
-V8 is a focused performance and responsive-layout refinement of V7. No research data, report, tab, visualization, glossary entry, or old-dashboard navigation was removed.
+V9 is the corrected provenance release of the integrated Ramban supercommentaries dashboard. **Its visual design is intentionally the same as V8.** The correction affects identities, population logic, reports, and derived interpretations — not the dashboard's basic layout or visual language.
 
-## Responsive graphs
+## Open the dashboard
 
-- SVG charts now scale to the width of their actual panel instead of retaining fixed pixel heights.
-- Knowledge-graph canvases use viewport-aware `clamp()` heights and refit automatically through `ResizeObserver` when their container changes size.
-- Grid children are allowed to shrink correctly (`min-width: 0`), avoiding charts forcing a panel wider than the browser window.
-- The main network, cluster networks, dispersion plots, dendrograms, histograms, bar charts and profile charts all use responsive sizing.
-- Heatmaps and large tables retain horizontal scrolling where shrinking cells would make the data unreadable.
+- Windows: run `OPEN_DASHBOARD.cmd`.
+- Or open `index.html` directly in a modern browser.
+- The small button at the top opens the embedded **old dashboard (V2)**; that dashboard contains a reciprocal button back to V9.
 
-## Performance changes
+## ⟦תיקון V9⟧ Da'at Chacham
 
-- Knowledge-graph layouts are cached. Switching labels, relation filters, or “מה זה? / מי זה?” no longer recomputes the expensive force layout when the graph itself is unchanged.
-- First-time force-layout iterations were reduced for large networks while preserving the same soft-boundary layout logic.
-- The “אשכולות ופיזור” page renders charts only for the currently visible research sub-tab instead of drawing every hidden visualization on entry.
-- The 1,534-row ranked-pairs table and the 1,869-row dispersion table are now lazy-loaded only when their `<details>` section is opened.
-- Technical-term decoration is restricted to the active tab, deferred to browser idle time, and skips large table bodies.
-- Live hover tooltip work is throttled to one update per animation frame.
-- Window resize work is also animation-frame throttled.
+There is no Da'at Chacham Vatican 114 witness in the supplied source corpus.
 
-## Source preservation
+Canonical identities:
 
-The contents of `data/`, `source/`, and `legacy/ramban-dashboard-V2/` remain unchanged from V7. The old dashboard is still bundled and navigation works in both directions.
+- `DaatChacham_Vat107_Main` — **דעת החכם — ותיקן 107**.
+- `DaatChacham_Vat214_Main` — **דעת החכם — ותיקן 214** (main commentary).
+- `DaatChacham_Vat214_Marginalia` — **הערות בשולי דעת החכם — ותיקן 214**.
 
-Open `index.html` (or `OPEN_DASHBOARD.cmd` on Windows).
+The marginalia remain available as a separate textual layer, but they are **not counted by default as an independent commentator/commentary witness**.
+
+## What changed
+
+- Legacy “Vat114” was remapped to the main text of Vat214.
+- Legacy “Vat214” in the Da'at Chacham slot was remapped to Vat214 marginalia.
+- Both the integrated dashboard and the embedded old dashboard were corrected.
+- Reports and evidence sheets were corrected and marked with `⟦תיקון V9⟧` at changed passages.
+- Direct pairwise metrics were preserved where mathematically valid after remapping.
+- Population-dependent metrics that cannot be reconstructed exactly from the supplied outputs are suspended rather than guessed.
+- The old E3 signature comparison that can be reconstructed exactly gives **Vat107 ↔ Vat214 main = 0.9839**.
+- The previous narrative of an “anomalous Vat214 witness” is invalid. The new research question concerns the relationship between **Vat214 marginalia** and the anonymous tradition.
+
+## Documentation
+
+- `CHANGELOG_V9.md` — concise change log.
+- `INTEGRATION_QA.md` — release QA and remaining limitations.
+- `source/CORRECTION_PROTOCOL_RAMBAN_V9.md` — authoritative correction protocol / reusable prompt.
+- `source/new_reports/` — corrected Markdown and PDF reports.
+
+## Important methodological rule
+
+V9 distinguishes between:
+
+1. direct measurements between fixed graph pairs, which can generally survive identity remapping; and
+2. population-dependent statistics (cluster membership, co-cluster, Z/percentile/rank and related aggregates), which require recomputation when the population changes.
+
+Where the original pipeline cannot be reconstructed exactly from the supplied files, the value is displayed as **pending rerun** and its V8 value is kept only for audit.

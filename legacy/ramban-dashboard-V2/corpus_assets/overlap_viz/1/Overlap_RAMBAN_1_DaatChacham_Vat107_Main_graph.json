@@ -1,7 +1,7 @@
 {
   "metadata": {
     "graph1_name": "RAMBAN_1",
-    "graph2_name": "DaatChachamVatokan107",
+    "graph2_name": "DaatChacham_Vat107_Main",
     "creation_date": "2026-06-26T17:10:59.227364",
     "total_nodes": 57,
     "total_edges": 60,
@@ -373,7 +373,7 @@
       "status": "shared",
       "color": "#90EE90",
       "shape": "dot",
-      "title": "SHARED CONCEPT\n【RAMBAN_1】: תפארתו\n【DaatChachamVatokan107】: תפארת\nReason: embedding cos=0.828 (no LLM verify)",
+      "title": "SHARED CONCEPT\n【RAMBAN_1】: תפארתו\n【DaatChacham_Vat107_Main】: תפארת\nReason: embedding cos=0.828 (no LLM verify)",
       "matched_with": "sg1_he_tiferet"
     },
     {
@@ -395,7 +395,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: החכם\nType: RabbinicAuthority",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: החכם\nType: RabbinicAuthority",
       "matched_with": null
     },
     {
@@ -406,7 +406,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הכתוב\nType: BiblicalSource",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הכתוב\nType: BiblicalSource",
       "matched_with": null
     },
     {
@@ -417,7 +417,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: שם מלא\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: שם מלא\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -428,7 +428,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יי'\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יי'\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -439,7 +439,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: דו פרצופין\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: דו פרצופין\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -450,7 +450,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: שם הגדול\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: שם הגדול\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -461,7 +461,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: י' ספירות\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: י' ספירות\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -472,7 +472,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הנפש\nType: SpiritualEntity",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הנפש\nType: SpiritualEntity",
       "matched_with": null
     },
     {
@@ -483,7 +483,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הנשמות\nType: SpiritualEntity",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הנשמות\nType: SpiritualEntity",
       "matched_with": null
     },
     {
@@ -494,7 +494,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: דבקות\nType: TheologicalConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: דבקות\nType: TheologicalConcept",
       "matched_with": null
     },
     {
@@ -505,7 +505,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יסודה\nType: OtherConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יסודה\nType: OtherConcept",
       "matched_with": null
     },
     {
@@ -516,7 +516,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יסוד המערכה\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יסוד המערכה\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -527,7 +527,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: התשובה\nType: ReligiousPractice",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: התשובה\nType: ReligiousPractice",
       "matched_with": null
     },
     {
@@ -538,7 +538,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: וו קצוות\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: וו קצוות\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -549,7 +549,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: עושה המלאכה\nType: SpiritualEntity",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: עושה המלאכה\nType: SpiritualEntity",
       "matched_with": null
     },
     {
@@ -560,7 +560,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יסוד\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יסוד\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -571,7 +571,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: רוח דעת ותבונה\nType: TheologicalConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: רוח דעת ותבונה\nType: TheologicalConcept",
       "matched_with": null
     },
     {
@@ -582,7 +582,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: גנזי המלך\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: גנזי המלך\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -593,7 +593,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: העטרת\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: העטרת\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -604,7 +604,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "box",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: חי נפשך\nType: BiblicalQuotation",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: חי נפשך\nType: BiblicalQuotation",
       "matched_with": null
     },
     {
@@ -615,7 +615,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "box",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: חי יי'\nType: BiblicalQuotation",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: חי יי'\nType: BiblicalQuotation",
       "matched_with": null
     },
     {
@@ -626,7 +626,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: המלך\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: המלך\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -637,7 +637,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "box",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: גנזי המלך\nType: BiblicalQuotation",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: גנזי המלך\nType: BiblicalQuotation",
       "matched_with": null
     }
   ],
@@ -656,7 +656,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "bq_tehillim_139_12",
@@ -672,7 +672,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg1_alhy_yqb",
@@ -688,7 +688,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_yy",
@@ -712,7 +712,7 @@
       "predicate": "isA",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: isA"
+      "title": "Unique to DaatChacham_Vat107_Main: isA"
     },
     {
       "source": "sg1_msh",
@@ -752,7 +752,7 @@
       "predicate": "isA",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: isA"
+      "title": "Unique to DaatChacham_Vat107_Main: isA"
     },
     {
       "source": "sg2_ר_אברהם",
@@ -776,7 +776,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: relatedTo"
+      "title": "Unique to DaatChacham_Vat107_Main: relatedTo"
     },
     {
       "source": "sg2_שם_תפארת",
@@ -792,7 +792,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_he_hamelech",
@@ -800,7 +800,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_bq_Exodus_13_21",
@@ -824,7 +824,7 @@
       "predicate": "commentedOn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: commentedOn"
+      "title": "Unique to DaatChacham_Vat107_Main: commentedOn"
     },
     {
       "source": "sg1_he_ginzei_hamelech",
@@ -832,7 +832,7 @@
       "predicate": "isA",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: isA"
+      "title": "Unique to DaatChacham_Vat107_Main: isA"
     },
     {
       "source": "sg1_bq_1a2b3c4d5e6f",
@@ -840,7 +840,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_bq_Exodus_13_21",
@@ -864,7 +864,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: relatedTo"
+      "title": "Unique to DaatChacham_Vat107_Main: relatedTo"
     },
     {
       "source": "sg1_he_nefesh",
@@ -872,7 +872,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg1_laatyd_lba",
@@ -960,7 +960,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_swd_hmdrsh",
@@ -1000,7 +1000,7 @@
       "predicate": "appearsIn",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: appearsIn"
+      "title": "Unique to DaatChacham_Vat107_Main: appearsIn"
     },
     {
       "source": "sg1_he_yhwh",
@@ -1008,7 +1008,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg1_yqb",
@@ -1040,7 +1040,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg1_hshm",
@@ -1096,7 +1096,7 @@
       "predicate": "symbolizes",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: symbolizes"
+      "title": "Unique to DaatChacham_Vat107_Main: symbolizes"
     },
     {
       "source": "sg1_byt_dynw",
@@ -1120,7 +1120,7 @@
       "predicate": "isA",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: isA"
+      "title": "Unique to DaatChacham_Vat107_Main: isA"
     }
   ]
 }

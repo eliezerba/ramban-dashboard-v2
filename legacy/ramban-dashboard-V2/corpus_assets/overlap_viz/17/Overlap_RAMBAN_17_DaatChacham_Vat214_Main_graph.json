@@ -1,7 +1,7 @@
 {
   "metadata": {
     "graph1_name": "RAMBAN_17",
-    "graph2_name": "DaatChachamVatokan114",
+    "graph2_name": "DaatChacham_Vat214_Main",
     "creation_date": "2026-06-26T17:11:21.549045",
     "total_nodes": 180,
     "total_edges": 203,
@@ -164,7 +164,7 @@
       "status": "shared",
       "color": "#90EE90",
       "shape": "dot",
-      "title": "SHARED CONCEPT\n【RAMBAN_17】: יום השבת\n【DaatChachamVatokan114】: יום השבת\nReason: embedding cos=0.928 (no LLM verify)",
+      "title": "SHARED CONCEPT\n【RAMBAN_17】: יום השבת\n【DaatChacham_Vat214_Main】: יום השבת\nReason: embedding cos=0.928 (no LLM verify)",
       "matched_with": "sg1_he_yom_hashabbat"
     },
     {
@@ -1825,7 +1825,7 @@
       "status": "shared",
       "color": "#90EE90",
       "shape": "dot",
-      "title": "SHARED CONCEPT\n【RAMBAN_17】: קידוש\n【DaatChachamVatokan114】: הקידוש בלילה\nReason: embedding cos=0.863 (no LLM verify)",
+      "title": "SHARED CONCEPT\n【RAMBAN_17】: קידוש\n【DaatChacham_Vat214_Main】: הקידוש בלילה\nReason: embedding cos=0.863 (no LLM verify)",
       "matched_with": "sg1_he_kiddush_balayla"
     },
     {
@@ -1946,7 +1946,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: החכם\nType: TraditionOrAttribution",
+      "title": "UNIQUE TO DaatChacham_Vat214_Main\nLabel: החכם\nType: TraditionOrAttribution",
       "matched_with": null
     },
     {
@@ -1957,7 +1957,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: הקידוש הגדול\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat214_Main\nLabel: הקידוש הגדול\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -1968,7 +1968,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: יסוד\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat214_Main\nLabel: יסוד\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -1979,7 +1979,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: קדש\nType: TheologicalConcept",
+      "title": "UNIQUE TO DaatChacham_Vat214_Main\nLabel: קדש\nType: TheologicalConcept",
       "matched_with": null
     },
     {
@@ -1990,7 +1990,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan114\nLabel: עכ\"ד\nType: TraditionOrAttribution",
+      "title": "UNIQUE TO DaatChacham_Vat214_Main\nLabel: עכ\"ד\nType: TraditionOrAttribution",
       "matched_with": null
     }
   ],
@@ -2129,7 +2129,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan114: relatedTo"
+      "title": "Unique to DaatChacham_Vat214_Main: relatedTo"
     },
     {
       "source": "sg2_bq_זכור",
@@ -2217,7 +2217,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan114: correspondsTo"
+      "title": "Unique to DaatChacham_Vat214_Main: correspondsTo"
     },
     {
       "source": "sg5_lulav",
@@ -2929,7 +2929,7 @@
       "predicate": "isA",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan114: isA"
+      "title": "Unique to DaatChacham_Vat214_Main: isA"
     },
     {
       "source": "sg8_yovel",
@@ -3569,7 +3569,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan114: relatedTo"
+      "title": "Unique to DaatChacham_Vat214_Main: relatedTo"
     },
     {
       "source": "sg7_שבת",
@@ -3601,7 +3601,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan114: relatedTo"
+      "title": "Unique to DaatChacham_Vat214_Main: relatedTo"
     },
     {
       "source": "sg6_שבת",

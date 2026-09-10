@@ -8,6 +8,9 @@ const RV2ToHighlightedHtml = window.RV2Text.toHighlightedHtml;
 const RV2StripNiqqud = window.RV2Text.stripNiqqud;
 
 const index = window.RAMBAN_V2_INDEX;
+const V9_MARGINALIA_ID = 'DaatChacham_Vat214_Marginalia';
+const isV9Marginalia = (id) => id === V9_MARGINALIA_ID;
+const v9DefaultCommentatorIds = () => new Set(index.global?.v9DefaultCommentatorIds || (index.commentators || []).filter(c => !isV9Marginalia(c.id)).map(c => c.id));
 if (!index) {
   throw new Error('data-index.js לא נטען.');
 }
@@ -205,6 +208,11 @@ function commentatorMetaById(commentatorId) {
   return index.commentators.find((c) => c.id === commentatorId) || null;
 }
 
+function commentatorLabel(commentatorId) {
+  if (commentatorId === 'RAMBAN') return 'רמב״ן';
+  return commentatorMetaById(commentatorId)?.displayName || commentatorId;
+}
+
 function buildGlobalKnowledgeGraph(knowledgeBodies) {
   const nodes = [];
   const edges = [];
@@ -232,7 +240,7 @@ function buildRambanSimilarityGraph(sectionData) {
   rows.forEach((row, idx) => {
     nodes.push({
       id: row.commentatorId,
-      label: row.commentatorId,
+      label: commentatorLabel(row.commentatorId),
       type: 'RabbinicAuthority',
       color: commentaryColor(idx),
       freq: row.shared.length + 1,
@@ -796,7 +804,7 @@ async function buildFingerprintDataset() {
   });
 
   const bridgeConceptCount = {};
-  (index.commentators || []).forEach((meta) => {
+  (index.commentators || []).filter((meta) => !isV9Marginalia(meta.id)).forEach((meta) => {
     const row = (window.RAMBAN_V2_COMMENTATORS?.[meta.id]?.structureProfile) || null;
     const raw = String(row?.bridge_concepts || row?.bridgeConcepts || '');
     const count = raw ? raw.split(';').map((x) => x.trim()).filter(Boolean).length : 0;
@@ -808,7 +816,7 @@ async function buildFingerprintDataset() {
     .filter((v) => Number.isFinite(v));
   const rambanPeriphAvg = rambanPeriph.length ? rambanPeriph.reduce((a, b) => a + b, 0) / rambanPeriph.length : 0;
 
-  const ids = [...new Set([...index.commentators.map((c) => c.id), 'RAMBAN'])];
+  const ids = [...new Set([...index.commentators.filter((c) => !isV9Marginalia(c.id)).map((c) => c.id), 'RAMBAN'])];
   const rows = ids.map((id) => {
     const commentatorMeta = commentatorMetaById(id);
     const align = id === 'RAMBAN'
@@ -1041,8 +1049,11 @@ function renderDataArchive() {
   const visualIndexes = index.global?.visualIndexes || {};
   const dendrograms = index.global?.dendrograms || {};
   const htmlCoverage = index.global?.htmlCoverage || {};
+  const defaultIds = v9DefaultCommentatorIds();
   const seenPairs = new Set();
-  const similarityPairs = (index.global?.commentatorSimilarity?.pairs || [])
+  const similarityPairsAll = (index.global?.commentatorSimilarity?.pairs || []);
+  const similarityPairsDefault = similarityPairsAll.filter((row) => defaultIds.has(row.source) && defaultIds.has(row.target));
+  const similarityPairs = similarityPairsDefault
     .filter((row) => {
       const key = [row.source, row.target].sort().join('||');
       if (seenPairs.has(key)) return false;
@@ -1050,14 +1061,14 @@ function renderDataArchive() {
       return true;
     })
     .slice(0, 20);
-  const matrixData = buildGlobalSimilarityMatrix(index.global?.commentatorSimilarity || {});
+  const matrixData = buildGlobalSimilarityMatrix({ids:[...(index.global?.commentatorSimilarity?.ids || [])].filter(id=>defaultIds.has(id)), pairs: similarityPairsDefault});
 
   el.dataArchiveView.innerHTML = `
     <div class="card">
       <h2>מה נוסף מתוך DATA</h2>
-      <p class="muted">כאן מוצגים פריטי נתונים ומסקנות שהיו קיימים בתיקיית DATA אך לא נחשפו באופן ברור בדשבורד הראשי.</p>
+      <p class="muted">כאן מוצגים פריטי נתונים ומסקנות שהיו קיימים בתיקיית DATA אך לא נחשפו באופן ברור בדשבורד הראשי. <strong>⟦תיקון V9⟧</strong> תצוגות כלל־קורפוסיות מוציאות כברירת־מחדל את שכבת השוליים של ותיקן 214; היא עדיין נגישה בפרופיל ובמקור שלה.</p>
       <div class="stats-grid">
-        <div><strong>זוגות דמיון בין פרשנים</strong><span>${escapeHtml(index.global?.commentatorSimilarity?.pairs?.length ?? 0)}</span></div>
+        <div><strong>זוגות דמיון בין פרשנים</strong><span>${escapeHtml(similarityPairsDefault.length)}</span></div>
         <div><strong>קבוצות חתימה (witness)</strong><span>${escapeHtml(witnessRows.length)}</span></div>
         <div><strong>רשומות מדדי רשת</strong><span>${escapeHtml(index.global?.corpusGraphMetricsRows?.length ?? 0)}</span></div>
         <div><strong>פריטי overlap_viz</strong><span>${escapeHtml(overlapRows.reduce((acc, x) => acc + (x.items?.length || 0), 0))}</span></div>
@@ -1224,7 +1235,7 @@ function renderDataArchive() {
                   <tbody>
                     ${items.map((item) => `
                       <tr>
-                        <td>${escapeHtml(item.commentatorId)}</td>
+                        <td>${escapeHtml(commentatorLabel(item.commentatorId))}</td>
                         <td>${item.html ? `<a href="${escapeHtml(item.html)}" target="_blank" rel="noopener">פתיחה</a>` : '-'}</td>
                         <td>${item.json ? `<a href="${escapeHtml(item.json)}" target="_blank" rel="noopener">JSON</a>` : '-'}</td>
                       </tr>
@@ -1255,7 +1266,7 @@ function renderDataArchive() {
                 <tbody>
                   ${rows.slice(0, 30).map((row) => `
                     <tr>
-                      <td>${escapeHtml(row.commentatorId)}</td>
+                      <td>${escapeHtml(commentatorLabel(row.commentatorId))}</td>
                       <td><a href="${escapeHtml(row.html)}" target="_blank" rel="noopener">פתיחה</a></td>
                       <td>
                         <button class="link-btn" data-archive-section="${escapeHtml(row.sectionId)}">מקור</button>
@@ -2147,7 +2158,7 @@ async function renderBySource() {
         : `rgba(109, 79, 130, ${Math.min(0.85, 0.15 + intensity / 35)})`;
     return `
       <button class="heatmap-row ${row.commentatorId === app.selectedPairCommentator ? 'is-selected' : ''}" data-heat-commentator="${escapeHtml(row.commentatorId)}" title="${escapeHtml(row.commentatorId)}">
-        <span class="heatmap-label">${escapeHtml(row.commentatorId)}</span>
+        <span class="heatmap-label">${escapeHtml(commentatorLabel(row.commentatorId))}</span>
         <span class="heatmap-bar" style="width:${row.widthPct}%; background:${tone}"></span>
         <span class="heatmap-value">${escapeHtml(row.label)}</span>
       </button>
@@ -2415,7 +2426,7 @@ async function renderBySource() {
     const chunks = RV2SplitHighlights(text.slice(0, 1400), highlightTerms);
     const colorIndex = data.pairwise.findIndex((item) => item.commentatorId === row.commentatorId);
     const selectedClass = selectedTextCommentators.includes(row.commentatorId) ? 'is-selected' : '';
-    return `<article class="text-col text-col-selectable ${selectedClass}" data-text-commentator-card="${escapeHtml(row.commentatorId)}" style="border-color:${commentaryColor(Math.max(colorIndex, 0))}; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(245,240,231,0.88)); box-shadow: inset 0 0 0 1px ${commentaryColor(Math.max(colorIndex, 0))}22;"><h4 style="color:${commentaryColor(Math.max(colorIndex, 0))}">${escapeHtml(row.commentatorId)}</h4><p>${RV2ToHighlightedHtml(chunks, highlightTermColors)}</p></article>`;
+    return `<article class="text-col text-col-selectable ${selectedClass}" data-text-commentator-card="${escapeHtml(row.commentatorId)}" style="border-color:${commentaryColor(Math.max(colorIndex, 0))}; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(245,240,231,0.88)); box-shadow: inset 0 0 0 1px ${commentaryColor(Math.max(colorIndex, 0))}22;"><h4 style="color:${commentaryColor(Math.max(colorIndex, 0))}">${escapeHtml(commentatorLabel(row.commentatorId))}</h4><p>${RV2ToHighlightedHtml(chunks, highlightTermColors)}</p></article>`;
     })
     .join('');
 
@@ -2423,7 +2434,7 @@ async function renderBySource() {
   const commentatorPicker = data.pairwise
     .map((row) => {
       const checked = selectedTextCommentators.includes(row.commentatorId) ? 'checked' : '';
-      return `<label class="check-chip"><input type="checkbox" data-text-commentator="${escapeHtml(row.commentatorId)}" ${checked} /> ${escapeHtml(row.commentatorId)}</label>`;
+      return `<label class="check-chip"><input type="checkbox" data-text-commentator="${escapeHtml(row.commentatorId)}" ${checked} /> ${escapeHtml(commentatorLabel(row.commentatorId))}</label>`;
     })
     .join(' ');
 
@@ -2527,7 +2538,7 @@ async function renderByCommentator() {
   const summary = el.commentatorView.querySelector('#commentator-summary');
 
   summary.innerHTML = `
-    <h2>${escapeHtml(data.id)}</h2>
+    <h2>${escapeHtml(commentatorLabel(data.id))}</h2>${data.id==='DaatChacham_Vat214_Marginalia'?'<p class="small muted"><strong>⟦תיקון V9⟧</strong> זוהי שכבת הערות שוליים בוותיקן 214, לא עד נוסח עצמאי של דעת החכם.</p>':''}
     <div class="stats-grid">
       <div><strong>מספר מקורות</strong><span>${data.sections.length}</span></div>
       <div><strong>דמיון ממוצע לרמב"ן</strong><span>${formatMetric(data.avgAlignVsRamban)}</span></div>
@@ -2538,7 +2549,7 @@ async function renderByCommentator() {
     <p><strong>מונחי פרשנות:</strong> ${escapeHtml(data.methodProfile?.method_terms || 'לא זמין')}</p>
     <p><strong>מושגי ליבה:</strong> ${escapeHtml(data.structureProfile?.core_concepts || 'לא זמין')}</p>
     <p><strong>מושגי גישור:</strong> ${escapeHtml(data.structureProfile?.bridge_concepts || 'לא זמין')}</p>
-    <p><strong>זוגות קרובים לפרשן זה:</strong> ${data.peerSimilarities.map((p) => `${escapeHtml(p.commentatorId)} (${formatMetric(p.similarity)})`).join(' | ') || 'לא זמין'}</p>
+    <p><strong>זוגות קרובים לפרשן זה:</strong> ${data.peerSimilarities.map((p) => `${escapeHtml(commentatorLabel(p.commentatorId))} (${formatMetric(p.similarity)})`).join(' | ') || 'לא זמין'}</p>
   `;
 
   const sectionsEl = el.commentatorView.querySelector('#commentator-sections');

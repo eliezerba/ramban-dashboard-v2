@@ -1,7 +1,7 @@
 {
   "metadata": {
     "graph1_name": "RAMBAN_17",
-    "graph2_name": "DaatChachamVatokan107",
+    "graph2_name": "DaatChacham_Vat107_Main",
     "creation_date": "2026-06-26T17:11:19.711581",
     "total_nodes": 182,
     "total_edges": 203,
@@ -1946,7 +1946,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: ודיבר במה\nType: CommentaryTypeOrMethod",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: ודיבר במה\nType: CommentaryTypeOrMethod",
       "matched_with": null
     },
     {
@@ -1957,7 +1957,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדוש הגדול\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הקדוש הגדול\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -1968,7 +1968,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יסוד\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יסוד\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -1979,7 +1979,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: יום השבת\nType: ReligiousPractice",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: יום השבת\nType: ReligiousPractice",
       "matched_with": null
     },
     {
@@ -1990,7 +1990,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדש\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הקדש\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -2001,7 +2001,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: הקדוש\nType: KabbalisticConcept",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: הקדוש\nType: KabbalisticConcept",
       "matched_with": null
     },
     {
@@ -2012,7 +2012,7 @@
       "status": "kg2_unique",
       "color": "#87CEFA",
       "shape": "dot",
-      "title": "UNIQUE TO DaatChachamVatokan107\nLabel: עד כאן דבריו\nType: CommentaryTypeOrMethod",
+      "title": "UNIQUE TO DaatChacham_Vat107_Main\nLabel: עד כאן דבריו\nType: CommentaryTypeOrMethod",
       "matched_with": null
     }
   ],
@@ -2111,7 +2111,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg1_zachor",
@@ -2775,7 +2775,7 @@
       "predicate": "correspondsTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: correspondsTo"
+      "title": "Unique to DaatChacham_Vat107_Main: correspondsTo"
     },
     {
       "source": "sg7_מכילתא",
@@ -2847,7 +2847,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: relatedTo"
+      "title": "Unique to DaatChacham_Vat107_Main: relatedTo"
     },
     {
       "source": "sg2_bq_שמור",
@@ -2895,7 +2895,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: relatedTo"
+      "title": "Unique to DaatChacham_Vat107_Main: relatedTo"
     },
     {
       "source": "sg11_אסמכתא",
@@ -3623,7 +3623,7 @@
       "predicate": "relatedTo",
       "status": "kg2_unique",
       "color": "#87CEFA",
-      "title": "Unique to DaatChachamVatokan107: relatedTo"
+      "title": "Unique to DaatChacham_Vat107_Main: relatedTo"
     },
     {
       "source": "sg6_שבת",
